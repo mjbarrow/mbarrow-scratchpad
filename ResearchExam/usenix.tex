@@ -47,43 +47,82 @@ University of California, San Diego
 
 \subsection*{Abstract}
 Recently, demand for increased processor performance coupled with reducing power budget has been addressed using emerging parallel processors. Parallel computation is an energy efficient \textbf{(cite chandrakasan)} way of increasing performance but requires wider interconnect busses. At the die boundary, the consequence is that systems face an IO bottleneck. The connection between silicon and substrate ends the scope of Moores law in a system, with IO density of packages increasing at a slower rate than on chip.\\
-Compounding this problem, addressing performance by increasing paralell units result in increasing energy density due to the end of Dennard scaling \textbf{(cite)}. Devices therefore require an increasing number of power pins, further limiting IO availability. \textbf{HOW ABOUT COMPELLING EXAMPLE?}
-We examine integrated power converters in this context. A review of the literature suggests with further research this technique offers a means to address the IO bottleneck and power efficiency of future processors.         
+Compounding this problem, addressing performance by increasing paralell units result in increasing energy density due to the end of Dennard scaling \textbf{(cite)}. Devices therefore require an increasing number of power pins, further limiting IO pin availability. \textbf{HOW ABOUT COMPELLING EXAMPLE?}
+We examine integrated power converters in this context. A review of the literature suggests with further research this technique could address the IO bottleneck of future processors.% and power efficiency of future processors.         
 
 \section{Introduction}
 
-As Moores law continues, Technology scaling gives an increasing number of building blocks to meet conflicting consumer demands of increasing performance and energy efficiency. However the turn right approach exposes architects to complications of inconsistent technology scaling rates. In particular, for IO bound applications, the amount of achievable parallelism in silicon is proportional to the number of IO pins. The  \\
+%As Moores law continues, Technology scaling gives an increasing number of building blocks to meet conflicting consumer demands of increasing performance and energy efficiency. However the turn right approach exposes architects to complications of inconsistent technology scaling rates. In particular, for IO bound applications, the amount of achievable parallelism in silicon is proportional to the number of IO pins. The  \\
+
+\begin{itemize}
+\item{Motivation}
+\item{Stakeholders}
+\item{Historical context}
+\item{Current state of art}
+\item{State of art limitations}
+\item{Content of doc}
+\end{itemize}
 
 More fascinating text. Features\endnote{Remember to use endnotes, not footnotes!} galore, plethora of promises.\\
 
-\section{This is Another Section}
+\section{The DC DC converter}
 
-Some embedded literal typset code might 
-look like the following :
+\textbf{Definition of the problem}\\
+How it works, critical parameters
 
-{\tt \small
-\begin{verbatim}
-#include <iostream>
-using namespace std;
-main()
-{
-cout << "Hello world \n";
-return 0;
-}
+\subsection{Problems of an Integrated DC DC Converter}
 
-\end{verbatim}
-}
+\textbf{Definition of the system problem lives in}\\
+History of research\\
+System type 1(Switched capacitor AND HISTORY)\\
+System type 2(Integrated buck AND HISTORY Kurson book)\\
+Want to show how General CMOS components are made for this role and why they didn't work.\\
+
+\subsection{Performance drawbacks of Baseline DC DC Converters}
+
+\textbf{Taxonomy of problem (deeper drill and more specifics of the problem)}\\
+what is wrong with the switches?\\
+what is wrong with the control? \\
+What is wrong with the capacitors?\\
+What is wrong with the inductors?\\
+
+\subsection{Solutions}
+
+\textbf{System: well defined, class of problems: well defined, now we will see "fixed" systems}\\
+\begin{itemize}
+\item{Switches fixes paper list and description DONT USE EXOTIC TECH! THESE WERE NEVER USED ON INTEGRATED DESIGNS!!!}
+\item{Control fixes paper list and description NOTE THAT THIS PROBLEM IS WELL UNDER CONTROL, CONCLUDE FROM THIS SECTION}
+\item{Capacitor fixes paper list and description NOTE THAT THIS PROBLEM CANNOT BE "SOLVED" FROM A SC TOPOLOGY POINT OF VIEW AND INDUCTORS ARE "BETTER" IN TERMS OF ENERGY DENSITY AND LINE REGULATION}
+\item{Inductor fixes paper list and description. NOTE THAT THIS IS "SOLVED" BUT FOR SEMI-INTEGRATED OR WHATEVER}
+\end{itemize}
+
+\section{Saving pins with DC DC converters}
+
+\textbf{Solutions \& Stakeholders, why is there still work to be done?}\\
+Need to define the problem of Signal to power pin ratio. We cannot optimize this today with DC DC converters, because the \@ CMOS voltage stepdown means we need to have a lot of CORE power pins.\\
+Our "stakeholder" is high voltage stepdown. If we do it we could reduce \textbf{DEFINE}"CORE POWER PINS" to an amount desirable for \textbf{DEFINE} signal integrity\\
+
+\subsection{The IO limit with integrated DC DC converters}
+
+\textbf{Defines stakeholder specific problem}\\
+Think about this, it has to be differentiated from the section above
+
+\subsection{Solutions}
+
+Here we have to talk about:\\
+3 the micro transformer solution to this problem (it could be made promising) \\
+2 the MIT solution to this problem (it does not look promising)\\
+1 the disruptive technology of Si on Insulator, and how it could be paired with interposers\\
+\textbf{SHOULD HAVE SOME SIMULATION TO CHECK INSIGHT ON 1, 2 and 3}\\
+
+\subsection{Conclusions}
+
+Basically conclude that given the solutions simulation we could reach a situation where IO pressure is lifted from core power perspective, but that isn't so great tbh. 
+
 
 Now we're going to cite somebody.  Watch for the cite tag.
 Here it comes~\cite{Einstein}.  
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 {\footnotesize \bibliographystyle{acm}
 \bibliography{sample}}
