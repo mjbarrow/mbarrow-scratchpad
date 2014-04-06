@@ -1,0 +1,40 @@
+\begin{thebibliography}{1}
+
+\bibitem{Dennard1974}
+{\sc Dennard, Robert~H., F. H. G. V. L. R. E.~B., and LeBlanc., A.~R.}
+\newblock Design of ion-implanted mosfet's with very small physical dimensions.
+\newblock {\em Solid-State Circuits, IEEE Journal of 9.5\/} (1974), 256--268.
+
+\bibitem{Kurson2003}
+{\sc Kursun, Volkan, S. G. N. V. K.~D., and Friedman., E.~G.}
+\newblock Analysis of buck converters for on-chip integration with a dual
+  supply voltage microprocessor.
+\newblock {\em Very Large Scale Integration (VLSI) Systems, IEEE Transactions
+  on 11.3\/} (2003), 514--522.
+
+\bibitem{Chang2010}
+{\sc L~Chang, D~Frank, R. M. S. K. B. J. P. C. R.~D., and Haensch., W.}
+\newblock Practical strategies for power-efficient computing technologies.
+\newblock {\em Proceedings of the IEEE 98.2.\/} (2010), 215--236.
+
+\bibitem{Marbell2011}
+{\sc Stanley-Marbell, Phillip, V. C.~C., and Luijten., R.}
+\newblock Pinned to the walls: impact of packaging and application properties
+  on the memory and power walls.
+\newblock {\em Proceedings of the 17th IEEE/ACM international symposium on
+  Low-power electronics and design. 50\/} (2011), 51--56.
+
+\bibitem{Sturcken2012}
+{\sc Sturcken, Noah, E. O. N. W. P. H. B. W. L. R. M.~P., and Shepard, K.}
+\newblock A 2.5 d integrated voltage regulator using coupled-magnetic-core
+  inductors on silicon interposer delivering 10.8 a/mm 2.
+\newblock {\em Solid-State Circuits Conference Digest of Technical Papers
+  (ISSCC), 2012 IEEE International\/} (2012), 400--402.
+
+\bibitem{Intel2010}
+{\sc Ted-DiBenne~II, J., M. P. R. P. M. C. K. W. P. Z. T. F. L. X. M. S. W. S.
+  E. F.~R., and Paul., F.}
+\newblock A 400 amp fully integrated silicon voltage regulator with in-die
+  magnetically coupled embedded inductors., 2010.
+
+\end{thebibliography}

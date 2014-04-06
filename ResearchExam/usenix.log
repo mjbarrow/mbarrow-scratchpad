@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.10)  4 APR 2014 20:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.10)  5 APR 2014 23:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -218,93 +218,149 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 58.
+
+Underfull \hbox (badness 2409) in paragraph at lines 66--74
+\OT1/ptm/m/n/10 Against a back-drop of de-clin-ing PC and grow-ing
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 66--74
+\OT1/ptm/m/n/10 smart-phone sales, mo-bile de-vices drive de-mand for
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 66--74
+\OT1/ptm/m/n/10 the IO and mem-ory band-width re-quire-ments of the
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 66--74
+[]\OT1/ptm/m/n/10 package IO den-sity is a well known prob-lem to
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 66--74
+\OT1/ptm/m/n/10 ar-chi-tects. Mar-bell et al [[]] re-view 130 hard-ware
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--74
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 75.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 84.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 84.
 \openout3 = `usenix.ent'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+Underfull \hbox (badness 10000) in paragraph at lines 93--98
 
  []
 
 
-Underfull \hbox (badness 2173) in paragraph at lines 81--81
+Underfull \hbox (badness 2173) in paragraph at lines 99--99
 []\OT1/ptm/b/n/12 Performance draw-backs of Base-line
  []
 
 
-Underfull \hbox (badness 5036) in paragraph at lines 83--88
+Underfull \hbox (badness 5036) in paragraph at lines 101--106
 \OT1/ptm/b/n/10 Taxonomy of prob-lem (deeper drill and more
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--88
+Underfull \hbox (badness 10000) in paragraph at lines 101--106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 94--95
+Underfull \hbox (badness 1448) in paragraph at lines 112--113
 []\OT1/ptm/m/n/10 Control fixes pa-per list and de-scrip-tion NOTE
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-
-]
-Underfull \hbox (badness 1147) in paragraph at lines 96--97
+Underfull \hbox (badness 1147) in paragraph at lines 114--115
 \OT1/ptm/m/n/10 THAT THIS IS "SOLVED" BUT FOR SEMI-
  []
 
 
-LaTeX Warning: Citation `Einstein' on page 2 undefined on input line 104.
+Underfull \hbox (badness 10000) in paragraph at lines 119--122
 
-No file usenix.bbl.
-(./usenix.ent
+ []
+
+[2]
+Underfull \hbox (badness 1603) in paragraph at lines 130--136
+\OT1/ptm/m/n/10 Glass/Silicon In-ter-poser for high Band-witdh Smart
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+[]\OT1/ptm/b/n/10 SHOULD HAVE SOME SIM-U-LA-TION TO
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+(./usenix.bbl
+Underfull \hbox (badness 1248) in paragraph at lines 4--7
+[]\OT1/ptm/m/sc/8 Dennard, Robert H., F. H. G. V. L. R. E. B., and
+ []
+
+) (./usenix.ent
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-) [2] (./usenix.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+) [3] (./usenix.aux) ) 
 Here is how much of TeX's memory you used:
- 1734 strings out of 495031
- 24980 string characters out of 6181531
- 79580 words of memory out of 5000000
- 4912 multiletter control sequences out of 15000+600000
- 38728 words of font info for 78 fonts, out of 8000000 for 9000
+ 1745 strings out of 495031
+ 25100 string characters out of 6181531
+ 86598 words of memory out of 5000000
+ 4918 multiletter control sequences out of 15000+600000
+ 41588 words of font info for 81 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,8n,23p,549b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
-tmri8a.pfb>
-Output written on usenix.pdf (2 pages, 55264 bytes).
+ 37i,8n,23p,1079b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.en
+c}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/times/utmri8a.pfb>
+Output written on usenix.pdf (3 pages, 67962 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 31 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

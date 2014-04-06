@@ -1,0 +1,149 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: usenix.aux
+The style file: acm.bst
+Database file #1: sample.bib.bib
+Warning--entry type for "Intel2010" isn't style-file defined
+--line 50 of file sample.bib.bib
+Name 1 in "Stanley-Marbell, Phillip, Victoria Caparros Cabezas, and Ronald Luijten." has a comma at the end for entry Marbell2011
+while executing---line 1092 of file acm.bst
+Name 1 in "L Chang, D Frank, R Montoye, S Koester, B Ji, P Coteus, R Dennard, and W Haensch." has a comma at the end for entry Chang2010
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "L Chang, D Frank, R Montoye, S Koester, B Ji, P Coteus, R Dennard, and W Haensch." for entry Chang2010
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "L Chang, D Frank, R Montoye, S Koester, B Ji, P Coteus, R Dennard, and W Haensch." for entry Chang2010
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "L Chang, D Frank, R Montoye, S Koester, B Ji, P Coteus, R Dennard, and W Haensch." for entry Chang2010
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "L Chang, D Frank, R Montoye, S Koester, B Ji, P Coteus, R Dennard, and W Haensch." for entry Chang2010
+while executing---line 1092 of file acm.bst
+Name 1 in "Dennard, Robert H., Fritz H. Gaensslen, V. Leo Rideout, Ernest Bassous, and Andre R. LeBlanc." has a comma at the end for entry Dennard1974
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Dennard, Robert H., Fritz H. Gaensslen, V. Leo Rideout, Ernest Bassous, and Andre R. LeBlanc." for entry Dennard1974
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Dennard, Robert H., Fritz H. Gaensslen, V. Leo Rideout, Ernest Bassous, and Andre R. LeBlanc." for entry Dennard1974
+while executing---line 1092 of file acm.bst
+Name 1 in "Kursun, Volkan, Siva G. Narendra, Vivek K. De, and Eby G. Friedman." has a comma at the end for entry Kurson2003
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Kursun, Volkan, Siva G. Narendra, Vivek K. De, and Eby G. Friedman." for entry Kurson2003
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene O'Sullivan, Naigang Wang, Philipp Herget, Bucknell Webb, Lubomyr Romankiw, Michele Petracca... and K Shepard" for entry Sturcken2012
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene O'Sullivan, Naigang Wang, Philipp Herget, Bucknell Webb, Lubomyr Romankiw, Michele Petracca... and K Shepard" for entry Sturcken2012
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene O'Sullivan, Naigang Wang, Philipp Herget, Bucknell Webb, Lubomyr Romankiw, Michele Petracca... and K Shepard" for entry Sturcken2012
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene O'Sullivan, Naigang Wang, Philipp Herget, Bucknell Webb, Lubomyr Romankiw, Michele Petracca... and K Shepard" for entry Sturcken2012
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene O'Sullivan, Naigang Wang, Philipp Herget, Bucknell Webb, Lubomyr Romankiw, Michele Petracca... and K Shepard" for entry Sturcken2012
+while executing---line 1092 of file acm.bst
+Name 1 in "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." has a comma at the end for entry Intel2010
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." for entry Intel2010
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." for entry Intel2010
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." for entry Intel2010
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." for entry Intel2010
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." for entry Intel2010
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." for entry Intel2010
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." for entry Intel2010
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." for entry Intel2010
+while executing---line 1092 of file acm.bst
+Name 1 in "Dennard, Robert H., Fritz H. Gaensslen, V. Leo Rideout, Ernest Bassous, and Andre R. LeBlanc." has a comma at the end for entry Dennard1974
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Dennard, Robert H., Fritz H. Gaensslen, V. Leo Rideout, Ernest Bassous, and Andre R. LeBlanc." for entry Dennard1974
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Dennard, Robert H., Fritz H. Gaensslen, V. Leo Rideout, Ernest Bassous, and Andre R. LeBlanc." for entry Dennard1974
+while executing---line 1133 of file acm.bst
+Name 1 in "Kursun, Volkan, Siva G. Narendra, Vivek K. De, and Eby G. Friedman." has a comma at the end for entry Kurson2003
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Kursun, Volkan, Siva G. Narendra, Vivek K. De, and Eby G. Friedman." for entry Kurson2003
+while executing---line 1133 of file acm.bst
+Name 1 in "L Chang, D Frank, R Montoye, S Koester, B Ji, P Coteus, R Dennard, and W Haensch." has a comma at the end for entry Chang2010
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "L Chang, D Frank, R Montoye, S Koester, B Ji, P Coteus, R Dennard, and W Haensch." for entry Chang2010
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "L Chang, D Frank, R Montoye, S Koester, B Ji, P Coteus, R Dennard, and W Haensch." for entry Chang2010
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "L Chang, D Frank, R Montoye, S Koester, B Ji, P Coteus, R Dennard, and W Haensch." for entry Chang2010
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "L Chang, D Frank, R Montoye, S Koester, B Ji, P Coteus, R Dennard, and W Haensch." for entry Chang2010
+while executing---line 1133 of file acm.bst
+Name 1 in "Stanley-Marbell, Phillip, Victoria Caparros Cabezas, and Ronald Luijten." has a comma at the end for entry Marbell2011
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene O'Sullivan, Naigang Wang, Philipp Herget, Bucknell Webb, Lubomyr Romankiw, Michele Petracca... and K Shepard" for entry Sturcken2012
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene O'Sullivan, Naigang Wang, Philipp Herget, Bucknell Webb, Lubomyr Romankiw, Michele Petracca... and K Shepard" for entry Sturcken2012
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene O'Sullivan, Naigang Wang, Philipp Herget, Bucknell Webb, Lubomyr Romankiw, Michele Petracca... and K Shepard" for entry Sturcken2012
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene O'Sullivan, Naigang Wang, Philipp Herget, Bucknell Webb, Lubomyr Romankiw, Michele Petracca... and K Shepard" for entry Sturcken2012
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene O'Sullivan, Naigang Wang, Philipp Herget, Bucknell Webb, Lubomyr Romankiw, Michele Petracca... and K Shepard" for entry Sturcken2012
+while executing---line 1133 of file acm.bst
+Name 1 in "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." has a comma at the end for entry Intel2010
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." for entry Intel2010
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." for entry Intel2010
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." for entry Intel2010
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." for entry Intel2010
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." for entry Intel2010
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." for entry Intel2010
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." for entry Intel2010
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Ted-DiBenne II, J., Morrow P R., Park M C, Koertzen W., Peng Zou., Thenus Fenardi., Li Xiaobei., Montgomery Stephen W., Sanford Ed., Fite Robert., and Fischer Paul." for entry Intel2010
+while executing---line 1133 of file acm.bst
+You've used 6 entries,
+            2253 wiz_defined-function locations,
+            568 strings with 5569 characters,
+and the built_in function-call counts, 1798 in all, are:
+= -- 173
+> -- 72
+< -- 0
++ -- 32
+- -- 24
+* -- 134
+:= -- 300
+add.period$ -- 17
+call.type$ -- 6
+change.case$ -- 30
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 53
+empty$ -- 157
+format.name$ -- 24
+if$ -- 377
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 5
+newline$ -- 32
+num.names$ -- 12
+pop$ -- 25
+preamble$ -- 1
+purify$ -- 24
+quote$ -- 0
+skip$ -- 37
+stack$ -- 0
+substring$ -- 131
+swap$ -- 12
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 0
+while$ -- 17
+width$ -- 7
+write$ -- 60
+(There were 50 error messages)
