@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.10)  5 APR 2014 23:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.10)  6 APR 2014 18:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -219,32 +219,32 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
 
-Underfull \hbox (badness 2409) in paragraph at lines 66--74
+Underfull \hbox (badness 2409) in paragraph at lines 66--75
 \OT1/ptm/m/n/10 Against a back-drop of de-clin-ing PC and grow-ing
  []
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 66--74
+Underfull \hbox (badness 1163) in paragraph at lines 66--75
 \OT1/ptm/m/n/10 smart-phone sales, mo-bile de-vices drive de-mand for
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 66--74
+Underfull \hbox (badness 1024) in paragraph at lines 66--75
 \OT1/ptm/m/n/10 the IO and mem-ory band-width re-quire-ments of the
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 66--74
+Underfull \hbox (badness 1168) in paragraph at lines 66--75
 []\OT1/ptm/m/n/10 package IO den-sity is a well known prob-lem to
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 66--74
+Underfull \hbox (badness 1132) in paragraph at lines 66--75
 \OT1/ptm/m/n/10 ar-chi-tects. Mar-bell et al [[]] re-view 130 hard-ware
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--74
+Underfull \hbox (badness 10000) in paragraph at lines 66--75
 
  []
 
@@ -255,81 +255,122 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 75.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
+
+Underfull \hbox (badness 6125) in paragraph at lines 92--92
+[]\OT1/ptm/b/n/12 Switched Ca-pac-i-tor step-down con-
+ []
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 84.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 84.
-\openout3 = `usenix.ent'.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+<SCTopology.png, id=9, 1124.2pt x 724.7075pt>
+File: SCTopology.png Graphic file (type png)
+ <use SCTopology.png>
+Package pdftex.def Info: SCTopology.png used on input line 98.
+(pdftex.def)             Requested size: 187.89912pt x 121.1197pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--106
+
+ []
+
+<BKTopology.png, id=10, 883.3pt x 622.325pt>
+File: BKTopology.png Graphic file (type png)
+ <use BKTopology.png>
+Package pdftex.def Info: BKTopology.png used on input line 111.
+(pdftex.def)             Requested size: 187.89912pt x 132.38237pt.
+
+
+LaTeX Warning: Reference `Kurson2006' on page 2 undefined on input line 117.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
+[2 <./SCTopology.png (PNG copy)> <./BKTopology.png (PNG copy)>]
+
+LaTeX Warning: Reference `NonIdealSCTopology' on page 3 undefined on input line
+ 120.
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 123--123
+[]\OT1/ptm/b/n/12 Inductor-capacitor con-verter crit-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--98
-
- []
-
-
-Underfull \hbox (badness 2173) in paragraph at lines 99--99
+Underfull \hbox (badness 2173) in paragraph at lines 136--136
 []\OT1/ptm/b/n/12 Performance draw-backs of Base-line
  []
 
 
-Underfull \hbox (badness 5036) in paragraph at lines 101--106
+Underfull \hbox (badness 5036) in paragraph at lines 138--143
 \OT1/ptm/b/n/10 Taxonomy of prob-lem (deeper drill and more
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--106
+Underfull \hbox (badness 10000) in paragraph at lines 138--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 112--113
+Underfull \hbox (badness 1448) in paragraph at lines 149--150
 []\OT1/ptm/m/n/10 Control fixes pa-per list and de-scrip-tion NOTE
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 114--115
+Underfull \hbox (badness 1147) in paragraph at lines 151--152
 \OT1/ptm/m/n/10 THAT THIS IS "SOLVED" BUT FOR SEMI-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--122
+Underfull \hbox (badness 10000) in paragraph at lines 156--159
 
  []
 
-[2]
-Underfull \hbox (badness 1603) in paragraph at lines 130--136
+
+Underfull \hbox (badness 1603) in paragraph at lines 167--173
 \OT1/ptm/m/n/10 Glass/Silicon In-ter-poser for high Band-witdh Smart
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--136
+Underfull \hbox (badness 10000) in paragraph at lines 167--173
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 []\OT1/ptm/b/n/10 SHOULD HAVE SOME SIM-U-LA-TION TO
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
@@ -343,24 +384,31 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-) [3] (./usenix.aux) ) 
+) [4
+
+] (./usenix.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1745 strings out of 495031
- 25100 string characters out of 6181531
- 86598 words of memory out of 5000000
- 4918 multiletter control sequences out of 15000+600000
- 41588 words of font info for 81 fonts, out of 8000000 for 9000
+ 1771 strings out of 495031
+ 25387 string characters out of 6181531
+ 86614 words of memory out of 5000000
+ 4930 multiletter control sequences out of 15000+600000
+ 46205 words of font info for 91 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  37i,8n,23p,1079b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.en
-c}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/urw/times/utmri8a.pfb>
-Output written on usenix.pdf (3 pages, 67962 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
+times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on usenix.pdf (4 pages, 99752 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 44 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
