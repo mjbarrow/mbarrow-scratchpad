@@ -17,6 +17,12 @@
 \newblock Practical strategies for power-efficient computing technologies.
 \newblock {\em Proceedings of the IEEE 98.2.\/} (2010), 215--236.
 
+\bibitem{Ramadass2007}
+{\sc Ramadass, Y.~K., and Chandrakasan, A.~P.}
+\newblock Voltage scalable switched capacitor dc-dc converter for
+  ultra-low-power on-chip applications.
+\newblock {\em Power Electronics Specialists Conference\/} (2007).
+
 \bibitem{Marbell2011}
 {\sc Stanley-Marbell, Phillip, V. C.~C., and Luijten., R.}
 \newblock Pinned to the walls: impact of packaging and application properties

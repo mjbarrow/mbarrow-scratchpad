@@ -102,7 +102,7 @@ Two types of DC DC step down converter are popular in the literature. Type 1 is 
 
 Let us consider the circuit with ideal components. $Cf$ denotes some capacitance such that $Cf_1 = Cf_2$. switches are controlled by mutually exclusive clocks, $\phi_1$ and $\phi_2$. These clocks are non-overlapping.\\
 The circuit has two phases of operation. In phase 1, the charging phase, $\phi_1$ switches are closed and $\phi_2$ switches are open. $Cf_1$ and $Cf_2$ are in series. Since the capacitors are the same size, $V_x$ is $\frac{1}{2}$ of $V_in$.\\
-In phase 2, the discharging phase, $\phi_2$ switches are closed and $\phi_1$ switches are open. Now $Cf_1$ and $Cf_2$ are in parallel. Since they are matched in size, $V_x$ remains at $\frac{1}{2}$ and is seen at terminal $L$.\\
+In phase 2, the discharging phase, $\phi_2$ switches are closed and $\phi_1$ switches are open. Now $Cf_1$ and $Cf_2$ are in parallel. Since they are matched in size, $V_x$ remains at $\frac{1}{2}$ and is seen at terminal $L$ across both capacitors.\\
 
 \subsection{Inductor-capacitor stepdown converter operating principle}
 
@@ -117,8 +117,17 @@ The second popular converter is the inductor-capacitor stepdown (buck) converter
 The voltage conversion principle is understood by considering the inductor and capacitor as a high pass filter. $\phi_1$ is a clock used to generate a square wave voltage of amplitude $V_{in}$. If this square wave is at a frequency sufficiently higher than the 3db cutoff frequency of the filter, only the DC component of the square wave is observed at $L$. Because of this, buck converters may change their voltage stepdown ratio during operation, by modulating $\phi_1$. For a properly designed converter, $V_L$ is defined by the duty cycle "$D$"~\ref{Kurson2006} of $\phi_1$ where: $V_{out} = V_{in} \times D$. In other words, if the square wave entering $L_f$ is high for $\frac{2}{3}$ of its period, $V_{out} = \frac{2}{3}\times V_{in}$ and $D = \frac{2}{3}$.\\ 
 
 \subsection{SC stepdown converter critical parameters}
-We re-draw Figure~\ref{SCTopology} with non-ideal components in Figure~\ref{NonIdealSCTopology} Note the \textbf{introduction of $\phi_{\frac{2}{3}}$} This is introduced so when $Cf_2$ has discharged to the load, $Cf_1$ may be connected to restore the supply voltage seen at node $L$. \textbf{we do this because the parasitic resistance of $Cf_1$ and $Cf_2$ is larger in series, maintaining Vout for longer (also fucks with your load impedance, why do it??!!)}\textbf{WE SEE THAT IT IS CRITICAL TO HAVE HIGH FREQUENCY IN ORDER TO MAINTAIN SUPPLY VOLTAGE}
+%Note the \textbf{introduction of $\phi_{\frac{2}{3}}$} This is introduced so when $Cf_2$ has discharged to the load, $Cf_1$ may be connected to restore the supply voltage seen at node $L$. \textbf{we do this because the parasitic resistance of $Cf_1$ and $Cf_2$ is larger in series, maintaining Vout for longer (also fucks with your load impedance, why do it??!!)}\textbf{WE SEE THAT IT IS CRITICAL TO HAVE HIGH FREQUENCY IN ORDER TO MAINTAIN SUPPLY VOLTAGE}
+The energy that a SC converter can transfer per charge cycle is $E_{Isc} = CV^2$. We could therefore express $W = E_{Isc}\times F_\phi$.\\
+$V$ For a design with a given $V_in$ and ideal components, the designer has two degrees of freedom to power a load, $C$ and $F_\phi$.\\  
+We re-draw Figure~\ref{SCTopology} with non-ideal components in Figure~\ref{NonIdealSCTopology}.\\
 
+By observation of Figure~\ref{NonIdealSCTopology} we see that $F_\phi$ and $C$ are critical parameters that must be optimised for minimum losses.\\
+Losses associated with switches are switching loss during the non-overlapping period of $\phi$, and conduction loss due to the equivilent series resistance (ESR) of switches.\\
+Conduction loss reduces the supply voltage seen at the capacitors by a factor $\delta V_a$. Conduction loss is therefore sensitive to the stepdown ratio. Increasing the stepdown ratio increases the number of series switches between all capacitors during the charging phase. For example a ratio of $\frac{1}{3}$ has 2 series switches, one of $\frac{1}{4}$ has 3 series switches and so on.\\
+Losses associated with capacitors are parasitic capacitance losses. A parasitic capacitance known as bottom plate capacitance exists between one plate of each capacitor and ground. The voltage of these parasitic capacitor is a virtual ground and reduces the supply voltage seen at the capacitors by $\delta V_b$. Their charge can leak to true ground but cannot reach a load. As they are smaller than useful capacitance, they are significantly charged and discharged on each cycle of the converter. Loss is therefore expressed as $W = E_{Pc} \times F_\phi$ where $E_{Pc} = 1.5\alpha CV^2$. Literature reports bottom plate capacitance to be up to 5\% of $C_{tot}$~\cite{Ramadass2007}\\
+SC converters by topology have difficulty 
+In SC converters then, careful design considering voltage specification and technology parameters 
 
 \subsection{Inductor-capacitor converter critical parameters}
 
@@ -129,7 +138,9 @@ How it works, critical parameters
 \textbf{Definition of the system problem lives in}\\
 History of research\\
 System type 1(Switched capacitor AND HISTORY)\\
-\textbf{Problems of bottom plate parasitic cap}\\
+\textbf{Problems of bottom plate parasitic cap}. Bottom plate parasitic capacitance limits the attractiveness of SC designs. \\
+Problems of switching noise. These designs are noisier than Bucks, which have a filter by design\\
+
 System type 2(Integrated buck AND HISTORY Kurson book)\\
 Want to show how General CMOS components are made for this role and why they didn't work.\\
 
@@ -139,6 +150,7 @@ Want to show how General CMOS components are made for this role and why they did
 what is wrong with the switches?\\
 what is wrong with the control? \\
 What is wrong with the capacitors?\\
+.~\cite{Pique2012} evaluate the state of the art and plot an frontier of capacitor area to converter efficiency for Integrated converters. In general they find as capacitor area exponentially increases power density follows with only a linear cost in peak efficiency. However, efficiency exponentially decreases with power density in the non-ideal case. \\
 What is wrong with the inductors?\\
 
 \subsection{Solutions}
