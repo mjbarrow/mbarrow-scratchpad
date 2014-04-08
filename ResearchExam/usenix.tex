@@ -84,7 +84,7 @@ suggests the FVIR is employed primarily to remove external DC DC converters and 
 
 %More fascinating text. Features\endnote{Remember to use endnotes, not footnotes!} galore, plethora of promises.\\
 
-\section{The DC DC converter}
+\section{Operation of the DC DC converter}
 
 \textbf{Definition of the problem}\\
 Two popular stepdown converters in the literature are presented. A review of the literature highlights critical properties the topologies must feature in order to integrate either on chip.
@@ -126,14 +126,31 @@ By observation of Figure~\ref{NonIdealSCTopology} we see that $F_\phi$ and $C$ a
 Losses associated with switches are switching loss during the non-overlapping period of $\phi$, and conduction loss due to the equivilent series resistance (ESR) of switches.\\
 Conduction loss reduces the supply voltage seen at the capacitors by a factor $\delta V_a$. Conduction loss is therefore sensitive to the stepdown ratio. Increasing the stepdown ratio increases the number of series switches between all capacitors during the charging phase. For example a ratio of $\frac{1}{3}$ has 2 series switches, one of $\frac{1}{4}$ has 3 series switches and so on.\\
 Losses associated with capacitors are parasitic capacitance losses. A parasitic capacitance known as bottom plate capacitance exists between one plate of each capacitor and ground. The voltage of these parasitic capacitor is a virtual ground and reduces the supply voltage seen at the capacitors by $\delta V_b$. Their charge can leak to true ground but cannot reach a load. As they are smaller than useful capacitance, they are significantly charged and discharged on each cycle of the converter. Loss is therefore expressed as $W = E_{Pc} \times F_\phi$ where $E_{Pc} = 1.5\alpha CV^2$. Literature reports bottom plate capacitance to be up to 5\% of $C_{tot}$~\cite{Ramadass2007}\\
-SC converters by topology have difficulty 
+%Move load regulation to different sub section SC converters by topology have difficulty 
 In SC converters then, careful design considering voltage specification and technology parameters 
 
 \subsection{Inductor-capacitor converter critical parameters}
 
 How it works, critical parameters
 
-\subsection{Problems of an Integrated DC DC Converter}
+\subsection{Basic converter load regulation}
+Load regulation is matching output impedance "$Z_O$" of a power converter to a current load. Because $I= \frac{V}{Z_O}$ and maintaining $V$ for a processor is critical, converter output impedance must track quickly with the load condition to keep $V$ constant. The responsibility of tracking load and adjusting $Z_O$ belongs to control circuits. Block Diagrams are shown in figure~\ref{ControlCKBlockDiags}\\
+Inductor-capacitor converters can reduce $Z_O$ by increasing conductance. This is done by increasing "$D$" in eqn\textbf{REF EQN}. Because the asymtote is impedance of the filter at $F_S$, $Z_O$ may also be increased by reducing $F_S$.~\ref{Alghamdi2012}.\\ %may want to change ref...
+SC converters power loads capacitively. Because the capacitors supply a DC load in parallel, $Z_O$ cannot be lowered below $Z_C$ + $Z_{Sw}$ at the nominal $F_{Sw}$. Modulating $F_{Sw}$ can increase impedance in practice, because the capacitors can be purposely under-charged.\\
+%Talk about tradeoffs? No I think put that in problems  
+
+\section{Design of Integrated DC DC Converters}
+
+Practical integrated converters are emerging and designed with different goals. A taxonomy of reviewed literature identifies two groupings\\
+1: Power system replacement. The goal is to remove external VRMs with an equaly performing integrated subsystem\\
+2: LDO replacement. The goal is an incremental improvement of the LDO voltage converters that have long been integrated on chip.\\
+These differing goals result in diferent tradeoffs and solutions to either are non comutitive in the state of the art. We focus on goal 1 as it best aligns with our interest in pin optimisation.\\  
+
+\subsection{Motivation}
+Now that basic operation of converters 
+
+\subsection{Problems}
+The benefits of integrated DC DC converters may only be realized through optimum tradeoffs with non-ideal components. Researchers realised  
 
 \textbf{Definition of the system problem lives in}\\
 History of research\\
