@@ -1,9 +1,35 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Alghamdi2012}
+{\sc Alghamdi, M.~K., and Hamoui., A.~A.}
+\newblock A spurious-free switching buck converter achieving enhanced
+  light-load efficiency by using a-modulator controller with a scalable
+  sampling frequency.
+\newblock {\em Solid-State Circuits, IEEE Journal of 47.4\/} (2012), 841--851.
 
 \bibitem{Dennard1974}
 {\sc Dennard, Robert~H., F. H. G. V. L. R. E.~B., and LeBlanc., A.~R.}
 \newblock Design of ion-implanted mosfet's with very small physical dimensions.
 \newblock {\em Solid-State Circuits, IEEE Journal of 9.5\/} (1974), 256--268.
+
+\bibitem{Damak2013}
+{\sc El-Damak, Dina, S.~B., and Chandrakasan., A.~P.}
+\newblock A 93% efficiency reconfigurable switched-capacitor dc-dc converter
+  using on-chip ferroelectric capacitors.
+\newblock {\em Solid-State Circuits Conference Digest of Technical Papers
+  (ISSCC)\/} (2013), 374--375.
+
+\bibitem{Cheng2013}
+{\sc Huang, C., and Mok., P.~K.}
+\newblock An 84.7% efficiency 100-mhz package bondwire-based fully integrated
+  buck converter with precise dcm operation and enhanced light-load efficiency.
+\newblock {\em Solid-State Circuits Conference Digest of Technical Papers
+  (ISSCC)\/} (2013), 1--13.
+
+\bibitem{Kurson2006}
+{\sc Kurson, V., F.~E.}
+\newblock {\em Multi-voltage CMOS circuit design.}
+\newblock John Wiley & Sons, Chichester, 2006.
 
 \bibitem{Kurson2003}
 {\sc Kursun, Volkan, S. G. N. V. K.~D., and Friedman., E.~G.}
@@ -23,6 +49,19 @@
   ultra-low-power on-chip applications.
 \newblock {\em Power Electronics Specialists Conference\/} (2007).
 
+\bibitem{Seeman2008}
+{\sc Seeman, M.~D., and Sanders., S.~R.}
+\newblock Analysis and optimization of switched-capacitor dc–dc converters.
+\newblock {\em Power Electronics, IEEE Transactions on 23.2\/} (2008),
+  841--851.
+
+\bibitem{Sanders2010}
+{\sc Seeman, Michael~D., V. W. N. H.-P. L. M. J. E.~A., and Sanders., S.~R.}
+\newblock A comparative analysis of switched-capacitor and inductor-based dc-dc
+  conversion technologies.
+\newblock {\em Control and Modeling for Power Electronics (COMPEL), 2010 IEEE
+  12th Workshop on\/} (2010), 1--7.
+
 \bibitem{Marbell2011}
 {\sc Stanley-Marbell, Phillip, V. C.~C., and Luijten., R.}
 \newblock Pinned to the walls: impact of packaging and application properties
@@ -38,9 +77,10 @@
   (ISSCC), 2012 IEEE International\/} (2012), 400--402.
 
 \bibitem{Intel2010}
-{\sc Ted-DiBenne~II, J., M. P. R. P. M. C. K. W. P. Z. T. F. L. X. M. S. W. S.
+{\sc Ted-DiBenne~II, J, M. P. R. P. M. C. K. W. P. Z. T. F. L. X. M. S. W. S.
   E. F.~R., and Paul., F.}
 \newblock A 400 amp fully integrated silicon voltage regulator with in-die
-  magnetically coupled embedded inductors., 2010.
+  magnetically coupled embedded inductors.
+\newblock {\em APEC—Special Presentation\/} (2010).
 
 \end{thebibliography}
