@@ -175,7 +175,27 @@ Therefore the design challenges emphasised in SC converters are: maximising effe
 %END MOVE DOWN
 
 \subsection{Performance drawbacks of Baseline DC DC Converters}
-An example of a CMOS integrated SC converter \cite{Viraj2007} and CMOS integrated buck converter \cite{Alimadadi2008} are taken as examples. These designs highlight the performance drawbacks of baseline CMOS for integrated converters and explain the present concentration of research interest in this field. These setbacks from the initial entry vectors of the SC and buck camps also explain the design approaches taken in more recent work.\\ 
+An example of a CMOS integrated SC converter \cite{Viraj2007} and CMOS integrated buck converter \cite{Alimadadi2008} are taken as examples. These designs highlight the performance drawbacks of baseline CMOS for integrated converters and explain the present concentration of research interest in this field. These setbacks from the initial entry vectors of the SC and buck camps also explain the research and design approaches taken in more recent work. Although one process generation separates the designs, they are reasonably compared since the power components (capacitors, inductors and switches) consume almost all of the die in both designs.\\
+\textbf{SC drawbacks} Naive Integrated SC converters have a low power density. \cite{Viraj2007} realize an on die capacitance of 1600pF with a converter power density of 1.7$mW/mm^2$. In comparison  the baseline buck \cite{Alimadadi2008} realize on die capacitance of 1.1nF with a power density of 20$mW/mm^2$.\\
+The baseline SC converter also realizes much lower efficiency than expected in\cite{Viraj2007}. $80\%$ is predicted in the literature, but only $62\%$ is achieved due to unmoddled losses.\\
+Only a single step-down voltage ratio is implemented, since the fixed SC circuit topology described earlier is used.\\
+The performance of this design focussed researchers in areas to make SC integrated converters attractive in replacing off chip IC power converters. Broad categories and related research are listed below.\\
+\begin{itemize}
+\item \textbf{Energy density: }Device technology research to improve capacitor energy density
+\item \textbf{Efficiency: }Technology, circuit topology and converter control research to reduce power leakage
+\item \textbf{Flexibility: }Improve load regulation with SC power circuit topology and SC converter control research. In other words, provide flexible step-down ratio's. 
+\end{itemize}
+\textbf{buck drawbacks} Although power density is higher than the baseline SC, it is still too low for contemporary processors. The combined area of the converter and load must feature an power density higher than that dissipated in the load \textbf{GET A GOOD REF OF POWER FOR MOBILE CPU'S}\\
+Naive Integrated buck converters have a low efficiency. \cite{Alimadadi2008} achieve a peak efficiency of $46\%$. Not only is this lower than the baseline SC \cite{Viraj2007}, its lower than an LDO ($50\%$).\\
+Unlike the SC design, the baseline buck can implement a range of stepdown voltages in a basic topology. However the baseline has poor load regulation. At its lowest output voltage it has a $25\%$ efficiency in its most sophisticated operating mode. This drops to $13\%$ in its baseline mode.\\ 
+As with the SC design, the issues in this and other early monolithic converters led researchers to focus on areas for improvement to make integrated buck converters suitable to replace discrete IC's. Again we summarise broad categories and related research below.
+\begin{itemize}
+\item \textbf{Energy density: }Device technology research to improve inductor energy density
+\item \textbf{Efficiency: }Technology, buck circuit topology and buck converter control research to reduce power leakage
+\item \textbf{Flexibility: }Improve load regulation with buck converter control research. Buck converter voltage stepdown was better understood than SC, but poorly controlled
+\end{itemize}
+The broad categories of buck overlap those of the SC researchers. Therefore some research effort may transfer between the two designs and we also observe a merge between the seperate research entry vectors identified earlier.\\
+This manifests at the device level, where both converters share the same need to reduce losses. We can list these basic blocks and consider their problems when applied to integrated power converters abstractly from the two converter topologies.\\  
 \textbf{Taxonomy of problem (deeper drill and more specifics of the problem)}\\
 what is wrong with the switches?\\ %loss of sqrt(fs) A 10-MHz Green Mode Automatic... Cite THIS paper.
 what is wrong with the control? \\
@@ -193,6 +213,7 @@ An evaluation of recent literature finds several novel approaches to the problem
 \item{Control fixes paper list and description NOTE THAT THIS PROBLEM IS WELL UNDER CONTROL, CONCLUDE FROM THIS SECTION}
 \item{Capacitor fixes paper list and description NOTE THAT THIS PROBLEM CANNOT BE "SOLVED" FROM A SC TOPOLOGY POINT OF VIEW AND INDUCTORS ARE "BETTER" IN TERMS OF ENERGY DENSITY AND LINE REGULATION}
 \item{Inductor fixes paper list and description. NOTE THAT THIS IS "SOLVED" BUT FOR SEMI-INTEGRATED OR WHATEVER}
+We note that the approach is not necesarily to increase the size of inductance, but the quality factor. the baseline CMOS \cite{Alimadadi2008} realized 4.38nH inductors which is comprable with \textbf{HKGuys} at \textbf{5.xnH}, but the later work is able to realize a far greater energy density due to the novel technique of using bondwire as inductors.
 \item{SC Ripple Fixes} % Fully Integrated Capacitive DC-DC Converter wit all digital Ripple Mitigation technique
 \end{itemize}
 

@@ -4,7 +4,6 @@ The top-level auxiliary file: usenix.aux
 The style file: acm.bst
 Database file #1: sample.bib.bib
 Warning--I didn't find a database entry for "Rodriguez2014"
-Warning--I didn't find a database entry for "Pique2012"
 Name 1 in "Stanley-Marbell, Phillip, Victoria Caparros Cabezas, and Ronald Luijten." has a comma at the end for entry Marbell2011
 while executing---line 1092 of file acm.bst
 Name 1 in "L Chang, D Frank, R Montoye, S Koester, B Ji, P Coteus, R Dennard, and W Haensch." has a comma at the end for entry Chang2010
@@ -73,7 +72,25 @@ Too many commas in name 1 of "Seeman, Michael D., Vincent W. Ng, Hanh-Phuc Le, M
 while executing---line 1092 of file acm.bst
 Too many commas in name 1 of "Seeman, Michael D., Vincent W. Ng, Hanh-Phuc Le, Mervin John, Elad Alon, and Seth R. Sanders." for entry Sanders2010
 while executing---line 1092 of file acm.bst
+Name 1 in "Viraj, A. K. P., and G. A. J. Amaratunga." has a comma at the end for entry Viraj2007
+while executing---line 1092 of file acm.bst
+Name 1 in "Alimadadi, Mehdi, Samad Sheikhaei, Guy Lemieux, Patrick Palmer, Shahriar Mirabbasi, and William Dunford." has a comma at the end for entry Alimadadi2008
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Alimadadi, Mehdi, Samad Sheikhaei, Guy Lemieux, Patrick Palmer, Shahriar Mirabbasi, and William Dunford." for entry Alimadadi2008
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Alimadadi, Mehdi, Samad Sheikhaei, Guy Lemieux, Patrick Palmer, Shahriar Mirabbasi, and William Dunford." for entry Alimadadi2008
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Alimadadi, Mehdi, Samad Sheikhaei, Guy Lemieux, Patrick Palmer, Shahriar Mirabbasi, and William Dunford." for entry Alimadadi2008
+while executing---line 1092 of file acm.bst
 Name 1 in "Alghamdi, Mohammad K., and Anas A. Hamoui." has a comma at the end for entry Alghamdi2012
+while executing---line 1133 of file acm.bst
+Name 1 in "Alimadadi, Mehdi, Samad Sheikhaei, Guy Lemieux, Patrick Palmer, Shahriar Mirabbasi, and William Dunford." has a comma at the end for entry Alimadadi2008
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Alimadadi, Mehdi, Samad Sheikhaei, Guy Lemieux, Patrick Palmer, Shahriar Mirabbasi, and William Dunford." for entry Alimadadi2008
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Alimadadi, Mehdi, Samad Sheikhaei, Guy Lemieux, Patrick Palmer, Shahriar Mirabbasi, and William Dunford." for entry Alimadadi2008
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Alimadadi, Mehdi, Samad Sheikhaei, Guy Lemieux, Patrick Palmer, Shahriar Mirabbasi, and William Dunford." for entry Alimadadi2008
 while executing---line 1133 of file acm.bst
 Name 1 in "Dennard, Robert H., Fritz H. Gaensslen, V. Leo Rideout, Ernest Bassous, and Andre R. LeBlanc." has a comma at the end for entry Dennard1974
 while executing---line 1133 of file acm.bst
@@ -141,45 +158,47 @@ Too many commas in name 1 of "Ted-DiBenne II, J, Morrow P R, Park M C, Koertzen 
 while executing---line 1133 of file acm.bst
 Too many commas in name 1 of "Ted-DiBenne II, J, Morrow P R, Park M C, Koertzen W, Peng Zou, Thenus Fenardi, Li Xiaobei, Montgomery Stephen W, Sanford Ed, Fite Robert, and Fischer Paul." for entry Intel2010
 while executing---line 1133 of file acm.bst
-You've used 13 entries,
+Name 1 in "Viraj, A. K. P., and G. A. J. Amaratunga." has a comma at the end for entry Viraj2007
+while executing---line 1133 of file acm.bst
+You've used 15 entries,
             2253 wiz_defined-function locations,
-            615 strings with 7116 characters,
-and the built_in function-call counts, 3763 in all, are:
-= -- 365
-> -- 151
+            625 strings with 7613 characters,
+and the built_in function-call counts, 4407 in all, are:
+= -- 429
+> -- 175
 < -- 0
-+ -- 69
-- -- 50
-* -- 278
-:= -- 635
-add.period$ -- 39
-call.type$ -- 13
-change.case$ -- 63
++ -- 81
+- -- 58
+* -- 328
+:= -- 739
+add.period$ -- 45
+call.type$ -- 15
+change.case$ -- 73
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 121
-empty$ -- 323
-format.name$ -- 50
-if$ -- 787
+cite$ -- 15
+duplicate$ -- 139
+empty$ -- 379
+format.name$ -- 58
+if$ -- 923
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 14
-newline$ -- 68
-num.names$ -- 26
-pop$ -- 45
+int.to.str$ -- 15
+missing$ -- 16
+newline$ -- 78
+num.names$ -- 30
+pop$ -- 51
 preamble$ -- 1
-purify$ -- 51
+purify$ -- 59
 quote$ -- 0
-skip$ -- 76
+skip$ -- 88
 stack$ -- 0
-substring$ -- 254
-swap$ -- 26
+substring$ -- 314
+swap$ -- 30
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 50
+type$ -- 58
 warning$ -- 0
-while$ -- 36
-width$ -- 15
-write$ -- 131
-(There were 68 error messages)
+while$ -- 42
+width$ -- 17
+write$ -- 151
+(There were 78 error messages)

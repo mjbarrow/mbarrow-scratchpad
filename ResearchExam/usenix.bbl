@@ -7,6 +7,13 @@
   sampling frequency.
 \newblock {\em Solid-State Circuits, IEEE Journal of 47.4\/} (2012), 841--851.
 
+\bibitem{Alimadadi2008}
+{\sc Alimadadi, Mehdi, S. S. G. L. P. P. S.~M., and Dunford., W.}
+\newblock A 660mhz zvs dc-dc converter using gate-driver charge-recycling in
+  0.18μm cmos with an integrated output filter.
+\newblock {\em Power Electronics Specialists Conference, 2008. PESC 2008.
+  IEEE\/} (2008), 140--146.
+
 \bibitem{Dennard1974}
 {\sc Dennard, Robert~H., F. H. G. V. L. R. E.~B., and LeBlanc., A.~R.}
 \newblock Design of ion-implanted mosfet's with very small physical dimensions.
@@ -29,7 +36,7 @@
 \bibitem{Kurson2006}
 {\sc Kurson, V., F.~E.}
 \newblock {\em Multi-voltage CMOS circuit design.}
-\newblock John Wiley & Sons, Chichester, 2006.
+\newblock John Wiley and Sons, Chichester, 2006.
 
 \bibitem{Kurson2003}
 {\sc Kursun, Volkan, S. G. N. V. K.~D., and Friedman., E.~G.}
@@ -82,5 +89,11 @@
 \newblock A 400 amp fully integrated silicon voltage regulator with in-die
   magnetically coupled embedded inductors.
 \newblock {\em APEC—Special Presentation\/} (2010).
+
+\bibitem{Viraj2007}
+{\sc Viraj, A. K.~P., and Amaratunga., G. A.~J.}
+\newblock A monolithic cmos 5v/1v switched capacitor dc-dc step-down converter.
+\newblock {\em Power Electronics Specialists Conference, 2007. PESC 2007.
+  IEEE\/} (2007), 2510--2514.
 
 \end{thebibliography}
