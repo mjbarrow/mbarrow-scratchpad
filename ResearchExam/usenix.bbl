@@ -1,5 +1,8 @@
 \begin{thebibliography}{10}
 
+\bibitem{Iwai2009}
+
+
 \bibitem{Alghamdi2012}
 {\sc Alghamdi, M.~K., and Hamoui., A.~A.}
 \newblock A spurious-free switching buck converter achieving enhanced
@@ -8,11 +11,28 @@
 \newblock {\em Solid-State Circuits, IEEE Journal of 47.4\/} (2012), 841--851.
 
 \bibitem{Alimadadi2008}
-{\sc Alimadadi, Mehdi, S. S. G. L. P. P. S.~M., and Dunford., W.}
+{\sc Alimadadi, Mehdi, S. S. G. L. P. P.-S.~M., and Dunford., W.}
 \newblock A 660mhz zvs dc-dc converter using gate-driver charge-recycling in
   0.18μm cmos with an integrated output filter.
 \newblock {\em Power Electronics Specialists Conference, 2008. PESC 2008.
   IEEE\/} (2008), 140--146.
+
+\bibitem{Andreou1999}
+{\sc Andreou, A.~G., and Sánchez-Sinencio., E.}
+\newblock Low-voltage/low-power integrated circuits and systems.
+\newblock {\em IEE\/} (1999).
+
+\bibitem{Bathily2012}
+{\sc Bathily, Malal, B.~A., and Hasbani, F.}
+\newblock A 200-mhz integrated buck converter with resonant gate drivers for an
+  rf power amplifier.
+\newblock {\em Power Electronics, IEEE Transactions on 27.2\/} (2012),
+  610--613.
+
+\bibitem{Alamo2009}
+{\sc del Alamo, J.~A., and Joh, J.}
+\newblock Gan hemt reliability.
+\newblock {\em Microelectronics reliability 49.9\/} (2009), 1200--1206.
 
 \bibitem{Dennard1974}
 {\sc Dennard, Robert~H., F. H. G. V. L. R. E.~B., and LeBlanc., A.~R.}
@@ -26,12 +46,44 @@
 \newblock {\em Solid-State Circuits Conference Digest of Technical Papers
   (ISSCC)\/} (2013), 374--375.
 
+\bibitem{Mustapha2008}
+{\sc Faqir, Mustapha, G. V. A. C. F. F. F. D. G. M. E.~Z., and Dua, C.}
+\newblock Mechanisms of rf current collapse in algan–gan high electron
+  mobility transistors.
+\newblock {\em Device and Materials Reliability, IEEE Transactions on 8.2\/}
+  (2008), 240--247.
+
+\bibitem{Goyal2013}
+{\sc Goyal, N.}
+\newblock Design and modeling of high-power semiconductor devices with emphasis
+  on algan/gan hemts.
+
+\bibitem{Hower2005}
+{\sc Hower, P.~L., and Pendharkar, S.}
+\newblock Short and long-term safe operating area considerations in ldmos
+  transistors.
+\newblock {\em Reliability Physics Symposium, 2005. Proceedings. 43rd Annual.
+  2005 IEEE International\/} (2005), 545--550.
+
 \bibitem{Cheng2013}
 {\sc Huang, C., and Mok., P.~K.}
 \newblock An 84.7% efficiency 100-mhz package bondwire-based fully integrated
   buck converter with precise dcm operation and enhanced light-load efficiency.
 \newblock {\em Solid-State Circuits Conference Digest of Technical Papers
   (ISSCC)\/} (2013), 1--13.
+
+\bibitem{Johari2009}
+{\sc Johari, H., and Ayazi, F.}
+\newblock High-density embedded deep trench capacitors in silicon with enhanced
+  breakdown voltage.
+\newblock {\em Components and Packaging Technologies, IEEE Transactions on
+  32.4\/} (2009), 808--815.
+
+\bibitem{Krausse2013}
+{\sc Krauße, D.}
+\newblock High power algan, gan hfets for industrial, scientific and medical
+  applications.
+\newblock {\em Diss. Universitätsbibliothek Freiburg\/}.
 
 \bibitem{Kurson2006}
 {\sc Kurson, V., F.~E.}
@@ -45,16 +97,48 @@
 \newblock {\em Very Large Scale Integration (VLSI) Systems, IEEE Transactions
   on 11.3\/} (2003), 514--522.
 
+\bibitem{Kwong2009}
+{\sc Kwong, Joyce, Y. K. R. N.~V., and Chandrakasan, A.~P.}
+\newblock A 65 nm sub-microcontroller with integrated sram and switched
+  capacitor dc-dc converter.
+\newblock {\em Solid-State Circuits, IEEE Journal of 44.1\/} (2009), 115--126.
+
 \bibitem{Chang2010}
 {\sc L~Chang, D~Frank, R. M. S. K. B. J. P. C. R.~D., and Haensch., W.}
 \newblock Practical strategies for power-efficient computing technologies.
 \newblock {\em Proceedings of the IEEE 98.2.\/} (2010), 215--236.
+
+\bibitem{Phuck2010}
+{\sc Le, H.-P.~Seeman, M. . S. S. . S. V. . N. S. . A.~E.}
+\newblock A 32nm fully integrated reconfigurable switched-capacitor dc-dc
+  converter delivering 0.55w/mm2 at 81% efficiency.
+\newblock {\em Solid-State Circuits Conference Digest of Technical Papers
+  (ISSCC), 2010 IEEE International\/} (2010), 210--211.
+
+\bibitem{Lee2004}
+{\sc Lee, Sangkyu, U. P. V. A. H. Y.-G.~J., and Yoon, K.-J.}
+\newblock Microstructure and permittivity of sintered batio 3 : influence of
+  particle surface chemistry in an aqueous medium.
+\newblock {\em Materials research bulletin 39.1\/} (2004), 93--102.
+
+\bibitem{Hyunseok2012}
+{\sc Nam, Hyunseok, Y.~A., and Roh, J.}
+\newblock 5-v buck converter using 3.3-v standard cmos process with adaptive
+  power transistor driver increasing efficiency and maximum load capacity.
+\newblock {\em Power Electronics, IEEE Transactions on 27.1\/} (2012),
+  463--471.
 
 \bibitem{Ramadass2007}
 {\sc Ramadass, Y.~K., and Chandrakasan, A.~P.}
 \newblock Voltage scalable switched capacitor dc-dc converter for
   ultra-low-power on-chip applications.
 \newblock {\em Power Electronics Specialists Conference\/} (2007).
+
+\bibitem{Robertson2004}
+{\sc Robertson, J.}
+\newblock High dielectric constant oxides.
+\newblock {\em The European physical journal applied physics 28.03\/} (2004),
+  265--291.
 
 \bibitem{Seeman2008}
 {\sc Seeman, M.~D., and Sanders., S.~R.}

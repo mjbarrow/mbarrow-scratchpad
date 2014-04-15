@@ -76,7 +76,7 @@ suggests the FVIR is employed primarily to remove external DC DC converters and 
 \item{The operation of the DC DC converter and its critical design parameters}
 \item{Challenges associated with integrating DC DC Converters on die}
 \item{Performance limitations of monolithic CMOS DC DC converters}
-\item{Practicaly implementing integrated DC DC converters}
+\item{Summary of recent research in integrated DC DC converters}
 \item{Methods of optimizing IC pin out with integrated DC DC converters}
 \item{Conclusions}
 \end{itemize}
@@ -122,12 +122,12 @@ The energy that a SC converter can transfer per charge cycle is $E_{Isc} = CV^2$
 $V$ For a design with a given $V_in$ and ideal components, the designer has two degrees of freedom to power a load, $C$ and $F_\phi$.\\  
 We re-draw Figure~\ref{SCTopology} with non-ideal components in Figure~\ref{NonIdealSCTopology}.\\
 
-By observation of Figure~\ref{NonIdealSCTopology} we see that $F_\phi$ and $C$ are critical parameters that must be optimised for minimum losses.\\
+By observation of Figure~\ref{NonIdealSCTopology} we see that $F_\phi$ and $C$ are critical parameters that must be optimised for minimum losses\\
 Losses associated with switches are switching loss during the non-overlapping period of $\phi$, and conduction loss due to the equivilent series resistance (ESR) of switches.\\
 Conduction loss reduces the supply voltage seen at the capacitors by a factor $\delta V_a$. Conduction loss is therefore sensitive to the stepdown ratio. Increasing the stepdown ratio increases the number of series switches between all capacitors during the charging phase. For example a ratio of $\frac{1}{3}$ has 2 series switches, one of $\frac{1}{4}$ has 3 series switches and so on.\\
-Losses associated with capacitors are parasitic capacitance losses. A parasitic capacitance known as bottom plate capacitance exists between one plate of each capacitor and ground. The voltage of these parasitic capacitor is a virtual ground and reduces the supply voltage seen at the capacitors by $\delta V_b$. Their charge can leak to true ground but cannot reach a load. As they are smaller than useful capacitance, they are significantly charged and discharged on each cycle of the converter. Loss is therefore expressed as $W = E_{Pc} \times F_\phi$ where $E_{Pc} = 1.5\alpha CV^2$. Literature reports bottom plate capacitance to be up to 5\% of $C_{tot}$~\cite{Ramadass2007}\\
+Losses associated with capacitors are parasitic capacitance losses. A parasitic capacitance known as bottom plate capacitance exists between one plate of each capacitor and ground. The voltage of these parasitic capacitor is a virtual ground and reduces the supply voltage seen at the capacitors by $\delta V_b$. Their charge can leak to true ground but cannot reach a load. As they are smaller than useful capacitance, they are significantly charged and discharged on each cycle of the converter. Loss is therefore expressed as $W = E_{Pc} \times F_\phi$ where $E_{Pc} = 1.5\alpha CV^2$. Literature reports bottom plate capacitance to be up to 5\% of $C_{tot}$~\cite{Ramadass2007}. We also note that $F_\phi$ is adjustable at runtime and $C$ is not and that $I_{out} \propto C$~\cite{Damak2013} as well as $F_\phi$.\\
 %Move load regulation to different sub section SC converters by topology have difficulty 
-In SC converters then, careful design considering voltage specification and technology parameters 
+In SC converters then, careful design considering voltage specification and technology parameters optimises converters to their load. 
 
 \subsection{Inductor-capacitor converter critical parameters}
 
@@ -174,7 +174,7 @@ Therefore the design challenges emphasised in SC converters are: maximising effe
 %\end{itemize}
 %END MOVE DOWN
 
-\subsection{Performance drawbacks of Baseline DC DC Converters}
+\subsection{Performance drawbacks of Baseline monolithic DC DC Converters}
 An example of a CMOS integrated SC converter \cite{Viraj2007} and CMOS integrated buck converter \cite{Alimadadi2008} are taken as examples. These designs highlight the performance drawbacks of baseline CMOS for integrated converters and explain the present concentration of research interest in this field. These setbacks from the initial entry vectors of the SC and buck camps also explain the research and design approaches taken in more recent work. Although one process generation separates the designs, they are reasonably compared since the power components (capacitors, inductors and switches) consume almost all of the die in both designs.\\
 \textbf{SC drawbacks} Naive Integrated SC converters have a low power density. \cite{Viraj2007} realize an on die capacitance of 1600pF with a converter power density of 1.7$mW/mm^2$. In comparison  the baseline buck \cite{Alimadadi2008} realize on die capacitance of 1.1nF with a power density of 20$mW/mm^2$.\\
 The baseline SC converter also realizes much lower efficiency than expected in\cite{Viraj2007}. $80\%$ is predicted in the literature, but only $62\%$ is achieved due to unmoddled losses.\\
@@ -196,25 +196,85 @@ As with the SC design, the issues in this and other early monolithic converters 
 \end{itemize}
 The broad categories of buck overlap those of the SC researchers. Therefore some research effort may transfer between the two designs and we also observe a merge between the seperate research entry vectors identified earlier.\\
 This manifests at the device level, where both converters share the same need to reduce losses. We can list these basic blocks and consider their problems when applied to integrated power converters abstractly from the two converter topologies.\\  
-\textbf{Taxonomy of problem (deeper drill and more specifics of the problem)}\\
-what is wrong with the switches?\\ %loss of sqrt(fs) A 10-MHz Green Mode Automatic... Cite THIS paper.
-what is wrong with the control? \\
-What is wrong with the capacitors?\\
+%\textbf{Taxonomy of problem (deeper drill and more specifics of the problem)}\\
+%what is wrong with the switches?\\ %loss of sqrt(fs) A 10-MHz Green Mode Automatic... Cite THIS paper.
+\textbf{CMOS Switches: }
+Besides conduction losses, CMOS switches also suffer static and dynamic parasitic losses due to non-idealities. All must be balanced for an optimised power switch.\\ % In integrated 
+\textbf{TRANSISTOR DIAGRAM SHOWING CRITICAL PARAMS}\\
+
+Static losses are constant no matter if the MOSFET switch is on or off. They occur because the MOSFET does not have an infinite open circuit resistance. Static loss is therefore technology node dependent and impossible to remove completely. Static losses are contributed to by components from sub-threshold leakage and gate oxide leakage currents.\\
+These losses are intrinsic to all transistor based switches, however tradeoffs possible in modern technology nodes for full integration are less optimal than older technologies. Aggressive technology scaling continuously increases transistor leakage\cite{Iwai2009}, so that realising the highest compute performance results in switches with the lowering efficiency in fully integrated designs.\\
+Dynamic losses occur due to toggling the MOSFET switches. Power is consumed by changing the switch condition. As such, losses can be reduced by controlling switch toggling frequency, since for a given technology loss of the power switches and drivers increases by approximately $\sqrt{F_s}$\cite{Andreou1999}. However given fixed size energy transfer components, reducing $F_s$ reduces the converters power rating since $P = F_s \times E$.\\
+Conduction loss occurs because the MOSFET switch does not have a zero on resistance. At a DC operating point, the conduction loss is simply the resistance of the MOSFET. Resistance of a MOSFET may be reduced by decreasing its channel length, $L_{ch}$ or increasing its channel width, $W_{ch}$. The minimum channel length is determined by process node e.g. $22_{nm}$ long in a $22_{nm}$ process, but channel width can be extended arbitrarily. However gate capacitance, $G_c \propto W_{ch} \times L_{ch}$. Reducing conduction loss therefore increases dynamic loss by increasing the power needed to charge $G_c$ and toggle the switch.\\  
+\indent As a final note, CMOS switches cannot operate reliably beyond the technology node voltage. This imposes limitations on the stepdown voltage ratio that can be achieved if a switch is connected between power rails. This does not impact loss but it does mean that the power a converter can supply is maximum when the stepdown ratio is $1:1$ \textbf{TRUE KINDA BUT JUSTIfy WITH EQN}\\
+\indent By considering a fully optimised switch, we see the pressing research problems are reversing the leakage trend\cite{Iwai2009} and operating with rail voltages above the target technology rating.\\ 
+\textbf{Capacitors: }
+Capacitors suffer from time or frequency related losses due to non-ideality. The loss problem is complicated by the frequency dependence of capacitor impedance/reactance. This is encapsulated with $Q_c=\frac{1}{\omega CR_c}$, or the capacitors "Q" quality factor. If $Q_c$ = 1, the capacitor is ideal and does not impede a voltage signal. The "Q" factor has a different level of criticality in SC and buck designs. buck designs can offset a low capacitor "$Q_c$" value with their inductor if properly designed.\\
+\textbf{DIAGRAM SHOWING CRITICAL PARASITICS}\\
+Because converters normally operate at a high frequency, Loss in the capacitor is typically due to its equivilant series resistance, $R_c$ and its parasitic capacitance. The major parasitic capacitance component is formed between the ground node and bottom plate of the capacitor\cite{Damak2013}. as noted previously CMOS may have up to 5\% parasitic capacitance. This is more critical for SC designs since they must transfer all of their energy via capacitors.\\
+\indent Considering the loss mechanisms in a capacitor, improvements to integrated converters are not easily made at the architectural or circuit level. Important research questions involve critical technology parameters. We also observe buck converters are less sensitive to low quality capacitors.\\
+\textbf{Inductors: }Inductors, similar to capacitors suffer from frequency related non-ideality as well as static DC loss. As such, they have a quality factor $Q_l = \frac{\omega L}{R_l}$. A $Q_l$ = 1 represents a perfect inductor. In a standard CMOS process, $R_l \gg R_c$. This is because $L \propto \phi_{ind}$ where $\phi_{ind}$ is magnetic flux. In standard CMOS, $\phi_{ind}$ is increased by increasing the inductor length and hence increasing $R_l$. Contemporary CMOS has metal layers optimised for deep sub-micrometer components and design rules  Conversely for a capacitor, increasing $C$ requires increasing plate area and hence reducing $R_c$. For this reason SC designs cite low $Q_l$ as their research motivation \textbf{CITE A BUNCH OF PAPERS THAT SAY THIS}.\\
+\indent Because the impedance of inductors is phase shifted from capacitors, buck converters can be optimized at the circuit level through component sizes. However, given their low $Q_l$ due to high resistive loss, important research questions concern technology parameters critical to improving $\phi_l$ and reducing $R_l$.\\    
+%TODAY CONVERTERS ARE SUFFERING 65 % OF THEIR ENERGY LOSS THROUGH INDUCTORS "High-Efficiency Silicon-Embedded Coreless..."
+
+
+%what is wrong with the control? \\
+%What is wrong with the capacitors?\\
 %.~\cite{Pique2012} evaluate the state of the art and plot an frontier of capacitor area to converter efficiency for Integrated converters. In general they find as capacitor area exponentially increases power density follows with only a linear cost in peak efficiency. However, efficiency exponentially decreases with power density in the non-ideal case. \\
-What is wrong with the inductors?\\
+%What is wrong with the inductors?\\
 
-\subsection{Solutions}
-An evaluation of recent literature finds several novel approaches to the problems described previously. These are summarized below\\
+\subsection{Summary of recent literature}
+An evaluation of recent literature finds a volume of work addressing the previously outlined issues of integrated converters.\\
+We review the literature beginning with work on the common building blocks of passive components and power transistors, then move on to review system level advances.\\ 
+\textbf{CMOS Switches: }Alimadadi et al.\cite{Alimadadi2008} propose an energy recycling mechanism to use the charge at the power switch gates as useful energy by pumping it to the load. The power PMOS and power NMOS gates are driven by stacked supply buffers to toggle the power switches. vss of the power PMOS gate buffer is vdd of the power NMOS gate buffer via an electrical connection at node $x$. by connecting node $x$ to the load via a forward-biased diode, energy used to charge power MOS gate capacitance can also charge the load node, rather than sink to ground. The drawback of this technique is that the $\frac{1}{2}$ VSS swing of the power MOS gate nodes limits the amount of stepdown possible. It would therefore not translate to a high voltage stepdown.\\
+\indent Bathily et al.\cite{Bathily2012} also focus on energy loss in switch toggling. They propose an LC tank that resonates at $F_s$ such that the power MOSFET switch gate voltages oscillate at this resonant frequency. If the power switch gate voltage is low the switching energy is stored in the tank. If the power switch gate voltage is high, switching energy is stored at the switch nodes. The authors find improvements in switch efficiency ranging from around $12 - 25\%$ accross the complete operating range. However the requirement is 16nH of inductance occupying 40\% extra silicon area in a standard CMOS process. The technique is applicable in high voltage converters, but the 40\% reduction of energy density makes it unattractive in medium to high power applications.
+\indent Hyunseok et all.\cite{Hyunseok2012} address the higher than operating voltage step-down issue with circuit design and CMOS layout techniques. The circuit design handles higher than operating voltage by stacking power MOSFET devices in series such that each device does not drop more than the CMOS operating voltage. The sum of series voltage exceeds the operating voltage however. This technique is made novel with the circuit design of the power MOSFET switching inputs, which are toggled by operating voltage, despite the switch stacking. Although an arbitrary voltage stepdown could be achieved with power MOSFET stacking, this technique has diminishing returns for two reasons. Firstly, the conduction loss of the stacked power switches is summed, reducing efficiency. Secondly the switch toggling energy of the stacked power switches is summed since it is capacitive. This reduces the maximum $F_s$ and therefore increases the required $C$ or $L$ for a fixed power envelope. As such this technique is less attractive as input voltage increases.\\
+\indent In the same high voltage vein, Bandyopadhyay et al\cite{Bandyopadhyay2011} propose a buck converter with stacked power MOSFET switches. However, they use a single drain extended NMOS (DEnMOS) for high voltage and stacked PMOS devices. DEnMOS increases the reverse breakdown voltage of a MOSFET so that it will not short circuit at voltage above the technology operating vdd. An advantage of DEMOS is that no special process steps are needed. The main disadvantage of DEMOS in high voltage converters is high on-resistance and sensitivity to process variation. The limit of voltage step-down and current flow is around 30V at 2A \cite{Hower2005} at which point non-standard CMOS process is required for reliable operation.\\
+\indent With the limit of DEMOS understood we consider the literature regarding switches suitable for high voltage and or high current.\\
+For voltages above 20V at current above 1A, LDMOS switches outperform DEMOS. Hower et al\cite{Hower2005} are paraphrased as follows: LDMOS devices have lower on-resistance than DEMOS but have a fixed device length, so transistors cannot be folded geometrically. LDMOS can be integrated into a low voltage technology node monolitically because they are compatible with bulk CMOS. The cost is an additional mask layer and therefore a non-standard process. A final drawback is LDMOS has a higher $V_t$, so they require more switching energy.\\
+\indent Finally in the high $F_s$ high power design corner we consider AlGaN/GaN switches. Although much research effort has been made to improve power density and breakdown voltage, AlGaN/GaN switches outperform LDMOS in high-power high frequency switching applications \cite{Goyal2013}. This is because these switches have unique semiconductor properties beneficial to high voltage power conversion, such as; high operating frequency, high current density and high breakdown voltage\cite{Alamo2009},\cite{Mustapha2008}. Krausse\cite{Krausse2013} summarises recent literature on power transistors graphically:\\ %The Goyal2013 says that AlGaN dominate LDMOS in high bandwidth high power applications such as optics and in basestations. It is also later than this: http://www.microwaves101.com/encyclopedia/ldmos.cfm which questions AlGaN/GaN
+\begin{figure}[here]
+\includegraphics[width=0.4\textwidth]{TransistorPerf}
+\caption{Comparative performance of power switch types, Reproduced from\cite{Krausse2013}}
+\label{GaNCharacter}
+\end{figure}
+\indent To conclude discussion on power switches, the literature proposed novel circuit designs to improve switching efficiency. The limitations of these designs focus attention on the switch devices. The literature indicates as voltage and power density demands of a design increase, non-standard CMOS process and CMOS alternatives become increasingly attractive.\\
+\textbf{Capacitors: }After Viraj et al.\cite{Viraj2007}, much research effort was expended regarding converter capacitor energy density and impedance modulation. Kwong et al.\cite{Kwong2009} address both issues uniquely. The load is a sub-threshold processor, which allows low-energy density capacitors to provide adequate drive. Converter impedence is reduced with technology options and circuit topology. Metal insulator metal (MIM) capacitors are used as power passives. MIM capacitors have the desirable qualities of being compatible with bulk CMOS and having a high $Q_c$. Their disadvantage is low energy density. Viraj et al.\cite{Viraj2007} observed an exponential deterioration of efficiency with mismatched load impedance. This work implements a re-configurable step-down voltage circuit, where output capacitors can be stacked for 4 step-down voltages or 4 converter impedances.\\
+Kwong et al. stands alone in the literature because it uses a sub-vt processor load to mitigate low energy density where most literature attempts to improve it.\\
+\indent Le et al. \cite{Phuck2010} propose a novel converter circuit topology with more granular impedance modulation control. By splitting $C$ into 4 parallel SC converter modules, $Z_O$ is adjusted by modulating the phase difference between the $F_s$ of these modules. The converter also features the re-configurable step-down voltage circuit for coarse grain voltage control. Peak efficiency is far higher than \cite{Viraj2007} at 82\%, and the efficiency curve has linear regions as opposed to the purely exponential worsening of \cite{Viraj2007}.\\
+\indent Regarding energy density, non-standard CMOS capacitors dominate contemporary integrated converter literature.\\
+Since energy density is improved by reducing loss, early work explored the limit of CMOS with circuit techniques. Besides their other innovations, Kwong et al.\cite{Kwong2009} feature a charge recycling circuit. The operating principle is similar to \cite{Alimadadi2008}, but the energy source is parasitic capacitance and bondwire inductance. The technique was not implemented in later designs by the authors or others.
+\indent Later work focuses on technology options for improving energy density. In CMOS compatible technologies, MIM~\cite{Kwong2009} and Thin-gateMOS/fringe metal~\cite{Pique2012} capacitors are succeded by the exotic Deep trench~\cite{Pique} and Ferroelectric~\cite{Damak2013} capacitors.\\
+Exotic capacitor types either greatly increase $C$ per unit area because they realise an extremely high permittivity ($\epsilon_r$). Capacitance may be calculated $C = \epsilon_r \times \frac{A_p}{l_p}$ where $A_p$ is the area of capacitive plates and $l_p$ is the separation distance. 
+\begin{table}
+    \begin{tabular}{|l|l|l|}
+    \hline
+    Capacitor               & Material & Permittivity ($\epsilon_r$) \\ \hline
+    Bulk CMOS~\cite{Robertson2004}               & SiO2     & 3.9          \\ \hline
+    High K CMOS~\cite{Robertson2004}             & HfSiO4   & 11           \\ \hline
+    *Deep trench (structure)~\cite{Johari2009} & PZT      & 1000         \\ \hline
+    *Ferroelectric~\cite{Lee2004}			& BaTiO3      & $\approx$4600         \\ \hline    
+    \end{tabular}
+\end{table}
+\textit{* example technologies, not used in reviewed designs}
+High $\epsilon_r$ can effectively negate bottom and top plate parasitic capacitance, since these capacitors could have an $\epsilon_r$ several orders of magnitude lower than the power capacitors.\\ 
+To close on the topic of high $\epsilon_r$, Deep trench and Ferroelectric capacitors designs do not exhibit multiple order of magnitude power density improvements over others. In these technologies, $\epsilon_r$ varies with greatly with temperature \cite{Lee2004} and frequency \textbf{Get paper ref}. %http://www.mrl.ucsb.edu/~seshadri/old/MATRL100A/class13.pdf
+Further research is needed to understand their limits in power converters.\\
+Another class of converters has gained prominence due to the difficulties of energy density in capacitors. Semi-integrated converters \textbf{Cite a bunch} use off-die capacitors as a charge source. Provided such capacitors can be connected to the rest of a converter with a very low inductive path, these designs offer higher drive capability at the cost of an extra component.\\
+\indent In summary of capacitors, early circuit level approaches to energy density have been superceded by non-standard CMOS. Architectural level approaches in SC designs have been successful in improving impedance modulation.
+
+\indent To summarise power component literature, power switches offer many options for design trade-off. Passive components were limited in energy density with standard CMOS. Recent advances in device physics have succeeded in miniturising energy dense inductors and capacitors, but these require additional doping material and process steps to create on bulk Si.\\
 
 
-\textbf{System: well defined, class of problems: well defined, now we will see "fixed" systems}\\
+
+%\textbf{System: well defined, class of problems: well defined, now we will see "fixed" systems}\\
 \begin{itemize}
-\item{Switches fixes paper list and description DONT USE EXOTIC TECH! THESE WERE NEVER USED ON INTEGRATED DESIGNS!!!}
-\item{Control fixes paper list and description NOTE THAT THIS PROBLEM IS WELL UNDER CONTROL, CONCLUDE FROM THIS SECTION}
-\item{Capacitor fixes paper list and description NOTE THAT THIS PROBLEM CANNOT BE "SOLVED" FROM A SC TOPOLOGY POINT OF VIEW AND INDUCTORS ARE "BETTER" IN TERMS OF ENERGY DENSITY AND LINE REGULATION}
-\item{Inductor fixes paper list and description. NOTE THAT THIS IS "SOLVED" BUT FOR SEMI-INTEGRATED OR WHATEVER}
+%\item{Switches fixes paper list and description DONT USE EXOTIC TECH! THESE WERE NEVER USED ON INTEGRATED DESIGNS!!!}
+\item{Control fixes paper list and description NOTE THAT THIS PROBLEM IS WELL UNDER CONTROL, CONCLUDE FROM THIS SECTION} Le note that splitting $C$ into parallel converter modules improves the terrible ripple of SC converters, 41phase of Pique takes this to the next level. all those phases greatly smooth ripple but this is an architecture/control technique
+%\item{Capacitor fixes paper list and description NOTE THAT THIS PROBLEM CANNOT BE "SOLVED" FROM A SC TOPOLOGY POINT OF VIEW AND INDUCTORS ARE "BETTER" IN TERMS OF ENERGY DENSITY AND LINE REGULATION. Note faliures: MIT charge recycling work did not work!. Figured out loss conditions capacitors here: A 32nm Fully Integrated Reconfigurable Switched-Capacitor DC-DC Converter Tried to mitigate bottom plate parasitics with fractal caps.defined here:\cite{Samavati2008} but not the paper }
+\item{Inductor fixes paper list and description. NOTE THAT THIS IS "SOLVED" BUT FOR SEMI-INTEGRATED OR WHATEVER note topology fixes, flying capacitor is used}
 We note that the approach is not necesarily to increase the size of inductance, but the quality factor. the baseline CMOS \cite{Alimadadi2008} realized 4.38nH inductors which is comprable with \textbf{HKGuys} at \textbf{5.xnH}, but the later work is able to realize a far greater energy density due to the novel technique of using bondwire as inductors.
-\item{SC Ripple Fixes} % Fully Integrated Capacitive DC-DC Converter wit all digital Ripple Mitigation technique
+%\item{SC Ripple Fixes} % Fully Integrated Capacitive DC-DC Converter wit all digital Ripple Mitigation technique
 \end{itemize}
 
 \section{Saving pins with DC DC converters}
@@ -222,6 +282,7 @@ We note that the approach is not necesarily to increase the size of inductance, 
 \textbf{Solutions \& Stakeholders, why is there still work to be done?}\\
 Need to define the problem of Signal to power pin ratio. We cannot optimize this today with DC DC converters, because the \@ CMOS voltage stepdown means we need to have a lot of CORE power pins.\\
 Our "stakeholder" is high voltage stepdown. If we do it we could reduce \textbf{DEFINE}"CORE POWER PINS" to an amount desirable for \textbf{DEFINE} signal integrity\\
+Now we can outline the high voltage work that was summarized in the google doc I did
 
 \subsection{The IO limit with integrated DC DC converters}
 
@@ -243,7 +304,7 @@ This interposer allows signal integrity to be maintained at low voltage from the
 \subsection{Conclusions}
 
 Basically conclude that given the solutions simulation we could reach a situation where IO pressure is lifted from core power perspective, but that isn't so great tbh. 
-  
+\textbf{Remeber Q = CV A high voltage power grid will require higher board capacitors and you need to be sure that inductance is sufficiently low on pcb as not to impede this current path}  
 
 
 {\footnotesize \bibliographystyle{acm}

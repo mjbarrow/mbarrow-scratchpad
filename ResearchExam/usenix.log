@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.10)  9 APR 2014 23:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.10)  15 APR 2014 01:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -239,6 +239,11 @@ Underfull \hbox (badness 1168) in paragraph at lines 66--75
  []
 
 
+Underfull \hbox (badness 1082) in paragraph at lines 66--75
+\OT1/ptm/m/n/10 ob-ser-va-tion in [[]] is that re-duc-ing CMOS volt-age
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 66--75
 
  []
@@ -321,7 +326,7 @@ Underfull \hbox (badness 3068) in paragraph at lines 132--132
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2828) has occurred while \output is active []
 
 
 
@@ -368,63 +373,134 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--183
  []
 
 [4]
-Underfull \hbox (badness 5036) in paragraph at lines 197--205
-\OT1/ptm/b/n/10 Taxonomy of prob-lem (deeper drill and more
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--205
+Underfull \hbox (badness 10000) in paragraph at lines 197--204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 1242) in paragraph at lines 205--219
+\OT1/ptm/m/n/10 in-creases tran-sis-tor leakage[[]], so that re-al-is-ing the
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 205--219
+[]\OT1/ptm/m/n/10 As a fi-nal note, CMOS switches can-not op-er-ate
+ []
+
+
+Underfull \hbox (badness 3058) in paragraph at lines 205--219
+\OT1/ptm/m/n/10 se-ries re-sis-tance, $\OML/ztmcm/m/it/10 R[]$ \OT1/ptm/m/n/10 
+and its par-a-sitic ca-pac-i-tance.
+ []
+
+
+Underfull \hbox (badness 1521) in paragraph at lines 205--219
+\OT1/ptm/m/n/10 be-tween the ground node and bot-tom plate of the
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 205--219
+\OT1/ptm/m/n/10 re-search ques-tions con-cern tech-nol-ogy pa-ram-e-ters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+
+LaTeX Warning: Citation `Bandyopadhyay2011' on page 6 undefined on input line 2
+32.
+
+<TransistorPerf.png, id=28, 1227.58624pt x 438.63875pt>
+File: TransistorPerf.png Graphic file (type png)
+
+<use TransistorPerf.png>
+Package pdftex.def Info: TransistorPerf.png used on input line 237.
+(pdftex.def)             Requested size: 187.89912pt x 67.13828pt.
+
+
+LaTeX Warning: Citation `Pique2012' on page 6 undefined on input line 247.
+
+
+LaTeX Warning: Citation `Pique' on page 6 undefined on input line 247.
+
+
+Overfull \hbox (25.57211pt too wide) in paragraph at lines 250--258
+[][] 
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 227--263
+[]\OT1/ptm/m/n/10 In sum-mary of ca-pac-i-tors, early cir-cuit level ap-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+Underfull \hbox (badness 1038) in paragraph at lines 264--265
+[]\OT1/ptm/m/n/10 To sum-marise power com-po-nent lit-er-a-ture, power
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
 
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 213--214
+Underfull \hbox (badness 1448) in paragraph at lines 271--273
 []\OT1/ptm/m/n/10 Control fixes pa-per list and de-scrip-tion NOTE
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 215--217
+Underfull \hbox (badness 1147) in paragraph at lines 273--276
 \OT1/ptm/m/n/10 THAT THIS IS "SOLVED" BUT FOR SEMI-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 222--225
-
- []
-
-
-Underfull \hbox (badness 1603) in paragraph at lines 233--239
+[7 <./TransistorPerf.png>]
+Underfull \hbox (badness 1603) in paragraph at lines 292--298
 \OT1/ptm/m/n/10 Glass/Silicon In-ter-poser for high Band-witdh Smart
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--239
+Underfull \hbox (badness 10000) in paragraph at lines 292--298
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 []\OT1/ptm/b/n/10 SHOULD HAVE SOME SIM-U-LA-TION TO
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
-[5] (./usenix.bbl
+(./usenix.bbl
 Missing character: There is no Î in font ptmr7t!
 Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no Ã in font ptmrc7t!
+Missing character: There is no ¡ in font ptmrc7t!
+
+Underfull \hbox (badness 1708) in paragraph at lines 21--24
+[]\OT1/ptm/m/sc/8 Andreou, A. G., and Snchez-Sinencio., E.  \OT1/ptm/m/n/8 Low-
+
+ []
+
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no Ã in font ptmrc7t!
+Missing character: There is no Ÿ in font ptmrc7t!
+Missing character: There is no Ã in font ptmri7t!
+Missing character: There is no ¤ in font ptmri7t!
+[8]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
@@ -436,30 +512,33 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-) [6] (./usenix.aux)
+) [9
+
+] (./usenix.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1783 strings out of 495031
- 25543 string characters out of 6181531
- 86647 words of memory out of 5000000
- 4941 multiletter control sequences out of 15000+600000
+ 1806 strings out of 495031
+ 25871 string characters out of 6181531
+ 93711 words of memory out of 5000000
+ 4963 multiletter control sequences out of 15000+600000
  47439 words of font info for 92 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,8n,23p,1079b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,9n,23p,1087b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
-utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on usenix.pdf (6 pages, 121104 bytes).
+type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol
+/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on usenix.pdf (9 pages, 235555 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 70 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
