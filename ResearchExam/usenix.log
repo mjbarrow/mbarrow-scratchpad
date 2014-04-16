@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.10)  15 APR 2014 01:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.10)  15 APR 2014 23:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -378,11 +378,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--204
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 205--219
-\OT1/ptm/m/n/10 in-creases tran-sis-tor leakage[[]], so that re-al-is-ing the
- []
-
-
 Underfull \hbox (badness 1430) in paragraph at lines 205--219
 []\OT1/ptm/m/n/10 As a fi-nal note, CMOS switches can-not op-er-ate
  []
@@ -435,7 +430,7 @@ Overfull \hbox (25.57211pt too wide) in paragraph at lines 250--258
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 227--263
+Underfull \hbox (badness 1082) in paragraph at lines 227--268
 []\OT1/ptm/m/n/10 In sum-mary of ca-pac-i-tors, early cir-cuit level ap-
  []
 
@@ -443,42 +438,46 @@ Underfull \hbox (badness 1082) in paragraph at lines 227--263
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
-Underfull \hbox (badness 1038) in paragraph at lines 264--265
-[]\OT1/ptm/m/n/10 To sum-marise power com-po-nent lit-er-a-ture, power
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
-
- []
-
-
-Underfull \hbox (badness 1448) in paragraph at lines 271--273
-[]\OT1/ptm/m/n/10 Control fixes pa-per list and de-scrip-tion NOTE
- []
-
-
-Underfull \hbox (badness 1147) in paragraph at lines 273--276
-\OT1/ptm/m/n/10 THAT THIS IS "SOLVED" BUT FOR SEMI-
- []
-
 [7 <./TransistorPerf.png>]
-Underfull \hbox (badness 1603) in paragraph at lines 292--298
+<CostvsGainofBondWireInductor.png, id=36, 365.365pt x 330.23375pt>
+File: CostvsGainofBondWireInductor.png Graphic file (type png)
+
+<use CostvsGainofBondWireInductor.png>
+Package pdftex.def Info: CostvsGainofBondWireInductor.png used on input line 27
+0.
+(pdftex.def)             Requested size: 187.89912pt x 169.83292pt.
+
+Underfull \hbox (badness 4084) in paragraph at lines 275--278
+[]\OT1/ptm/m/n/10 With the above men-tioned lim-i-ta-tions, re-search
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--278
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--282
+
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 308--314
 \OT1/ptm/m/n/10 Glass/Silicon In-ter-poser for high Band-witdh Smart
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--298
+Underfull \hbox (badness 10000) in paragraph at lines 308--314
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+[8 <./CostvsGainofBondWireInductor.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
 []\OT1/ptm/b/n/10 SHOULD HAVE SOME SIM-U-LA-TION TO
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
@@ -488,7 +487,7 @@ Missing character: There is no ¼ in font ptmr7t!
 Missing character: There is no Ã in font ptmrc7t!
 Missing character: There is no ¡ in font ptmrc7t!
 
-Underfull \hbox (badness 1708) in paragraph at lines 21--24
+Underfull \hbox (badness 1708) in paragraph at lines 25--28
 []\OT1/ptm/m/sc/8 Andreou, A. G., and Snchez-Sinencio., E.  \OT1/ptm/m/n/8 Low-
 
  []
@@ -496,23 +495,28 @@ Underfull \hbox (badness 1708) in paragraph at lines 21--24
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
 Missing character: There is no Ã in font ptmrc7t!
 Missing character: There is no Ÿ in font ptmrc7t!
 Missing character: There is no Ã in font ptmri7t!
 Missing character: There is no ¤ in font ptmri7t!
-[8]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
+[9]
 Missing character: There is no â in font ptmri7t!
 Missing character: There is no € in font ptmri7t!
 Missing character: There is no ” in font ptmri7t!
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no µ in font ptmr7t!
 ) (./usenix.ent
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-) [9
+) [10
 
 ] (./usenix.aux)
 
@@ -520,11 +524,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1806 strings out of 495031
- 25871 string characters out of 6181531
- 93711 words of memory out of 5000000
- 4963 multiletter control sequences out of 15000+600000
- 47439 words of font info for 92 fonts, out of 8000000 for 9000
+ 1821 strings out of 495031
+ 26157 string characters out of 6181531
+ 98747 words of memory out of 5000000
+ 4975 multiletter control sequences out of 15000+600000
+ 48069 words of font info for 94 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  37i,9n,23p,1087b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -535,10 +539,10 @@ type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol
 /usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on usenix.pdf (9 pages, 235555 bytes).
+Output written on usenix.pdf (10 pages, 248721 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -114,7 +114,7 @@ The second popular converter is the inductor-capacitor stepdown (buck) converter
 \end{figure}
 
 %For Buck description use chapter 4 of Kurson
-The voltage conversion principle is understood by considering the inductor and capacitor as a high pass filter. $\phi_1$ is a clock used to generate a square wave voltage of amplitude $V_{in}$. If this square wave is at a frequency sufficiently higher than the 3db cutoff frequency of the filter, only the DC component of the square wave is observed at $L$. Because of this, buck converters may change their voltage stepdown ratio during operation, by modulating $\phi_1$. For a properly designed converter, $V_L$ is defined by the duty cycle "$D$"~\cite{Kurson2006} of $\phi_1$ where: $V_{out} = V_{in} \times D$. In other words, if the square wave entering $L_f$ is high for $\frac{2}{3}$ of its period, $V_{out} = \frac{2}{3}\times V_{in}$ and $D = \frac{2}{3}$.\\ 
+The voltage conversion principle is understood by considering the inductor and capacitor as a low pass filter. $\phi_1$ is a clock used to generate a square wave voltage of amplitude $V_{in}$. If this square wave is at a frequency sufficiently higher than the 3db cutoff frequency of the filter, only the DC component of the square wave is observed at $L$. Because of this, buck converters may change their voltage stepdown ratio during operation, by modulating $\phi_1$. For a properly designed converter, $V_L$ is defined by the duty cycle "$D$"~\cite{Kurson2006} of $\phi_1$ where: $V_{out} = V_{in} \times D$. In other words, if the square wave entering $L_f$ is high for $\frac{2}{3}$ of its period, $V_{out} = \frac{2}{3}\times V_{in}$ and $D = \frac{2}{3}$.\\ 
 
 \subsection{SC stepdown converter critical parameters}
 %Note the \textbf{introduction of $\phi_{\frac{2}{3}}$} This is introduced so when $Cf_2$ has discharged to the load, $Cf_1$ may be connected to restore the supply voltage seen at node $L$. \textbf{we do this because the parasitic resistance of $Cf_1$ and $Cf_2$ is larger in series, maintaining Vout for longer (also fucks with your load impedance, why do it??!!)}\textbf{WE SEE THAT IT IS CRITICAL TO HAVE HIGH FREQUENCY IN ORDER TO MAINTAIN SUPPLY VOLTAGE}
@@ -261,21 +261,35 @@ High $\epsilon_r$ can effectively negate bottom and top plate parasitic capacita
 To close on the topic of high $\epsilon_r$, Deep trench and Ferroelectric capacitors designs do not exhibit multiple order of magnitude power density improvements over others. In these technologies, $\epsilon_r$ varies with greatly with temperature \cite{Lee2004} and frequency \textbf{Get paper ref}. %http://www.mrl.ucsb.edu/~seshadri/old/MATRL100A/class13.pdf
 Further research is needed to understand their limits in power converters.\\
 Another class of converters has gained prominence due to the difficulties of energy density in capacitors. Semi-integrated converters \textbf{Cite a bunch} use off-die capacitors as a charge source. Provided such capacitors can be connected to the rest of a converter with a very low inductive path, these designs offer higher drive capability at the cost of an extra component.\\
-\indent In summary of capacitors, early circuit level approaches to energy density have been superceded by non-standard CMOS. Architectural level approaches in SC designs have been successful in improving impedance modulation.
+\indent In summary of capacitors, early circuit level approaches to energy density have been superceded by non-standard CMOS. Architectural level approaches in SC designs have been successful in improving impedance modulation.\\
+\textbf{Inductors: }Since total inductance is improved by increasing mutual inductance within a conductor structure, researchers have made several attempts to improve $Q_l$ with custom inductor layout. Angular spiral inductors were shown to have inadequate $Q_l$ for efficient fully integrated power converters\cite{Alimadadi2008},\cite{Artillan2011}, motivating exploration of alternate structures and materials. Meere et al. \cite{Meere2009} characterized fully integrated racetrack style inductors for buck power converters. They find the $Cu$ resistivity to dominate loss and to increase exponentially with $F_s$. They conclude 7mA as the supply limit of a converter with such inductors.\\
+As with capacitors, the $Q_l$ problem was also explored using semi-integrated converters. Researchers realised the parasitic inductance of bond wires could be re-purposed to become active power delivering inductance~\cite{Wens2007},~\cite{Ahn2012}. This work received much attention owing to the high $L$ of bondwire relative to integrated $Cu$ spiral and racetrack inductors. In addition, since package inductance is a large contributer to power loss, end to end efficiencies have been realised up to 84.7\%~\cite{Cheng2013}. Owing to the relatively low resistivity of bondwire, energy density is also greatly improved with an $I_{Out}$ of 1.2A reported~\cite{Cheng2013}.\\
+\indent Researchers have also combined innovations. $L$ is enhanced when the core of an inductor is a high permiability material. $L \approx \frac{N^2\mu A_L}{l_L}$ where $\mu$ is the permeability of the core. To this end Hongwei et al.~\cite{Hongwei2011} propose applying a ferrite epoxy to bondwire inductors with Wang et all. proposing ceramic tape for 2.5D semi-integrated passives. Although neither author was able to match the energy density of Chengs work, a more fundamental issue omits bondwire inductor converters as a candidate technology for pin optimisation.
+    
+\begin{figure}[here]
+\includegraphics[width=0.4\textwidth]{CostvsGainofBondWireInductor}
+\caption{The power limitation of bondwire inductors}
+\label{BondWireLim}
+\end{figure}
 
-\indent To summarise power component literature, power switches offer many options for design trade-off. Passive components were limited in energy density with standard CMOS. Recent advances in device physics have succeeded in miniturising energy dense inductors and capacitors, but these require additional doping material and process steps to create on bulk Si.\\
+Topology b, with no switching converter in Figure \ref{BondWireLim} is able to deliver more power per pin than topology a, which features bondwire inductors.\\
+\indent With the above mentioned limitations, research integrating high permiability materials into custom layout inductors is considered. Recent advances in device physics have yeilded thin film inductors ~\cite{OSulivan2013} with orders of magnitude energy density improvement over those in prior art~\cite{Meere2009}. Sturcken et al.~\cite{Sturcken2013} propose a converter with such devices able to drive 6.3A and Intel report 400A~\cite{Intel2010} using the same inductor technology. This is the highest reported drive of all integrated converters to the authors knowledge. Thin film inductors appear to be subject to a caveat. Due to their geometric structure and unique ferroelectric core they are not integrated into bulk CMOS in the literature, instead being built on a separate interposer.\\
+\indent Inductor research is summarised as being a focussed effort to improve $Q_l$ The state of the art is represented by thin film inductors, which enable much higher energy density converters than capacitors alone.\\
 
+
+\indent Component literature as a whole is distilled as follows; power switches offer many options for design trade-off. Passive components were limited in energy density with standard CMOS. Recent advances in device physics have succeeded in miniturising energy dense inductors and capacitors, but these require additional doping material and process steps to create on bulk Si.\\
+%SKIP CONTROL PAPERS, THEY DONT REALLY ADD MUCH
 
 
 %\textbf{System: well defined, class of problems: well defined, now we will see "fixed" systems}\\
-\begin{itemize}
+%\begin{itemize}
 %\item{Switches fixes paper list and description DONT USE EXOTIC TECH! THESE WERE NEVER USED ON INTEGRATED DESIGNS!!!}
-\item{Control fixes paper list and description NOTE THAT THIS PROBLEM IS WELL UNDER CONTROL, CONCLUDE FROM THIS SECTION} Le note that splitting $C$ into parallel converter modules improves the terrible ripple of SC converters, 41phase of Pique takes this to the next level. all those phases greatly smooth ripple but this is an architecture/control technique
+%\item{Control fixes paper list and description NOTE THAT THIS PROBLEM IS WELL UNDER CONTROL, CONCLUDE FROM THIS SECTION} Le note that splitting $C$ into parallel converter modules improves the terrible ripple of SC converters, 41phase of Pique takes this to the next level. all those phases greatly smooth ripple but this is an architecture/control technique
 %\item{Capacitor fixes paper list and description NOTE THAT THIS PROBLEM CANNOT BE "SOLVED" FROM A SC TOPOLOGY POINT OF VIEW AND INDUCTORS ARE "BETTER" IN TERMS OF ENERGY DENSITY AND LINE REGULATION. Note faliures: MIT charge recycling work did not work!. Figured out loss conditions capacitors here: A 32nm Fully Integrated Reconfigurable Switched-Capacitor DC-DC Converter Tried to mitigate bottom plate parasitics with fractal caps.defined here:\cite{Samavati2008} but not the paper }
-\item{Inductor fixes paper list and description. NOTE THAT THIS IS "SOLVED" BUT FOR SEMI-INTEGRATED OR WHATEVER note topology fixes, flying capacitor is used}
-We note that the approach is not necesarily to increase the size of inductance, but the quality factor. the baseline CMOS \cite{Alimadadi2008} realized 4.38nH inductors which is comprable with \textbf{HKGuys} at \textbf{5.xnH}, but the later work is able to realize a far greater energy density due to the novel technique of using bondwire as inductors.
+%\item{Inductor fixes paper list and description. NOTE THAT THIS IS "SOLVED" BUT FOR SEMI-INTEGRATED OR WHATEVER note topology fixes, flying capacitor is used}
+%We note that the approach is not necesarily to increase the size of inductance, but the quality factor. the baseline CMOS \cite{Alimadadi2008} realized 4.38nH inductors which is comprable with \textbf{HKGuys} at \textbf{5.xnH}, but the later work is able to realize a far greater energy density due to the novel technique of using bondwire as inductors.
 %\item{SC Ripple Fixes} % Fully Integrated Capacitive DC-DC Converter wit all digital Ripple Mitigation technique
-\end{itemize}
+%\end{itemize}
 
 \section{Saving pins with DC DC converters}
 
@@ -303,6 +317,7 @@ This interposer allows signal integrity to be maintained at low voltage from the
 
 \subsection{Conclusions}
 
+In the literature converters focus on single metrics like efficiency, parasitic loss etc.
 Basically conclude that given the solutions simulation we could reach a situation where IO pressure is lifted from core power perspective, but that isn't so great tbh. 
 \textbf{Remeber Q = CV A high voltage power grid will require higher board capacitors and you need to be sure that inductance is sufficiently low on pcb as not to impede this current path}  
 

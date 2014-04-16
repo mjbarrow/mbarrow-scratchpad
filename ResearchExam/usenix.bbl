@@ -1,7 +1,11 @@
 \begin{thebibliography}{10}
 
-\bibitem{Iwai2009}
-
+\bibitem{Ahn2012}
+{\sc Ahn, Youngkook, H.~N., and Roh, J.}
+\newblock A 50-mhz fully integrated low-swing buck converter using packaging
+  inductors.
+\newblock {\em Power Electronics, IEEE Transactions on 27.10\/} (2012),
+  4347--4356.
 
 \bibitem{Alghamdi2012}
 {\sc Alghamdi, M.~K., and Hamoui., A.~A.}
@@ -11,7 +15,7 @@
 \newblock {\em Solid-State Circuits, IEEE Journal of 47.4\/} (2012), 841--851.
 
 \bibitem{Alimadadi2008}
-{\sc Alimadadi, Mehdi, S. S. G. L. P. P.-S.~M., and Dunford., W.}
+{\sc Alimadadi, Mehdi, S. S. G. L. P. P. S.~M., and Dunford., W.}
 \newblock A 660mhz zvs dc-dc converter using gate-driver charge-recycling in
   0.18μm cmos with an integrated output filter.
 \newblock {\em Power Electronics Specialists Conference, 2008. PESC 2008.
@@ -21,6 +25,13 @@
 {\sc Andreou, A.~G., and Sánchez-Sinencio., E.}
 \newblock Low-voltage/low-power integrated circuits and systems.
 \newblock {\em IEE\/} (1999).
+
+\bibitem{Artillan2011}
+{\sc Artillan, Philippe, M. B. D. B. J.-P. L. N. M. L. B. M. D. B. E. C.~A.,
+  and Sanchez, J.~L.}
+\newblock Integrated lc filter on silicon for dc–dc converter applications.
+\newblock {\em Power Electronics, IEEE Transactions on 26.8\/} (2011),
+  2319--2325.
 
 \bibitem{Bathily2012}
 {\sc Bathily, Malal, B.~A., and Hasbani, F.}
@@ -72,6 +83,18 @@
 \newblock {\em Solid-State Circuits Conference Digest of Technical Papers
   (ISSCC)\/} (2013), 1--13.
 
+\bibitem{Iwai2009}
+{\sc Iwai, H.}
+\newblock Roadmap for 22nm and beyond.
+\newblock {\em Microelectronic Engineering 86.7\/} (2009), 1520--1528.
+
+\bibitem{Hongwei2011}
+{\sc Jia, Hongwei, J. L. X. W. K.~P., and Shen, Z.~J.}
+\newblock Integration of a monolithic buck converter power ic and bondwire
+  inductors with ferrite epoxy glob cores.
+\newblock {\em Power Electronics, IEEE Transactions on 26.6\/} (2011),
+  1627--1630.
+
 \bibitem{Johari2009}
 {\sc Johari, H., and Ayazi, F.}
 \newblock High-density embedded deep trench capacitors in silicon with enhanced
@@ -83,7 +106,7 @@
 {\sc Krauße, D.}
 \newblock High power algan, gan hfets for industrial, scientific and medical
   applications.
-\newblock {\em Diss. Universitätsbibliothek Freiburg\/}.
+\newblock {\em Diss. Universitätsbibliothek Freiburg\/} (2013).
 
 \bibitem{Kurson2006}
 {\sc Kurson, V., F.~E.}
@@ -121,12 +144,25 @@
   particle surface chemistry in an aqueous medium.
 \newblock {\em Materials research bulletin 39.1\/} (2004), 93--102.
 
+\bibitem{Meere2009}
+{\sc Meere, Ronan, T. O. H. J. B. N.~W., and O'Mathuna, S.~C.}
+\newblock Analysis of microinductor performance in a 20-100 mhz dc/dc
+  converter.
+\newblock {\em Power Electronics, IEEE Transactions on 24.9\/} (2009),
+  2212--2218.
+
 \bibitem{Hyunseok2012}
 {\sc Nam, Hyunseok, Y.~A., and Roh, J.}
 \newblock 5-v buck converter using 3.3-v standard cmos process with adaptive
   power transistor driver increasing efficiency and maximum load capacity.
 \newblock {\em Power Electronics, IEEE Transactions on 27.1\/} (2012),
   463--471.
+
+\bibitem{OSulivan2013}
+{\sc O'Sullivan, Eugene~J., e.~a.}
+\newblock (invited) developments in integrated on-chip inductors with magnetic
+  yokes.
+\newblock {\em ECS Transactions 50.10\/} (2013), 93--105.
 
 \bibitem{Ramadass2007}
 {\sc Ramadass, Y.~K., and Chandrakasan, A.~P.}
@@ -160,6 +196,12 @@
 \newblock {\em Proceedings of the 17th IEEE/ACM international symposium on
   Low-power electronics and design. 50\/} (2011), 51--56.
 
+\bibitem{Sturcken2013}
+{\sc Sturcken, Noah, E. J. O. N. W.-P. H. B. C. W. L. T. R. M. P. e.~a.}
+\newblock A 2.5 d integrated voltage regulator using coupled-magnetic-core
+  inductors on silicon interposer.
+\newblock {\em Solid-State Circuits, IEEE Journal of 48.1\/} (2013), 244--254.
+
 \bibitem{Sturcken2012}
 {\sc Sturcken, Noah, E. O. N. W. P. H. B. W. L. R. M.~P., and Shepard, K.}
 \newblock A 2.5 d integrated voltage regulator using coupled-magnetic-core
@@ -179,5 +221,12 @@
 \newblock A monolithic cmos 5v/1v switched capacitor dc-dc step-down converter.
 \newblock {\em Power Electronics Specialists Conference, 2007. PESC 2007.
   IEEE\/} (2007), 2510--2514.
+
+\bibitem{Wens2007}
+{\sc Wens, Mike, K.~C., and Steyaert, M.}
+\newblock A fully-integrated 0.18µm cmos dc-dc step-up converter, using a
+  bondwire spiral inductor.
+\newblock {\em Solid State Circuits Conference, 2007. ESSCIRC 2007. 33rd
+  European. IEEE\/} (2007), 268--271.
 
 \end{thebibliography}

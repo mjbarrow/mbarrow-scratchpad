@@ -3,16 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: usenix.aux
 The style file: acm.bst
 Database file #1: sample.bib.bib
-I was expecting a `,' or a `}'---line 120 of file sample.bib.bib
- : 
- : Author = {Iwai, H. I. R. O. S. H. I.},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 202 of file sample.bib.bib
- : 
- : year = {2013}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Rodriguez2014"
 Warning--I didn't find a database entry for "Bandyopadhyay2011"
 Warning--I didn't find a database entry for "Pique2012"
@@ -95,7 +85,6 @@ Too many commas in name 1 of "Alimadadi, Mehdi, Samad Sheikhaei, Guy Lemieux, Pa
 while executing---line 1092 of file acm.bst
 Too many commas in name 1 of "Alimadadi, Mehdi, Samad Sheikhaei, Guy Lemieux, Patrick Palmer, Shahriar Mirabbasi, and William Dunford." for entry Alimadadi2008
 while executing---line 1092 of file acm.bst
-Warning--to sort, need author or key in Iwai2009
 Name 1 in "Andreou, Andreas G., and Edgar Sánchez-Sinencio." has a comma at the end for entry Andreou1999
 while executing---line 1092 of file acm.bst
 Name 1 in "Bathily, Malal, Bruno Allard, and Frédéric Hasbani" has a comma at the end for entry Bathily2012
@@ -138,9 +127,50 @@ Too many commas in name 1 of "Lee, Sangkyu, Ungyu Paik, Vincent A. Hackley, Yeon
 while executing---line 1092 of file acm.bst
 Too many commas in name 1 of "Lee, Sangkyu, Ungyu Paik, Vincent A. Hackley, Yeon-Gil Jung, and Kyung-Jin Yoon" for entry Lee2004
 while executing---line 1092 of file acm.bst
-Warning--empty author in Iwai2009
-Warning--empty title in Iwai2009
-Warning--empty journal in Iwai2009
+Name 1 in "Artillan, Philippe, Magali Brunet, David Bourrier, J-P. Laur, Nicolas Mauran, Laurent Bary, Monique Dilhan, Bruno Estibals, Corinne Alonso, and J. L. Sanchez" has a comma at the end for entry Artillan2011
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Artillan, Philippe, Magali Brunet, David Bourrier, J-P. Laur, Nicolas Mauran, Laurent Bary, Monique Dilhan, Bruno Estibals, Corinne Alonso, and J. L. Sanchez" for entry Artillan2011
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Artillan, Philippe, Magali Brunet, David Bourrier, J-P. Laur, Nicolas Mauran, Laurent Bary, Monique Dilhan, Bruno Estibals, Corinne Alonso, and J. L. Sanchez" for entry Artillan2011
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Artillan, Philippe, Magali Brunet, David Bourrier, J-P. Laur, Nicolas Mauran, Laurent Bary, Monique Dilhan, Bruno Estibals, Corinne Alonso, and J. L. Sanchez" for entry Artillan2011
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Artillan, Philippe, Magali Brunet, David Bourrier, J-P. Laur, Nicolas Mauran, Laurent Bary, Monique Dilhan, Bruno Estibals, Corinne Alonso, and J. L. Sanchez" for entry Artillan2011
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Artillan, Philippe, Magali Brunet, David Bourrier, J-P. Laur, Nicolas Mauran, Laurent Bary, Monique Dilhan, Bruno Estibals, Corinne Alonso, and J. L. Sanchez" for entry Artillan2011
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Artillan, Philippe, Magali Brunet, David Bourrier, J-P. Laur, Nicolas Mauran, Laurent Bary, Monique Dilhan, Bruno Estibals, Corinne Alonso, and J. L. Sanchez" for entry Artillan2011
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Artillan, Philippe, Magali Brunet, David Bourrier, J-P. Laur, Nicolas Mauran, Laurent Bary, Monique Dilhan, Bruno Estibals, Corinne Alonso, and J. L. Sanchez" for entry Artillan2011
+while executing---line 1092 of file acm.bst
+Name 1 in "Meere, Ronan, Terence O'Donnell, Henk Jan Bergveld, Ningning Wang, and Seán Cian O'Mathuna" has a comma at the end for entry Meere2009
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Meere, Ronan, Terence O'Donnell, Henk Jan Bergveld, Ningning Wang, and Seán Cian O'Mathuna" for entry Meere2009
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Meere, Ronan, Terence O'Donnell, Henk Jan Bergveld, Ningning Wang, and Seán Cian O'Mathuna" for entry Meere2009
+while executing---line 1092 of file acm.bst
+Name 1 in "Wens, Mike, Koen Cornelissens, and Michiel Steyaert" has a comma at the end for entry Wens2007
+while executing---line 1092 of file acm.bst
+Name 1 in "Ahn, Youngkook, Hyunseok Nam, and Jeongjin Roh" has a comma at the end for entry Ahn2012
+while executing---line 1092 of file acm.bst
+Name 1 in "Jia, Hongwei, Jian Lu, Xuexin Wang, Karthik Padmanabhan, and Z. John Shen" has a comma at the end for entry Hongwei2011
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Jia, Hongwei, Jian Lu, Xuexin Wang, Karthik Padmanabhan, and Z. John Shen" for entry Hongwei2011
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Jia, Hongwei, Jian Lu, Xuexin Wang, Karthik Padmanabhan, and Z. John Shen" for entry Hongwei2011
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene J. O'Sullivan, Naigang Wang, Philipp Herget, Bucknell C. Webb, Lubomyr T. Romankiw, Michele Petracca et al" for entry Sturcken2013
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene J. O'Sullivan, Naigang Wang, Philipp Herget, Bucknell C. Webb, Lubomyr T. Romankiw, Michele Petracca et al" for entry Sturcken2013
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene J. O'Sullivan, Naigang Wang, Philipp Herget, Bucknell C. Webb, Lubomyr T. Romankiw, Michele Petracca et al" for entry Sturcken2013
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene J. O'Sullivan, Naigang Wang, Philipp Herget, Bucknell C. Webb, Lubomyr T. Romankiw, Michele Petracca et al" for entry Sturcken2013
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene J. O'Sullivan, Naigang Wang, Philipp Herget, Bucknell C. Webb, Lubomyr T. Romankiw, Michele Petracca et al" for entry Sturcken2013
+while executing---line 1092 of file acm.bst
+Name 1 in "Ahn, Youngkook, Hyunseok Nam, and Jeongjin Roh" has a comma at the end for entry Ahn2012
+while executing---line 1133 of file acm.bst
 Name 1 in "Alghamdi, Mohammad K., and Anas A. Hamoui." has a comma at the end for entry Alghamdi2012
 while executing---line 1133 of file acm.bst
 Name 1 in "Alimadadi, Mehdi, Samad Sheikhaei, Guy Lemieux, Patrick Palmer, Shahriar Mirabbasi, and William Dunford." has a comma at the end for entry Alimadadi2008
@@ -152,6 +182,22 @@ while executing---line 1133 of file acm.bst
 Too many commas in name 1 of "Alimadadi, Mehdi, Samad Sheikhaei, Guy Lemieux, Patrick Palmer, Shahriar Mirabbasi, and William Dunford." for entry Alimadadi2008
 while executing---line 1133 of file acm.bst
 Name 1 in "Andreou, Andreas G., and Edgar Sánchez-Sinencio." has a comma at the end for entry Andreou1999
+while executing---line 1133 of file acm.bst
+Name 1 in "Artillan, Philippe, Magali Brunet, David Bourrier, J-P. Laur, Nicolas Mauran, Laurent Bary, Monique Dilhan, Bruno Estibals, Corinne Alonso, and J. L. Sanchez" has a comma at the end for entry Artillan2011
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Artillan, Philippe, Magali Brunet, David Bourrier, J-P. Laur, Nicolas Mauran, Laurent Bary, Monique Dilhan, Bruno Estibals, Corinne Alonso, and J. L. Sanchez" for entry Artillan2011
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Artillan, Philippe, Magali Brunet, David Bourrier, J-P. Laur, Nicolas Mauran, Laurent Bary, Monique Dilhan, Bruno Estibals, Corinne Alonso, and J. L. Sanchez" for entry Artillan2011
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Artillan, Philippe, Magali Brunet, David Bourrier, J-P. Laur, Nicolas Mauran, Laurent Bary, Monique Dilhan, Bruno Estibals, Corinne Alonso, and J. L. Sanchez" for entry Artillan2011
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Artillan, Philippe, Magali Brunet, David Bourrier, J-P. Laur, Nicolas Mauran, Laurent Bary, Monique Dilhan, Bruno Estibals, Corinne Alonso, and J. L. Sanchez" for entry Artillan2011
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Artillan, Philippe, Magali Brunet, David Bourrier, J-P. Laur, Nicolas Mauran, Laurent Bary, Monique Dilhan, Bruno Estibals, Corinne Alonso, and J. L. Sanchez" for entry Artillan2011
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Artillan, Philippe, Magali Brunet, David Bourrier, J-P. Laur, Nicolas Mauran, Laurent Bary, Monique Dilhan, Bruno Estibals, Corinne Alonso, and J. L. Sanchez" for entry Artillan2011
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Artillan, Philippe, Magali Brunet, David Bourrier, J-P. Laur, Nicolas Mauran, Laurent Bary, Monique Dilhan, Bruno Estibals, Corinne Alonso, and J. L. Sanchez" for entry Artillan2011
 while executing---line 1133 of file acm.bst
 Name 1 in "Bathily, Malal, Bruno Allard, and Frédéric Hasbani" has a comma at the end for entry Bathily2012
 while executing---line 1133 of file acm.bst
@@ -182,9 +228,14 @@ Name 1 in "Hower, Philip L., and Sameer Pendharkar" has a comma at the end for e
 while executing---line 1133 of file acm.bst
 Name 1 in "Huang, Cheng, and Philip KT Mok." has a comma at the end for entry Cheng2013
 while executing---line 1133 of file acm.bst
+Name 1 in "Jia, Hongwei, Jian Lu, Xuexin Wang, Karthik Padmanabhan, and Z. John Shen" has a comma at the end for entry Hongwei2011
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Jia, Hongwei, Jian Lu, Xuexin Wang, Karthik Padmanabhan, and Z. John Shen" for entry Hongwei2011
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Jia, Hongwei, Jian Lu, Xuexin Wang, Karthik Padmanabhan, and Z. John Shen" for entry Hongwei2011
+while executing---line 1133 of file acm.bst
 Name 1 in "Johari, Houri, and Farrokh Ayazi" has a comma at the end for entry Johari2009
 while executing---line 1133 of file acm.bst
-Warning--empty year in Krausse2013
 Name 1 in "Kursun, Volkan, Siva G. Narendra, Vivek K. De, and Eby G. Friedman." has a comma at the end for entry Kurson2003
 while executing---line 1133 of file acm.bst
 Too many commas in name 1 of "Kursun, Volkan, Siva G. Narendra, Vivek K. De, and Eby G. Friedman." for entry Kurson2003
@@ -217,6 +268,12 @@ Too many commas in name 1 of "Lee, Sangkyu, Ungyu Paik, Vincent A. Hackley, Yeon
 while executing---line 1133 of file acm.bst
 Too many commas in name 1 of "Lee, Sangkyu, Ungyu Paik, Vincent A. Hackley, Yeon-Gil Jung, and Kyung-Jin Yoon" for entry Lee2004
 while executing---line 1133 of file acm.bst
+Name 1 in "Meere, Ronan, Terence O'Donnell, Henk Jan Bergveld, Ningning Wang, and Seán Cian O'Mathuna" has a comma at the end for entry Meere2009
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Meere, Ronan, Terence O'Donnell, Henk Jan Bergveld, Ningning Wang, and Seán Cian O'Mathuna" for entry Meere2009
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Meere, Ronan, Terence O'Donnell, Henk Jan Bergveld, Ningning Wang, and Seán Cian O'Mathuna" for entry Meere2009
+while executing---line 1133 of file acm.bst
 Name 1 in "Nam, Hyunseok, Youngkook Ahn, and Jeongjin Roh" has a comma at the end for entry Hyunseok2012
 while executing---line 1133 of file acm.bst
 Name 1 in "Ramadass, Yogesh K., and Anantha P. Chandrakasan" has a comma at the end for entry Ramadass2007
@@ -232,6 +289,16 @@ while executing---line 1133 of file acm.bst
 Too many commas in name 1 of "Seeman, Michael D., Vincent W. Ng, Hanh-Phuc Le, Mervin John, Elad Alon, and Seth R. Sanders." for entry Sanders2010
 while executing---line 1133 of file acm.bst
 Name 1 in "Stanley-Marbell, Phillip, Victoria Caparros Cabezas, and Ronald Luijten." has a comma at the end for entry Marbell2011
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene J. O'Sullivan, Naigang Wang, Philipp Herget, Bucknell C. Webb, Lubomyr T. Romankiw, Michele Petracca et al" for entry Sturcken2013
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene J. O'Sullivan, Naigang Wang, Philipp Herget, Bucknell C. Webb, Lubomyr T. Romankiw, Michele Petracca et al" for entry Sturcken2013
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene J. O'Sullivan, Naigang Wang, Philipp Herget, Bucknell C. Webb, Lubomyr T. Romankiw, Michele Petracca et al" for entry Sturcken2013
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene J. O'Sullivan, Naigang Wang, Philipp Herget, Bucknell C. Webb, Lubomyr T. Romankiw, Michele Petracca et al" for entry Sturcken2013
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Sturcken, Noah, Eugene J. O'Sullivan, Naigang Wang, Philipp Herget, Bucknell C. Webb, Lubomyr T. Romankiw, Michele Petracca et al" for entry Sturcken2013
 while executing---line 1133 of file acm.bst
 Too many commas in name 1 of "Sturcken, Noah, Eugene O'Sullivan, Naigang Wang, Philipp Herget, Bucknell Webb, Lubomyr Romankiw, Michele Petracca... and K Shepard" for entry Sturcken2012
 while executing---line 1133 of file acm.bst
@@ -263,45 +330,47 @@ Too many commas in name 1 of "Ted-DiBenne II, J, Morrow P R, Park M C, Koertzen 
 while executing---line 1133 of file acm.bst
 Name 1 in "Viraj, A. K. P., and G. A. J. Amaratunga." has a comma at the end for entry Viraj2007
 while executing---line 1133 of file acm.bst
-You've used 29 entries,
+Name 1 in "Wens, Mike, Koen Cornelissens, and Michiel Steyaert" has a comma at the end for entry Wens2007
+while executing---line 1133 of file acm.bst
+You've used 36 entries,
             2253 wiz_defined-function locations,
-            711 strings with 10353 characters,
-and the built_in function-call counts, 8209 in all, are:
-= -- 802
-> -- 312
+            757 strings with 12094 characters,
+and the built_in function-call counts, 10561 in all, are:
+= -- 1040
+> -- 392
 < -- 0
-+ -- 142
-- -- 102
-* -- 607
-:= -- 1363
-add.period$ -- 84
-call.type$ -- 29
-change.case$ -- 136
++ -- 178
+- -- 128
+* -- 786
+:= -- 1749
+add.period$ -- 107
+call.type$ -- 36
+change.case$ -- 171
 chr.to.int$ -- 0
-cite$ -- 35
-duplicate$ -- 262
-empty$ -- 712
-format.name$ -- 102
-if$ -- 1720
+cite$ -- 37
+duplicate$ -- 327
+empty$ -- 926
+format.name$ -- 128
+if$ -- 2225
 int.to.chr$ -- 0
-int.to.str$ -- 29
-missing$ -- 30
-newline$ -- 145
-num.names$ -- 56
-pop$ -- 98
+int.to.str$ -- 36
+missing$ -- 37
+newline$ -- 182
+num.names$ -- 72
+pop$ -- 111
 preamble$ -- 1
-purify$ -- 109
+purify$ -- 136
 quote$ -- 0
-skip$ -- 169
+skip$ -- 213
 stack$ -- 0
-substring$ -- 600
-swap$ -- 55
+substring$ -- 833
+swap$ -- 71
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 114
-warning$ -- 6
-while$ -- 78
-width$ -- 31
-write$ -- 280
-(There were 122 error messages)
+type$ -- 142
+warning$ -- 1
+while$ -- 102
+width$ -- 38
+write$ -- 356
+(There were 162 error messages)
