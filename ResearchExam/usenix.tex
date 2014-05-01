@@ -20,7 +20,7 @@
 % usepackage command, below.
 
 \documentclass[letterpaper,twocolumn,10pt]{article}
-\usepackage{usenix,epsfig,endnotes}
+\usepackage{usenix,epsfig,endnotes, upgreek}
 \begin{document}
 
 %don't want date printed
@@ -73,8 +73,8 @@ Intel's literature~\cite{Intel2010} %http://www.psma.com/sites/default/files/upl
 suggests the FVIR is employed primarily to remove external DC DC converters and improve power efficiency. However a comparison of the pinout between Haswell \textbf{Cite} and the non FIVR predecessor \textbf{Ivybridge Cite} suggests that some power pins were saved too. This is unsurprising as Kurson notes in~\cite{Kurson2003} that power pins could be saved by integrated DC DC converters. As we note DC DC converters improve the IO density problem, we review the literature to asses the feasibility of optimizing power pins to IO pins by increasing supply voltage of an integrated DC DC converter greatly beyond typical CPU operating voltage.\\
 \indent The rest of the document is ordered as follows:\\
 \begin{itemize}
-\item{The operation of the DC DC converter and its critical design parameters}
-\item{Challenges associated with integrating DC DC Converters on die}
+\item{Section 2 outlines the operation of the DC DC converter and its critical design parameters}
+\item{Section 3 describes the design and associated challenges of integrating DC DC Converters on die}
 \item{Performance limitations of monolithic CMOS DC DC converters}
 \item{Summary of recent research in integrated DC DC converters}
 \item{Methods of optimizing IC pin out with integrated DC DC converters}
@@ -114,24 +114,82 @@ The second popular converter is the inductor-capacitor stepdown (buck) converter
 \end{figure}
 
 %For Buck description use chapter 4 of Kurson
-The voltage conversion principle is understood by considering the inductor and capacitor as a low pass filter. $\phi_1$ is a clock used to generate a square wave voltage of amplitude $V_{in}$. If this square wave is at a frequency sufficiently higher than the 3db cutoff frequency of the filter, only the DC component of the square wave is observed at $L$. Because of this, buck converters may change their voltage stepdown ratio during operation, by modulating $\phi_1$. For a properly designed converter, $V_L$ is defined by the duty cycle "$D$"~\cite{Kurson2006} of $\phi_1$ where: $V_{out} = V_{in} \times D$. In other words, if the square wave entering $L_f$ is high for $\frac{2}{3}$ of its period, $V_{out} = \frac{2}{3}\times V_{in}$ and $D = \frac{2}{3}$.\\ 
+The voltage conversion principle is understood by considering the inductor and capacitor as a low pass filter. $\phi_1$ is a clock used to generate a square wave voltage of amplitude $V_{in}$. If this square wave is at a frequency sufficiently higher than the 3db cutoff frequency of the filter, only the DC component of the square wave is observed at $L$. Because of this, buck converters may change their voltage stepdown ratio during operation, by modulating $\phi_1$. For a converter when current always flows in $L$ (CCM mode), $V_L$ is defined by the duty cycle "$D$"~\cite{Kurson2006} of $\phi_1$ where: $V_{out} = V_{in} \times D$. In other words, if the square wave entering $L_f$ is high for $\frac{2}{3}$ of its period, $V_{out} = \frac{2}{3}\times V_{in}$ and $D = \frac{2}{3}$.\\ 
 
 \subsection{SC stepdown converter critical parameters}
 %Note the \textbf{introduction of $\phi_{\frac{2}{3}}$} This is introduced so when $Cf_2$ has discharged to the load, $Cf_1$ may be connected to restore the supply voltage seen at node $L$. \textbf{we do this because the parasitic resistance of $Cf_1$ and $Cf_2$ is larger in series, maintaining Vout for longer (also fucks with your load impedance, why do it??!!)}\textbf{WE SEE THAT IT IS CRITICAL TO HAVE HIGH FREQUENCY IN ORDER TO MAINTAIN SUPPLY VOLTAGE}
 The energy that a SC converter can transfer per charge cycle is $E_{Isc} = CV^2$. We could therefore express $W = E_{Isc}\times F_\phi$.\\
 $V$ For a design with a given $V_in$ and ideal components, the designer has two degrees of freedom to power a load, $C$ and $F_\phi$.\\  
 We re-draw Figure~\ref{SCTopology} with non-ideal components in Figure~\ref{NonIdealSCTopology}.\\
+\begin{figure}[here]
+\includegraphics[width=0.4\textwidth]{SCTopologyParasitics}
+\caption{An SC topology with major parasitic components}
+\label{NonIdealSCTopology}
+\end{figure}
+\begin{figure}[here]
+\includegraphics[width=0.4\textwidth]{BottomPlateCap}
+\caption{Bottom Plate parasitic capacitance}
+\label{BottomPlatePar}
+\end{figure}
 
-By observation of Figure~\ref{NonIdealSCTopology} we see that $F_\phi$ and $C$ are critical parameters that must be optimised for minimum losses\\
-Losses associated with switches are switching loss during the non-overlapping period of $\phi$, and conduction loss due to the equivilent series resistance (ESR) of switches.\\
+%The $R_p$ ESR loss of power switches is significant as all power is transfered through switch ESR. The $C_b$ bottom plate capacitance loss is particularly significant with integrated SC because close proximity between the plate and gnd forms large parasitic capacitors from which charge can leak    
+By observation of Figure~\ref{NonIdealSCTopology} and Figure~\ref{BottomPlatePar} we see that $F_\phi$ and $C$ are critical parameters that must be optimised for minimum losses\\
+\textbf{Switching losses }Losses associated with switches are switching loss during the non-overlapping period of $\phi$, and conduction loss due to the equivilent series resistance (ESR) of switches.\\
 Conduction loss reduces the supply voltage seen at the capacitors by a factor $\delta V_a$. Conduction loss is therefore sensitive to the stepdown ratio. Increasing the stepdown ratio increases the number of series switches between all capacitors during the charging phase. For example a ratio of $\frac{1}{3}$ has 2 series switches, one of $\frac{1}{4}$ has 3 series switches and so on.\\
-Losses associated with capacitors are parasitic capacitance losses. A parasitic capacitance known as bottom plate capacitance exists between one plate of each capacitor and ground. The voltage of these parasitic capacitor is a virtual ground and reduces the supply voltage seen at the capacitors by $\delta V_b$. Their charge can leak to true ground but cannot reach a load. As they are smaller than useful capacitance, they are significantly charged and discharged on each cycle of the converter. Loss is therefore expressed as $W = E_{Pc} \times F_\phi$ where $E_{Pc} = 1.5\alpha CV^2$. Literature reports bottom plate capacitance to be up to 5\% of $C_{tot}$~\cite{Ramadass2007}. We also note that $F_\phi$ is adjustable at runtime and $C$ is not and that $I_{out} \propto C$~\cite{Damak2013} as well as $F_\phi$.\\
+\textbf{Capacitor losses }Losses associated with capacitors are parasitic capacitance losses. A parasitic capacitance known as bottom plate capacitance exists between one plate of each capacitor and ground. The voltage of these parasitic capacitor is a virtual ground and reduces the supply voltage seen at the capacitors by $\delta V_b$. Their charge can leak to true ground but cannot reach a load. As they are smaller than useful capacitance, they are significantly charged and discharged on each cycle of the converter. Loss is therefore expressed as $W = E_{Pc} \times F_\phi$ where $E_{Pc} = 1.5\alpha CV^2$. Literature reports bottom plate capacitance to be up to 5\% of $C_{tot}$~\cite{Ramadass2007}. We also note that $F_\phi$ is adjustable at runtime yet $C$ is not and that $I_{out} \propto C$~\cite{Damak2013} as well as $F_\phi$.\\
 %Move load regulation to different sub section SC converters by topology have difficulty 
-In SC converters then, careful design considering voltage specification and technology parameters optimises converters to their load. 
+\textbf{Circuit noise }SC converters are relatively noisy compared with buck converters because they do not have the built in output filter of the buck. Output noise is therefore strongly related to bounce of the power switches and high inrush current to the power capacitors~\cite{Zheng2013}. As such characterisation of the noise depends on switch and capacitor device parameters, with mitigation achieved through careful switch design and timing control to reduce high frequency noise. 
+
+In SC converters then, careful design considering voltage specification and technology parameters optimises converters to their load, with noise being addressed via control circuitry. 
 
 \subsection{Inductor-capacitor converter critical parameters}
 
-How it works, critical parameters
+Owing to the similar basic components employed in the buck converter, critical parameters are first identified by differentiating the circuits at the component level. Next, inductor losses are breifly reviewed. Finally, buck transient behaviour is more complex than SC. A brief overview of power and noise in the circuit is therefore provided as an aid to understanding trade-offs for the critical circuit parameters.
+We re-draw Figure~\ref{BKTopology} with non ideal components in Figure~\ref{NonIdealBuckTopology}.\\
+\begin{figure}[here]
+\includegraphics[width=0.4\textwidth]{BuckTopologyParasitics}
+\caption{An SC topology with major parasitic components}
+\label{NonIdealBuckTopology}
+\end{figure}
+The extra MOSFET is common in the literature and replaces the diode of Figure~\ref{BKTopology}. Introducing this device gives buck and SC converters a common power switch loss mechanism at each phase of operation, but the buck features fewer switches contributing to losses.\\
+
+\textbf{Inductor Losses: }We now consider the inductor parasitics, given all other power train components are common with SC converters.\\
+Losses associated with the inductor are dominated by equivilent series resistance (ESR). Standard CMOS only permits for planar inductors. Increasing inductance is acomplished with a spiral coil to increase flux linkeage. High inductance requires high numbers of coils per unit area, which translates to increased resistance through the coil.\\
+Besides the ESR, the series connection with capacitor $C$ introduces extra impedance $Z_{LC}$ determined by the $F_{Sw}$ of the buck. It is critical to match $L$ to $F_{Sw}$ and $C$ to minimise this impedance, but the ESR may never be removed.\\  
+
+%We consider the circuit in Figure \ref{BKTopology} in an initial state, with the capacitor and inductor discharged. %With ideal components, $V_{Out} = D \times V_{In}$. 
+%In keeping with ideal components, $P_{In} = P_{Out}$ and $P = IV$. Current enters the converter through the switch in Figure \ref{BKTopology} when it is closed. This period $T_{On} = D \times \frac{1}{F_{sw}}$. When the Current meets the inductor we consider the relationship $L =\frac{di}{dt}$.\\ %For a larger $di$ or AC current, $L$ could be increased or $dt$ could be increased.\\
+%For a fixed $dt = T_{On}$, $di$ is bound by $L$. Since DC current is the integral of AC, $I_{in} = \[ \int_0^T_{On} f(i)di\]$. With our DC input voltage, $f(i) \propto aV (a > 0)$. Also power converters operate inductors in the approximately linear region of their charge curve so $I_{in} = \frac{1}{2}T_{On}I_{Peak}$. We can now summarize $P_{In} P_{Out} = \frac{V_{In}I_{Peak}}{2}$. With a smaller $L$, a smaller $d{t}$ bigger inductors are desirable kirchoffs current law 
+%Next the switch is opened  
+\textbf{Circuit noise: }With the voltage step-down principle understood we consider the circuit in Figure \ref{BKTopology} from a current perspective. We cannot directly apply Kirchoffs law due the AC variation of $I$ with $T$. However $P_{In} = P_{Out}$ for conservation of energy. Power can only enter the system when current flows through the closed switch from $V_{In}$. Due to the Diode, its path to the load must be through the inductor. Inductors impede current less as they are charged, therefore for a some $T_{On}$ High $P$ can be transferred into the system if either;\\
+A: $L$ is small relative to $T_{On}$\\
+B: $T_{On}$ is large relative to $L$\\
+We consider that during $T_{Off}$, the inductors charge dissipates through the rest of the circuit as current driving the load and parasitic components. Let $T = T_{On}+T_{Off}$ and $F_{Sw} = \frac{1}{T}$ so now A and B correspond to designing a buck with either;\\
+C: A high $F_{Sw}$ and small $L$\\
+D: A low $F_{Sw}$ and high $L$\\
+Since the voltage step-down principle is understood, it follows that the choice of $L$ determines the choice of $C$ to minimise $Z_{Out}$ at the desired operating curve of $V_{Out}$ for a given $F_{Sw}$.\\
+Another intuitive observation is that lower $P$ requirements result in $L$ and $F_{Sw}$ values that are easier to realise for given technology limitations, since $P \propto L\times F_{Sw}$. More precisely $P = V_{Out}\times \frac{V_{In}(1 - D)}{2L}DT$ for the maximum load condition.\\ %http://en.wikipedia.org/wiki/Buck_converter#Theory_of_operation
+\indent As with any analogue AC circuit, transient operating point complicate the choice of components. A breif overview of solutions provides context for evaluating component loss and trade-off. % Buck converters have dominanted medium to high power converter designs for many years~\cite{Sanders2010} and design "rules of thumb" exist in the literature to guide component choice based on required performance.\\
+A given load has operating corners that must be satisfied. The following parameters are used to design operating point behaviour for a buck: % input to the buck "rules of thumb"\\
+\begin{itemize}
+\item {\textbf{Current ripple, $\Updelta i_{Out}$: }Tollerable current variation through the load}
+\item {\textbf{Voltage ripple, $\Updelta v_{Out}$: }Tollerable supply voltage noise at the load}
+\item {\textbf{Switching frequency $F_{Sw}$: }Nominal switching frequency of the power switches, lower reduces loss but increases $\Updelta v$ and $\Updelta i$}
+\item {\textbf{Operating voltages $V_{In}$,$V_{Out}$: }Nominal input and output voltage of the converter}
+\item {\textbf{Maximum drive power $P$: }Converter Power at the highest DC load. $P = V_{Out}\times I_{Max}$} 
+\end{itemize}   
+
+$\Updelta i$,$\Updelta v$,$V_{Out}$ and $P$ are constraints specified by the load.\\
+$V_{In}$,$F_{Sw}$ along with the passive components $C$ and $L$ must be chosen to satisfy the load constraints as well as technology constraints.
+
+\textbf{Current ripple: }Digital circuits require low supply ripple for deterministic operation. Supply current ripple is defined as\\
+$\Updelta i_{Out} = \frac{(V_{In} - V_{Out})D}{2LF_{Sw}}$ ~\cite{Kurson2006}\\
+The current flow principle of the buck is understood, so it is unsurprising that this formulae does not involve $C$
+\textbf{Voltage ripple: }Digital circuits require low voltage ripple for reliable operation. Typically $\frac{V_{In}}{10}$ is specified. Supply voltage ripple is defined as\\
+$\Updelta v_{Out} = \frac{(V_{In} - V_{Out})D}{16LCF_{Sw}^2}$ ~\cite{Kurson2006}\\
+The voltage filtering behaviour of the buck is understood, so it is unsurprising that this formula involve $F_{Sw}$, $L$ and $C$\\
+
+\indent In summary the loss mechanisms in the buck converters offer more degrees of freedom for optimisation than SC designs because of the additional component type of the inductor. The ripple formulae are useful in limiting aggresiveness applied to any particular parameter and can be used to balance the losses of power train components.
 
 \subsection{Converter load regulation concept}
 Load regulation is matching output impedance "$Z_O$" of a power converter to a current load. Because $I= \frac{V}{Z_O}$ and maintaining $V$ for a processor is critical, converter output impedance must track quickly with the load condition to keep $V$ constant. The responsibility of tracking load and adjusting $Z_O$ belongs to control circuits. Block Diagrams are shown in figure~\ref{ControlCKBlockDiags}\\
@@ -223,10 +281,10 @@ Because converters normally operate at a high frequency, Loss in the capacitor i
 %.~\cite{Pique2012} evaluate the state of the art and plot an frontier of capacitor area to converter efficiency for Integrated converters. In general they find as capacitor area exponentially increases power density follows with only a linear cost in peak efficiency. However, efficiency exponentially decreases with power density in the non-ideal case. \\
 %What is wrong with the inductors?\\
 
-\subsection{Summary of recent literature}
+\section{Summary of recent literature}
 An evaluation of recent literature finds a volume of work addressing the previously outlined issues of integrated converters.\\
 We review the literature beginning with work on the common building blocks of passive components and power transistors, then move on to review system level advances.\\ 
-\textbf{CMOS Switches: }Alimadadi et al.\cite{Alimadadi2008} propose an energy recycling mechanism to use the charge at the power switch gates as useful energy by pumping it to the load. The power PMOS and power NMOS gates are driven by stacked supply buffers to toggle the power switches. vss of the power PMOS gate buffer is vdd of the power NMOS gate buffer via an electrical connection at node $x$. by connecting node $x$ to the load via a forward-biased diode, energy used to charge power MOS gate capacitance can also charge the load node, rather than sink to ground. The drawback of this technique is that the $\frac{1}{2}$ VSS swing of the power MOS gate nodes limits the amount of stepdown possible. It would therefore not translate to a high voltage stepdown.\\
+\subsection{CMOS Switches: }Alimadadi et al.\cite{Alimadadi2008} propose an energy recycling mechanism to use the charge at the power switch gates as useful energy by pumping it to the load. The power PMOS and power NMOS gates are driven by stacked supply buffers to toggle the power switches. vss of the power PMOS gate buffer is vdd of the power NMOS gate buffer via an electrical connection at node $x$. by connecting node $x$ to the load via a forward-biased diode, energy used to charge power MOS gate capacitance can also charge the load node, rather than sink to ground. The drawback of this technique is that the $\frac{1}{2}$ VSS swing of the power MOS gate nodes limits the amount of stepdown possible. It would therefore not translate to a high voltage stepdown.\\
 \indent Bathily et al.\cite{Bathily2012} also focus on energy loss in switch toggling. They propose an LC tank that resonates at $F_s$ such that the power MOSFET switch gate voltages oscillate at this resonant frequency. If the power switch gate voltage is low the switching energy is stored in the tank. If the power switch gate voltage is high, switching energy is stored at the switch nodes. The authors find improvements in switch efficiency ranging from around $12 - 25\%$ accross the complete operating range. However the requirement is 16nH of inductance occupying 40\% extra silicon area in a standard CMOS process. The technique is applicable in high voltage converters, but the 40\% reduction of energy density makes it unattractive in medium to high power applications.
 \indent Hyunseok et all.\cite{Hyunseok2012} address the higher than operating voltage step-down issue with circuit design and CMOS layout techniques. The circuit design handles higher than operating voltage by stacking power MOSFET devices in series such that each device does not drop more than the CMOS operating voltage. The sum of series voltage exceeds the operating voltage however. This technique is made novel with the circuit design of the power MOSFET switching inputs, which are toggled by operating voltage, despite the switch stacking. Although an arbitrary voltage stepdown could be achieved with power MOSFET stacking, this technique has diminishing returns for two reasons. Firstly, the conduction loss of the stacked power switches is summed, reducing efficiency. Secondly the switch toggling energy of the stacked power switches is summed since it is capacitive. This reduces the maximum $F_s$ and therefore increases the required $C$ or $L$ for a fixed power envelope. As such this technique is less attractive as input voltage increases.\\
 \indent In the same high voltage vein, Bandyopadhyay et al\cite{Bandyopadhyay2011} propose a buck converter with stacked power MOSFET switches. However, they use a single drain extended NMOS (DEnMOS) for high voltage and stacked PMOS devices. DEnMOS increases the reverse breakdown voltage of a MOSFET so that it will not short circuit at voltage above the technology operating vdd. An advantage of DEMOS is that no special process steps are needed. The main disadvantage of DEMOS in high voltage converters is high on-resistance and sensitivity to process variation. The limit of voltage step-down and current flow is around 30V at 2A \cite{Hower2005} at which point non-standard CMOS process is required for reliable operation.\\
@@ -239,9 +297,8 @@ For voltages above 20V at current above 1A, LDMOS switches outperform DEMOS. How
 \label{GaNCharacter}
 \end{figure}
 \indent To conclude discussion on power switches, the literature proposed novel circuit designs to improve switching efficiency. The limitations of these designs focus attention on the switch devices. The literature indicates as voltage and power density demands of a design increase, non-standard CMOS process and CMOS alternatives become increasingly attractive.\\
-\textbf{Capacitors: }After Viraj et al.\cite{Viraj2007}, much research effort was expended regarding converter capacitor energy density and impedance modulation. Kwong et al.\cite{Kwong2009} address both issues uniquely. The load is a sub-threshold processor, which allows low-energy density capacitors to provide adequate drive. Converter impedence is reduced with technology options and circuit topology. Metal insulator metal (MIM) capacitors are used as power passives. MIM capacitors have the desirable qualities of being compatible with bulk CMOS and having a high $Q_c$. Their disadvantage is low energy density. Viraj et al.\cite{Viraj2007} observed an exponential deterioration of efficiency with mismatched load impedance. This work implements a re-configurable step-down voltage circuit, where output capacitors can be stacked for 4 step-down voltages or 4 converter impedances.\\
+\subsection{Capacitors: }After Viraj et al.\cite{Viraj2007}, much research effort was expended regarding converter capacitor energy density and impedance modulation. Kwong et al.\cite{Kwong2009} address both issues uniquely. The load is a sub-threshold processor, which allows low-energy density capacitors to provide adequate drive. Converter impedence is reduced with technology options and circuit topology. Metal insulator metal (MIM) capacitors are used as power passives. MIM capacitors have the desirable qualities of being compatible with bulk CMOS and having a high $Q_c$. Their disadvantage is low energy density. Viraj et al.\cite{Viraj2007} observed an exponential deterioration of efficiency with mismatched load impedance. This work implements a re-configurable step-down voltage circuit, where output capacitors can be stacked for 4 step-down voltages or 4 converter impedances.\\
 Kwong et al. stands alone in the literature because it uses a sub-vt processor load to mitigate low energy density where most literature attempts to improve it.\\
-\indent Le et al. \cite{Phuck2010} propose a novel converter circuit topology with more granular impedance modulation control. By splitting $C$ into 4 parallel SC converter modules, $Z_O$ is adjusted by modulating the phase difference between the $F_s$ of these modules. The converter also features the re-configurable step-down voltage circuit for coarse grain voltage control. Peak efficiency is far higher than \cite{Viraj2007} at 82\%, and the efficiency curve has linear regions as opposed to the purely exponential worsening of \cite{Viraj2007}.\\
 \indent Regarding energy density, non-standard CMOS capacitors dominate contemporary integrated converter literature.\\
 Since energy density is improved by reducing loss, early work explored the limit of CMOS with circuit techniques. Besides their other innovations, Kwong et al.\cite{Kwong2009} feature a charge recycling circuit. The operating principle is similar to \cite{Alimadadi2008}, but the energy source is parasitic capacitance and bondwire inductance. The technique was not implemented in later designs by the authors or others.
 \indent Later work focuses on technology options for improving energy density. In CMOS compatible technologies, MIM~\cite{Kwong2009} and Thin-gateMOS/fringe metal~\cite{Pique2012} capacitors are succeded by the exotic Deep trench~\cite{Pique} and Ferroelectric~\cite{Damak2013} capacitors.\\
@@ -262,7 +319,7 @@ To close on the topic of high $\epsilon_r$, Deep trench and Ferroelectric capaci
 Further research is needed to understand their limits in power converters.\\
 Another class of converters has gained prominence due to the difficulties of energy density in capacitors. Semi-integrated converters \textbf{Cite a bunch} use off-die capacitors as a charge source. Provided such capacitors can be connected to the rest of a converter with a very low inductive path, these designs offer higher drive capability at the cost of an extra component.\\
 \indent In summary of capacitors, early circuit level approaches to energy density have been superceded by non-standard CMOS. Architectural level approaches in SC designs have been successful in improving impedance modulation.\\
-\textbf{Inductors: }Since total inductance is improved by increasing mutual inductance within a conductor structure, researchers have made several attempts to improve $Q_l$ with custom inductor layout. Angular spiral inductors were shown to have inadequate $Q_l$ for efficient fully integrated power converters\cite{Alimadadi2008},\cite{Artillan2011}, motivating exploration of alternate structures and materials. Meere et al. \cite{Meere2009} characterized fully integrated racetrack style inductors for buck power converters. They find the $Cu$ resistivity to dominate loss and to increase exponentially with $F_s$. They conclude 7mA as the supply limit of a converter with such inductors.\\
+\subsection{Inductors: }Since total inductance is improved by increasing mutual inductance within a conductor structure, researchers have made several attempts to improve $Q_l$ with custom inductor layout. Angular spiral inductors were shown to have inadequate $Q_l$ for efficient fully integrated power converters\cite{Alimadadi2008},\cite{Artillan2011}, motivating exploration of alternate structures and materials. Meere et al. \cite{Meere2009} characterized fully integrated racetrack style inductors for buck power converters. They find the $Cu$ resistivity to dominate loss and to increase exponentially with $F_s$. They conclude 7mA as the supply limit of a converter with such inductors.\\
 As with capacitors, the $Q_l$ problem was also explored using semi-integrated converters. Researchers realised the parasitic inductance of bond wires could be re-purposed to become active power delivering inductance~\cite{Wens2007},~\cite{Ahn2012}. This work received much attention owing to the high $L$ of bondwire relative to integrated $Cu$ spiral and racetrack inductors. In addition, since package inductance is a large contributer to power loss, end to end efficiencies have been realised up to 84.7\%~\cite{Cheng2013}. Owing to the relatively low resistivity of bondwire, energy density is also greatly improved with an $I_{Out}$ of 1.2A reported~\cite{Cheng2013}.\\
 \indent Researchers have also combined innovations. $L$ is enhanced when the core of an inductor is a high permiability material. $L \approx \frac{N^2\mu A_L}{l_L}$ where $\mu$ is the permeability of the core. To this end Hongwei et al.~\cite{Hongwei2011} propose applying a ferrite epoxy to bondwire inductors with Wang et all. proposing ceramic tape for 2.5D semi-integrated passives. Although neither author was able to match the energy density of Chengs work, a more fundamental issue omits bondwire inductor converters as a candidate technology for pin optimisation.
     
@@ -277,10 +334,32 @@ Topology b, with no switching converter in Figure \ref{BondWireLim} is able to d
 \indent Inductor research is summarised as being a focussed effort to improve $Q_l$ The state of the art is represented by thin film inductors, which enable much higher energy density converters than capacitors alone.\\
 
 
-\indent Component literature as a whole is distilled as follows; power switches offer many options for design trade-off. Passive components were limited in energy density with standard CMOS. Recent advances in device physics have succeeded in miniturising energy dense inductors and capacitors, but these require additional doping material and process steps to create on bulk Si.\\
-%SKIP CONTROL PAPERS, THEY DONT REALLY ADD MUCH
+\indent Component literature as a whole is distilled as follows; power switches offer many options for design trade-off. The upper limits of voltage and energy density are reached with CMOS alternative transistors. Passive components were limited in energy density with standard CMOS. Recent advances in device physics have succeeded in miniturising energy dense inductors and capacitors, but these require additional doping material and process steps to create on bulk Si. As with power switches, the upper limit of energy density is not demonstrated in bulk CMOS\\
+%DONT SKIP CONTROL PAPERS, NEED TO TALK ABOUT DCM MODE FOR LIGHT LOAD (NOT DEFINED EARILER) THEY DONT REALLY ADD MUCH 
+
+\subsection{SC Architecture}
+Integrated SC architecture research focusses on addressing the poor load regulation and line noise of the basic circuit topology described earlier.\\
+\textbf{Improving load regulation: }Basic SC converters have no load regulation. Load regulation is desirable as it improves the exponential decay in efficiency outside of the basic topology operating point(s). This is because increasing $Z_O$ for light loads means less power is burned in the converter, since for a fixed operating voltage, the end to end DC impedance is higher and therefore end to end DC current is lower.\\
+\indent As seen in  Viraj et al.~\cite{Viraj2007} Integrating SC converters to digital processors allows for complex capacitor and switch topologies, since bulk capacitance can be sub-divided.\\
+Le et al. \cite{Phuck2010} propose a novel converter circuit topology with more granular impedance modulation control than that of Viraj. By splitting $C$ into 4 parallel SC converter modules, $Z_O$ is adjusted by modulating the phase difference between the $F_s$ of these modules. The converter also features the re-configurable step-down voltage circuit for coarse grain voltage control. Peak efficiency is far higher than \cite{Viraj2007} at 82\%, and the efficiency curve has linear regions as opposed to the purely exponential worsening of \cite{Viraj2007}.\\
+Although other work (~\cite{Ramadass2010} etc.) implement capacitance modulation, Le et al. is notable for additionally implementing conductance modulation.\\
+Conductance modulation of the power switches allows finer control of converter impedance, since the MOSFETs are analogue devices. However since the operating principle is equivilant to an LDO, it is unattractive in terms of efficiency. 
+\textbf{Improving line noise: }Basic SC converters have high voltage ripple because of exponential discharge of the power capacitors to the load. Improving the voltage line stability is important as processors have low line noise tolerances.\\ 
+Line noise is addressed in the literature by sub-dividing the load driving capacitance as was seen in load regulation improvement techniques. However the capacitance visible at the load is not modulated. Instead, the converter modules operate out of phase, superposing their exponential voltage discharges to smooth $V_{Out}$. Success of this technique motivated aggressive exploration of capacitance phase slicing in the literature. Pique~\cite{Pique2012} reports a load driving capacitance sliced into 41 phase shifted parallel converters and find line noise to improve around 16$\times$ compared with 10 phase prior art.\\ 
 
 
+\subsection{Inductor buck architecture}
+The basic buck topology offers far better impedance modulation relative to SC designs with the well established technique of pulse width modulation (PWM). Earlier discussion focussed on Continuous current mode (CCM), where conductance is increased varying the $D$ ducty cycle. Increased conductance improves buck efficiency for heavy loads since the converters impedance can be made lower than the load, with less wasted power burnt in the converter.\\
+However for light loads efficiency is improved with increased Impedance. Impedance is increased by shortening the inductor charge pulse. In DCM PWM, inductor current is "discontinuous" because the charge pulse is so short the inductor fully discharges into the filter capacitor $F_c$ and load. In DCM mode, DC $V_{Out}$ is no longer simplified to $D \times V_{in}$ because $C$ supplies both current and voltage after the inductor is discharged. Resolving $V_{Out}$ is therefore non trivial for buck control circuitry.\\
+\indent Integrated buck converters can feature complex digital control loops and the literature explores this space. The two challanges are precisely controlling the operating point in DCM and switching between DCM and CCM at optimum intervals for a load in flux.\\
+Wens et al. ~\cite{Wens2011} report a novel SCOOT control system for alternating between CCM and DCM. SCOOT differs from the bulk of literature on this topic by splitting the passive components into a grid of sub modules, a technique applied in integraged SC architectures. However unlike capacitance, inductance reduces for electrically parallel modules, such that the 4 constituent converters quiesce in DCM mode. The superposition principle allows Wens to simulate CCM in this quiescent mode by adding a phase shift of $\frac{\pi}{2}$ for each module relative to its two adjacent neighbours. DCM can be forced by reducing the duty cycle $D$. The benefit of this approach is reduced ripple voltage at $V_{Out}$ compared with monolithic passives. SCOOT varies module phase along with $D$ in attempts to optimize the operating point to load, however the latency of the passives and control circuitry appears to oscillate efficiency around the load operating point.\\
+The imprecise operating point of DCM is also addressed with control techniques on monolithic passive designs.\\
+DCM control operates on a hysteresis principle since $D$ does not govern $V_{Out}$. Non-integrated buck converters can adjust $T_{On}$ of the power train switch(es) after sensing $V_{Out}$ in a timely fashion since these converters feature large passive devices. Switching speeds typically occur in the KHz regimen. The small passive size of integrated converters requires switching speeds of hundreds of MHz \textbf{Cite a bunch}. With control circuit blocks operating in the nS range, simple hysteresis control of integrated bucks has received attention in the literature.\\
+Feng et al.~\cite{Feng2008} propose a delay compensation hysteresis controller for integrated DC DC converters, however their approach requires overcharging the load for faster operation of the control comparator circuitry. This is unattractive from an efficiency perspective, since the goal is to increase converter impedance in DCM. Cheng et al. ~\cite{Cheng2013}address this by using a short discharge pulse of the load. They calibrate the control loop timing for different light load conditions using difference in the sensed $V_{Out}$ before and after discharge to determine an optimum $T_{On}$ to restore $V_{Out}$. As Cheng's method increases output impedance, it is more attractive in DCM mode than Feng's. The 84.7\% efficiency is the highest reported for a chip integrated converter, however the architecture cannot be applied to moderate and heavy loading conditions.\\  
+\indent Researchers have applied circuit design to improving performance characteristics besides efficiencies. An additional flying capacitor added to the basic circuit can reduce the total capacitance by 50\% according to Cheng~\cite{ChengII2013}.Flying capacitor buck converters vary in topology depending if the target passive for reduction is capacitive ~\cite{ChengII2013} or inductive ~\cite{Kim2011}, but all create a more complicated filter and energy storage network. The Additional complex poles in the circuit frequency domain enable researchers to operate at a target load range with smaller passives.\\
+\indent To summarize converter architecture research, integrated buck and SC topologies improve performance with common techniques such as passive slicing and control phase shift techniques applied to modular converter designs. Both types of converter are able to improve control of impedance, $Z_O$ however the SC design is still fundamentally limited to higher impedance than the buck.\\
+In addition, circuit techniques in the literature are shown to reduce the passive sizes beyond those required for a basic topology.\\  
+ 
 %\textbf{System: well defined, class of problems: well defined, now we will see "fixed" systems}\\
 %\begin{itemize}
 %\item{Switches fixes paper list and description DONT USE EXOTIC TECH! THESE WERE NEVER USED ON INTEGRATED DESIGNS!!!}
@@ -291,35 +370,100 @@ Topology b, with no switching converter in Figure \ref{BondWireLim} is able to d
 %\item{SC Ripple Fixes} % Fully Integrated Capacitive DC-DC Converter wit all digital Ripple Mitigation technique
 %\end{itemize}
 
-\section{Saving pins with DC DC converters}
+\section{The IO limit with integrated DC DC converters}
 
-\textbf{Solutions \& Stakeholders, why is there still work to be done?}\\
-Need to define the problem of Signal to power pin ratio. We cannot optimize this today with DC DC converters, because the \@ CMOS voltage stepdown means we need to have a lot of CORE power pins.\\
-Our "stakeholder" is high voltage stepdown. If we do it we could reduce \textbf{DEFINE}"CORE POWER PINS" to an amount desirable for \textbf{DEFINE} signal integrity\\
-Now we can outline the high voltage work that was summarized in the google doc I did
-
-\subsection{The IO limit with integrated DC DC converters}
-
-\textbf{Defines stakeholder specific problem}\\
-Think about this, it has to be differentiated from the section above
-
-\subsection{Solutions}
-
-Here we have to talk about:\\
-3 the micro transformer solution to this problem (it could be made promising) \\
-2 the MIT solution to this problem (it does not look promising)\\
-1 the disruptive technology of Si on Insulator, and how it could be paired with interposers\\
-In the mobile segment Silicon interposers can be used to solve the IO problem as seen in [Ultra-high I/O Density Glass/Silicon Interposer for high Band-witdh Smart Mobile Application].\\
-This interposer allows signal integrity to be maintained at low voltage from the interposer to memory. a High voltage from the substrate and DC DC converter integrated to the interposer allows power density to be met with fewer pins on the package. In this scenario, the package can be made smaller to allow denser integration, or the io bandwidth  can be bound to signal integrity requirements...\\
+For a given SOC design if power were supplied with independently from the PCB substrate, the IO bandwidth limit of a package is defined by signal integrity limits. The theoretical limit proposed by Shannon~\cite{Shannon1948} defines an SNR that must be met for information transfer. For some given noise, chips toggle their pins with an SNR headroom beyond Shannon's limit for practical IO. As frequencies increase it becomes more difficult to maintain this headroom. The reason is characterised by 
+\begin{itemize}
+\item Reducing signal drive relative to noise
+\item Increasing signal attenuation relative to noise
+%\item Signal noise
+\end{itemize}
 
 
-\textbf{SHOULD HAVE SOME SIMULATION TO CHECK INSIGHT ON 1, 2 and 3}\\
+For signal attenuation consider the transmission line diagram, Figure\ref{TXLine}\\
+\begin{figure}[here]
+\includegraphics[width=0.4\textwidth]{TransmissionLine}
+\caption{Transmission line model with parasitic $Z$}
+\label{TXLine}
+\end{figure}
+We see that the parasitics create a low pass filter on the transmission line. A high transmission frequency offers high bandwidth but also suffers higher attenuation. Because noise has constant power for all frequencies the result is lower SNR. Since the parasitics increase with line length, transmission lines may be shortened to reduce filtering and improve SNR. The parasitics are also affected by transmission line quality so filtering is also reduced with routing techniques and improved materials.
+
+For reducing signal drive consider the IO buffer diagrams, Figure\ref{IOBuf}\\ %http://www.ti.com/lit/ds/slls003e/slls003e.pdf
+%Pre-charge http://www.eecs.berkeley.edu/~yidaduan/EE241_report.pdf
+The supply voltage of buffers must be maintained for the maximum swing and hence SNR of IO. Driving. Consider the difference in topology for integrated and external DC DC Converters\\
+\textbf{DIAGRAMSHOWINGLARGEPARASITCINDUCTANCE FOR EXTERNAL MAYBE SHOW ON CHIP DECAP FOR BUFFER TOO!}
+The high switching speed and bursty nature of high speed IO, such as processor to processor interfaces creates a performance corner requirement for DC DC converters. For reliable chip operation, the converter must be able to respond to transient I$\times$R drop at the IO buffers $V_{CC}$. Because of the long power transmission lines from off chip converters an IO buffer, large parasitic inductance Increases the converters response time to transient I$\times$R drop. This attenuates IO signals and reduces SNR.\\
+
+A review of Intel processors from the past three decades evidences the two SNR characteristics in IO. Increasing SNR at high frequency \textbf{NEED TO MASSAGE THESE NUMBERS!} 
+
+Integrated DC DC converter can improve SNR to and the IO limit\\
+\indent IO drive strength is compromised because of localized transient voltage droops at IO driver transistor supply terminals. This reduces the SNR since the IO buffers have a weaker drive capability. Not only can integrated converters respond faster to voltage droop than external converters, they can do so on localised regions of a power grid. Designs such as \textbf{Cite} split the power components into modules distributed geographically in a chip, with similarly distributed $V_{Out}$ terminals.\\ 
+\indent \textbf{Signal attenuation: }
+An integrated DC DC converter addresses the problem of transient IO loading. The inductance path from power supply to IO buffer $V_{CC}$ is reduced. This makes reliable chip operation easier to achieve, since the on chip converter can respond to transient I$\times$R drop faster. The granularity of transient I$\times$R drop is also improved since the on chip converter can be split into multiple power supply modules driving regions of the power distribution network. The literature exemplifies several such topologies \textbf{CITE}. 
+
+
+ 
+The literature demonstrates integrated power converters capable of replacing external VRMs with a low volume considering input voltage above those common to Li-Ion batteries. 
+\indent Although the set of component capabilities and converter characteristics identified earlier show promise for application to this problem, the high voltage integrated converters identified do not make aggressive use of them. Therefore the performance of integrated converters in high voltage is an open research question  
+%\textbf{Defines stakeholder specific problem}\\
+%Think about this, it has to be differentiated from the section above
+
+\subsection{Saving pins with DC DC converters}
+
+Practical high power, high voltage integrated converters are the enabler for pin optimisation as they define the lower bound of pins required for a given power envelope.\\
+Previously reviewed literature finds active and passive components capable of driving a spectrum of processor power loads. reviewed literature has also reported integrated converters capable replacing external VRMs. However up to this point the report has focussed on systems operating at input voltages of $4.5V$ and lower. With high voltage switches reviewed, state of the art in high voltage integrated converters are reviewed in this section.\\
+\indent As high power density passives are nacent, there is a dearth of literature on high voltage integrated converters owing to their impracticality as LDO replacements. Two representitive designs are reviewed below that attempt to circumvent the limitations of commonly available low power integrated passives.\\
+\textbf{High voltage SC-buck: }Pilawa et al.~\cite{pilawa2012} Implement a twin stage stepdown converter that is a hybrid SC and buck design. high voltage input is stepped down by an SC phase as pre-regulation. The output of the pre-regulator is input to a secondary buck phase, which cleans the noisy SC voltage with its filter and provides an analogue range of low voltages.\\
+Pilawa et al. implement a semi-integrated design. They achieve relatively high power density of 0.8W with off die passive components. High input voltage is handled with LDMOS (triple well) switches, which increases the operating voltage at the cost of switching speed. Since the buck stage operates within nominal bulk supply voltage, its power switches operate much faster. This improves the realisable $Z_O$ regulation speed.\\
+The LDMOS switches are a technology option of the CMOS process chosen in the work. They limit the design input voltage to 5V and are a significant source of loss.\\
+With more closely integrated passives and improved switches, the ideas of this work could mature into a practical candidate for high voltage integrated power converters.\\
+\textbf{High voltage substrate transformer-buck: }High voltage DC DC converters (5v+) miniture power converters exist as substrate integrated devices. With semi-integrated converters emerging as viable replacements for off chip VRM's, we consider the limit of semi-integration. Much of the reviewed literature integrates passive components to die substrate \textbf{Cite a bunch, inc pilawa}. Gong et al.~\cite{Gong2008} is an example of substrate integration for high voltage, high energy density power converters. The design embeds a miniture transformer coil and inductor coil in a 6 layer PCB substrate. The control IC, power switches and capacitor are mounted on this substrate. This design operates in the high voltage high power, high efficiency corner. Metrics are respectively 48V, 300W and 96\% peak.\\
+This level of substrate integration and power output has several drawbacks. The primary issue for pin count optimisation is substrate area consumed by planar power components blocks vias and constrains pin routing.\\
+Designs such as that of Gong offer a potential means for high voltage efficient converters but have a high component cost and area penalty in the substrate. This limits their appeal despite their demonstrated utility.\\       
+\indent To conclude on the state of the art, a lack of exploration in high voltage integrated converters was identified. Practical semi-integrated approaches were found but have limited power capabilities or limited appeal for pin optimisation. 
+%\textbf{Solutions \& Stakeholders, why is there still work to be done?}\\
+%Need to define the problem of Signal to power pin ratio. We cannot optimize this today with DC DC converters, because the \@ CMOS voltage stepdown means we need to have a lot of CORE power pins.\\
+%Our "stakeholder" is high voltage stepdown. If we do it we could reduce \textbf{DEFINE}"CORE POWER PINS" to an amount desirable for \textbf{DEFINE} signal integrity\\
+%Now we can outline the high voltage work that was summarized in the google doc I did
+
+\subsection{Directions for future work}
+
+We define a research goal of high voltage, efficient and energy dense integrated power converters.\\
+Several enabling works were identified in the literature to explore this space. Therefore the goal is refined as investigating the lower bound power to IO pin ratio of realisable converters.\\
+Several reviewed converter implementations can be eliminated given the refined goal:
+\begin{itemize}
+\item{\textbf{Standard CMOS SC/Buck converters: }Standard CMOS converters do not operate efficiently enough to reduce the power to IO pin ratio}
+\item{\textbf{Mini-transformer: }Planar substrate transformer and inductors block both IO and power pins }
+\item{\textbf{Bondwire inductors: }Consuming substrate pin pads for power inductors can never reduce the power to IO pin ratio}
+\end{itemize}   
+%Here we have to talk about:\\
+%3 the micro transformer solution to this problem (it could be made promising) \\
+Some augmentation to the reviewed literature is now postulated.\\
+\textbf{LDMOS High voltage SC-Buck}
+Pilawa's work ~\cite{Pilawa2012} Is a potential application for relatively slow switching high voltage LDMOS.\\
+LDMOS transistors cannot operate fast enough to provide the tightly controlled converter required for high bandwidth IO, neither is an SC converter suited to an efficient transient load regulation. However the pre-regulated capacitors are excellent charge wells for decoupling. This allows a faster switching buck regulator to provide a clean voltage with fast transient response, since there is negligable inductance between the charge well and filter. This is the main advantage of such a design.\\
+Realizing the pontential benefits require several research questions be addressed.\\
+\textbf{Power Density: }Pilawa's semi-integrated solution to the power density issue of integrated capacitors may be questioned and alternate avenues explored. Although power density of Pilawa's work is relatively high it is below that of Cheng ~\cite{Cheng2013}, Strucken ~\cite{Sturcken2012},~\cite{Sturcken2013} and other semi-integrated converters. As such Pilawa's power density is unattractive. The semi-integrated approach of passives may also be further explored as Pliawa's design mounts the power capacitors to the die substrate, introducing a far larger parasitic impendence than Sturcken and Intel's $Si$ interposer mounted inductors. The trade-off in energy density and charge cycle periods of deep trench~\cite{Pique} and ferroelectric capacitors~\cite{Damak2013} employed by could be weighed against those of substrate and interposer mounted power capacitors.\\   
+\textbf{Efficiency: }The design has a double power train and therefore double parasitic losses. The design is also complex for component value optimization since the SC and buck create a complex filter.\\  
+\textbf{Interposer buck: }Silicon interposer bucks represent the state of the art in performance ~\cite{Intel2010},~\cite{Sturcken2013}. In additon the interposer enables IO optimisation to be explored via the directions of 3D and 2.5D integration.\\ 
+\textbf{The limit of IO density: }A tangental exploration of processor IO density leveraging interposers is presented by Gokul et al. ~\cite{Gokul2011}. Interposers are used to reduce memory IO pins on the die substrate by sandwiching a Si interposer between memory and digital logic. The interposer mounted inductors used by Strucken and Intel could be integrated into such an interposer, with the buck converter used to optimise the IO and memory bandwidth to digital logic.\\
+\textbf{Power Density: }In the 2.5D space, the energy dense non standard passives and high voltage power switches reviewed earlier could be used to explore an optimum pin ratio whilst retaining a standard CMOS digital die. The performance of GaN switches and Ferroelectric deep-trench capacitors alongside thin film inductors is as yet unknown.\\        
+%1 the disruptive technology of Si on Insulator, and how it could be paired with interposers\\
+%In the mobile segment Silicon interposers can be used to solve the IO problem as seen in [Ultra-high I/O Density Glass/Silicon Interposer for high Band-witdh Smart Mobile Application].\\
+%This interposer allows signal integrity to be maintained at low voltage from the interposer to memory. a High voltage from the substrate and DC DC converter integrated to the interposer allows power density to be met with fewer pins on the package. In this scenario, the package can be made smaller to allow denser integration, or the io bandwidth  can be bound to signal integrity requirements...\\
 
 \subsection{Conclusions}
 
-In the literature converters focus on single metrics like efficiency, parasitic loss etc.
-Basically conclude that given the solutions simulation we could reach a situation where IO pressure is lifted from core power perspective, but that isn't so great tbh. 
-\textbf{Remeber Q = CV A high voltage power grid will require higher board capacitors and you need to be sure that inductance is sufficiently low on pcb as not to impede this current path}  
+Integrated DC DC converters show promise as a means to optimise IO pins in CPU and SOC chips. Integrated converters may improve power efficiency and power integrity for digital circuits and IO buffers as well as reducing the required number of core logic supply pins. The state of the art demonstrates some of this utility, but research is required to explore the full potential of integrated converters.\\  
+The limits of converter circuits and their components along with related research were reviewed.\\
+Novel solutions and techniques show potential in addressing the efficiency and energy density issues of integrated circuits. However the question of optimally integrating the reviewed work remains open owing to the dearth of collaboration between specialists in each problem area.\\
+\indent With a goal of IO pin optimisation, conjecture is offered on advancing understanding of the area based on the SNR problems of high speed IO and the reviewed work. The low latency $I \times R$ droop response and high quality output regulation required may be possible by furthering the twin stage converter work of Pilawa~\cite{Pilawa2012} as this architecture features a coarse grain low latency charge well in the SC phase in support of a low drive strength high quality output line in the buck phase.\\
+Other reviewed literature offers insight required to address this works caveats and augment it for differing power and bandwidth requirements.\\
+\indent Pilawa's work is only one of several possible directions for integrated converter research targeting the IO problem. At it's heart, miniturizing DC DC converters is governed by advances in device physics and a discovery in this field could rapidly change the focus of architecture researchers in the future.      
+%In the feild of integrated DC DC converters The reviewed literature has 
+%In the literature converters focus on single metrics like efficiency, parasitic loss etc.
+%Basically conclude that given the solutions simulation we could reach a situation where IO pressure is lifted from core power perspective, but that isn't so great tbh. 
+%\textbf{Remeber Q = CV A high voltage power grid will require higher board capacitors and you need to be sure that inductance is sufficiently low on pcb as not to impede this current path}  
 
 
 {\footnotesize \bibliographystyle{acm}
