@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.10)  1 MAY 2014 00:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.10)  6 MAY 2014 04:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -224,7 +224,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
 
 Underfull \hbox (badness 2409) in paragraph at lines 66--75
 \OT1/ptm/m/n/10 Against a back-drop of de-clin-ing PC and grow-ing
@@ -246,8 +246,13 @@ Underfull \hbox (badness 1168) in paragraph at lines 66--75
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 66--75
-\OT1/ptm/m/n/10 ob-ser-va-tion in [[]] is that re-duc-ing CMOS volt-age
+Underfull \hbox (badness 1337) in paragraph at lines 66--75
+\OT1/ptm/m/n/10 ob-ser-va-tion is that re-duc-ing CMOS volt-age has an
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 66--75
+\OT1/ptm/m/n/10 of op-ti-miz-ing power pins to IO pins by in-creas-ing
  []
 
 
@@ -269,400 +274,474 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
 
-Underfull \hbox (badness 6125) in paragraph at lines 92--92
+Underfull \hbox (badness 6125) in paragraph at lines 94--94
 []\OT1/ptm/b/n/12 Switched Ca-pac-i-tor step-down con-
  []
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 <SCTopology.png, id=9, 1124.2pt x 724.7075pt>
 File: SCTopology.png Graphic file (type png)
  <use SCTopology.png>
-Package pdftex.def Info: SCTopology.png used on input line 98.
+Package pdftex.def Info: SCTopology.png used on input line 100.
 (pdftex.def)             Requested size: 187.89912pt x 121.1197pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--106
+Underfull \hbox (badness 10000) in paragraph at lines 105--108
 
  []
 
 <BKTopology.png, id=10, 883.3pt x 622.325pt>
 File: BKTopology.png Graphic file (type png)
  <use BKTopology.png>
-Package pdftex.def Info: BKTopology.png used on input line 111.
+Package pdftex.def Info: BKTopology.png used on input line 113.
 (pdftex.def)             Requested size: 187.89912pt x 132.38237pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
-[2 <./SCTopology.png (PNG copy)> <./BKTopology.png (PNG copy)>]
+[2 <./SCTopology.png (PNG copy)>]
 <SCTopologyParasitics.png, id=17, 1104.125pt x 748.7975pt>
 File: SCTopologyParasitics.png Graphic file (type png)
 
 <use SCTopologyParasitics.png>
-Package pdftex.def Info: SCTopologyParasitics.png used on input line 125.
+Package pdftex.def Info: SCTopologyParasitics.png used on input line 133.
 (pdftex.def)             Requested size: 187.89912pt x 127.431pt.
 
 <BottomPlateCap.png, id=18, 775.89874pt x 612.2875pt>
 File: BottomPlateCap.png Graphic file (type png)
  <use BottomPlateCap.png>
-Package pdftex.def Info: BottomPlateCap.png used on input line 130.
+Package pdftex.def Info: BottomPlateCap.png used on input line 138.
 (pdftex.def)             Requested size: 187.89912pt x 148.26932pt.
 
-Underfull \hbox (badness 3068) in paragraph at lines 145--145
-[]\OT1/ptm/b/n/12 Inductor-capacitor con-verter crit-i-cal
- []
 
-<BuckTopologyParasitics.png, id=19, 943.525pt x 632.3625pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1776) has occurred while \output is active []
+
+ [3 <./BKTopology.png (PNG copy)> <./SCTopologyParasitics.png> <./BottomPlateCa
+p.png>]
+<BuckTopologyParasitics.png, id=25, 943.525pt x 632.3625pt>
 File: BuckTopologyParasitics.png Graphic file (type png)
 
 <use BuckTopologyParasitics.png>
-Package pdftex.def Info: BuckTopologyParasitics.png used on input line 150.
+Package pdftex.def Info: BuckTopologyParasitics.png used on input line 160.
 (pdftex.def)             Requested size: 187.89912pt x 125.9299pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--155
-
- []
-
-[3 <./SCTopologyParasitics.png> <./BottomPlateCap.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 156--159
+Underfull \hbox (badness 10000) in paragraph at lines 157--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--191
+Underfull \hbox (badness 10000) in paragraph at lines 166--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 [4 <./BuckTopologyParasitics.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 200--206
+
+ []
+
 
 LaTeX Warning: Reference `ControlCKBlockDiags' on page 5 undefined on input lin
-e 195.
+e 210.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--199
-
- []
-
-
-LaTeX Warning: Reference `MaximLDO' on page 5 undefined on input line 204.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 202--206
+Underfull \hbox (badness 10000) in paragraph at lines 210--214
 
  []
 
 
-LaTeX Warning: Citation `Rodriguez2014' on page 5 undefined on input line 208.
+LaTeX Warning: Reference `MaximLDO' on page 5 undefined on input line 219.
 
 
-Underfull \vbox (badness 3612) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 217--221
 
  []
 
 
-Underfull \hbox (badness 2173) in paragraph at lines 235--235
-[]\OT1/ptm/b/n/12 Performance draw-backs of Base-line
- []
+LaTeX Warning: Citation `Rodriguez2014' on page 5 undefined on input line 223.
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 236--241
-\OT1/ptm/m/n/10 one pro-cess gen-er-a-tion sep-a-rates the de-signs, they
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 236--241
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 255--262
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+[]\OT1/ptm/m/n/10 Inductors have a nec-es-sar-ily large par-a-sitic
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 234--235
+\OT1/ptm/m/n/10 impedance be-cause they are made from coiled
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 234--235
+\OT1/ptm/m/n/10 impedance which shrinks as the plate size or
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 260--260
+[]\OT1/ptm/b/n/12 Performance draw-backs of Base-line
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--267
 
  []
 
 
-Underfull \hbox (badness 1430) in paragraph at lines 263--277
-[]\OT1/ptm/m/n/10 As a fi-nal note, CMOS switches can-not op-er-ate
- []
-
-
-Underfull \hbox (badness 3058) in paragraph at lines 263--277
-\OT1/ptm/m/n/10 se-ries re-sis-tance, $\OML/ztmcm/m/it/10 R[]$ \OT1/ptm/m/n/10 
-and its par-a-sitic ca-pac-i-tance.
- []
-
-
-Underfull \hbox (badness 1521) in paragraph at lines 263--277
-\OT1/ptm/m/n/10 be-tween the ground node and bot-tom plate of the
- []
-
-
-Underfull \hbox (badness 7047) in paragraph at lines 263--277
-\OT1/ptm/m/n/10 re-search ques-tions con-cern tech-nol-ogy pa-ram-e-ters
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--277
+Underfull \hbox (badness 10000) in paragraph at lines 281--288
 
  []
 
 [6]
+Underfull \hbox (badness 1521) in paragraph at lines 289--303
+[]\OT1/ptm/m/n/10 As a fi-nal note, CMOS switches can-not usu-ally
+ []
+
+
+Underfull \hbox (badness 1521) in paragraph at lines 289--303
+\OT1/ptm/m/n/10 be-tween the ground node and bot-tom plate of the
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 289--303
+[]\OT1/ptm/m/n/10 Considering the loss mech-a-nisms in a ca-pac-i-tor,
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 289--303
+\OT1/ptm/m/n/10 re-search ques-tions con-cern tech-nol-ogy pa-ram-e-ters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--303
+
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--287
-
- []
-
-
-LaTeX Warning: Citation `Bandyopadhyay2011' on page 7 undefined on input line 2
-90.
-
-<TransistorPerf.png, id=39, 1227.58624pt x 438.63875pt>
-File: TransistorPerf.png Graphic file (type png)
-
-<use TransistorPerf.png>
-Package pdftex.def Info: TransistorPerf.png used on input line 295.
-(pdftex.def)             Requested size: 187.89912pt x 67.13828pt.
-
-Underfull \hbox (badness 1810) in paragraph at lines 287--300
-\OT1/ptm/m/n/10 switches out-per-form DE-MOS. Hower et al[[]] are
- []
-
-
-Underfull \hbox (badness 1142) in paragraph at lines 287--300
-[]\OT1/ptm/m/n/10 Finally in the high $\OML/ztmcm/m/it/10 F[]$ \OT1/ptm/m/n/10 
-high power de-sign cor-ner
- []
-
-
-Underfull \hbox (badness 2809) in paragraph at lines 287--300
-\OT1/ptm/m/n/10 unique semi-con-duc-tor prop-er-ties ben-e-fi-cial to high
- []
-
-
-Underfull \hbox (badness 1701) in paragraph at lines 287--300
-\OT1/ptm/m/n/10 volt-age power con-ver-sion, such as; high op-er-at-ing
- []
-
-
-Underfull \hbox (badness 1062) in paragraph at lines 287--300
-\OT1/ptm/m/n/10 lit-er-a-ture pro-posed novel cir-cuit de-signs to im-prove
- []
-
-
-Underfull \hbox (badness 1087) in paragraph at lines 287--300
-\OT1/ptm/m/n/10 in-di-cates as volt-age and power den-sity de-mands of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 287--300
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
 
  []
 
 [7]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
+LaTeX Warning: Citation `Bandyopadhyay2011' on page 8 undefined on input line 3
+16.
 
+<TransistorPerf.png, id=43, 1227.58624pt x 438.63875pt>
+File: TransistorPerf.png Graphic file (type png)
 
-LaTeX Warning: Citation `Pique2012' on page 8 undefined on input line 304.
+<use TransistorPerf.png>
+Package pdftex.def Info: TransistorPerf.png used on input line 321.
+(pdftex.def)             Requested size: 187.89912pt x 67.13828pt.
 
-
-LaTeX Warning: Citation `Pique' on page 8 undefined on input line 304.
-
-
-Overfull \hbox (25.57211pt too wide) in paragraph at lines 307--315
-[][] 
+Underfull \hbox (badness 2913) in paragraph at lines 327--328
+[]\OT1/ptm/m/n/10 To con-clude dis-cus-sion on power switches, the
  []
 
 
-Underfull \hbox (badness 6825) in paragraph at lines 300--322
-[]\OT1/ptm/m/n/10 Regarding en-ergy den-sity, non-standard CMOS
+Underfull \hbox (badness 1062) in paragraph at lines 327--328
+\OT1/ptm/m/n/10 lit-er-a-ture pro-posed novel cir-cuit de-signs to im-prove
  []
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 300--322
-\OT1/ptm/m/n/10 Another class of con-vert-ers has gained promi-nence
+Underfull \hbox (badness 1087) in paragraph at lines 327--328
+\OT1/ptm/m/n/10 in-di-cates as volt-age and power den-sity de-mands of
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 300--322
-[]\OT1/ptm/m/n/10 In sum-mary of ca-pac-i-tors, early cir-cuit level ap-
- []
-
-
-Underfull \hbox (badness 1895) in paragraph at lines 300--322
-\OT1/ptm/m/n/10 non-standard CMOS. Ar-chi-tec-tural level ap-proaches
- []
-
-
-Underfull \hbox (badness 2452) in paragraph at lines 300--322
-\OT1/ptm/m/n/10 in SC de-signs have been suc-cess-ful in im-prov-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--322
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
 
  []
 
 [8 <./TransistorPerf.png>]
-<CostvsGainofBondWireInductor.png, id=47, 365.365pt x 330.23375pt>
+
+LaTeX Warning: Citation `Pique2012' on page 9 undefined on input line 333.
+
+
+LaTeX Warning: Citation `Pique' on page 9 undefined on input line 333.
+
+
+Overfull \hbox (25.57211pt too wide) in paragraph at lines 336--344
+[][] 
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 328--352
+[]\OT1/ptm/m/n/10 In sum-mary of ca-pac-i-tors, early cir-cuit level ap-
+ []
+
+[9] <CostvsGainofBondWireInductor.png, id=50, 365.365pt x 330.23375pt>
 File: CostvsGainofBondWireInductor.png Graphic file (type png)
 
 <use CostvsGainofBondWireInductor.png>
-Package pdftex.def Info: CostvsGainofBondWireInductor.png used on input line 32
+Package pdftex.def Info: CostvsGainofBondWireInductor.png used on input line 35
 7.
 (pdftex.def)             Requested size: 187.89912pt x 169.83292pt.
 
-Underfull \hbox (badness 4084) in paragraph at lines 332--335
+Underfull \hbox (badness 4084) in paragraph at lines 362--365
 []\OT1/ptm/m/n/10 With the above men-tioned lim-i-ta-tions, re-search
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--335
+Underfull \hbox (badness 10000) in paragraph at lines 362--365
 
  []
 
-[9 <./CostvsGainofBondWireInductor.png>]
-Underfull \hbox (badness 1137) in paragraph at lines 337--339
-\OT1/ptm/m/n/10 trade-off. The up-per lim-its of volt-age and en-ergy
- []
 
-
-Underfull \hbox (badness 1701) in paragraph at lines 337--339
+Underfull \hbox (badness 1701) in paragraph at lines 367--369
 \OT1/ptm/m/n/10 and ca-pac-i-tors, but these re-quire ad-di-tional dop-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--339
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
 
  []
 
 
-LaTeX Warning: Citation `Pique2012' on page 10 undefined on input line 348.
+LaTeX Warning: Citation `Pique2012' on page 10 undefined on input line 378.
 
 
-Underfull \hbox (badness 2644) in paragraph at lines 341--349
+Underfull \hbox (badness 2644) in paragraph at lines 371--379
 \OT1/ptm/m/n/10 to dig-i-tal pro-ces-sors al-lows for com-plex ca-pac-i-tor
  []
 
 
-Underfull \hbox (badness 2393) in paragraph at lines 341--349
-\OT1/ptm/m/n/10 also fea-tures the re-configurable step-down volt-age
+Underfull \hbox (badness 3471) in paragraph at lines 371--379
+\OT1/ptm/m/n/10 with more gran-u-lar impedance mod-u-la-tion con-trol
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 341--349
-\OT1/ptm/m/n/10 SC con-vert-ers have high volt-age rip-ple be-cause of
+Underfull \hbox (badness 1092) in paragraph at lines 371--379
+\OT1/ptm/m/n/10 vis-i-ble at the load is not mod-u-lated. In-stead, the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--349
-
+Underfull \hbox (badness 1472) in paragraph at lines 371--379
+\OT1/ptm/m/n/10 ag-gres-sive ex-plo-ration of ca-pac-i-tance mod-ule phase
  []
 
 
-Underfull \hbox (badness 3713) in paragraph at lines 352--362
-\OT1/ptm/m/n/10 Ear-lier dis-cus-sion fo-cussed on Con-tin-u-ous cur-rent
+Underfull \hbox (badness 10000) in paragraph at lines 371--379
+
+ []
+
+[10 <./CostvsGainofBondWireInductor.png>]
+Underfull \hbox (badness 1226) in paragraph at lines 382--390
+\OT1/ptm/m/n/10 The ba-sic buck topol-ogy of-fers su-pe-rior impedance
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 352--362
+Underfull \hbox (badness 1184) in paragraph at lines 382--390
+\OT1/ptm/m/n/10 im-proves buck ef-fi-ciency for heavy loads since the
+ []
+
+
+Underfull \hbox (badness 2401) in paragraph at lines 382--390
 \OT1/ptm/m/n/10 in-creased Impedance. Impedance is in-creased by
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 352--362
+Underfull \hbox (badness 1546) in paragraph at lines 382--390
 \OT1/ptm/m/n/10 a tech-nique ap-plied in in-te-graged SC ar-chi-tec-tures.
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 352--362
+Underfull \hbox (badness 1147) in paragraph at lines 382--390
 \OT1/ptm/m/n/10 How-ever un-like ca-pac-i-tance, in-duc-tance re-duces for
  []
 
 
-Underfull \hbox (badness 3219) in paragraph at lines 352--362
+Underfull \hbox (badness 1521) in paragraph at lines 382--390
+\OT1/ptm/m/n/10 buck con-vert-ers can ad-just $\OML/ztmcm/m/it/10 T[]$ \OT1/ptm
+/m/n/10 of the power train
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--390
+
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 391--393
 \OT1/ptm/m/n/10 con-trol phase shift tech-niques ap-plied to mod-u-lar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--362
+Underfull \hbox (badness 10000) in paragraph at lines 391--393
 
  []
 
-[10]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-<TransmissionLine.png, id=55, 963.6pt x 240.9pt>
+ [11]
+<TransmissionLine.png, id=58, 963.6pt x 240.9pt>
 File: TransmissionLine.png Graphic file (type png)
  <use TransmissionLine.png>
-Package pdftex.def Info: TransmissionLine.png used on input line 385.
+Package pdftex.def Info: TransmissionLine.png used on input line 420.
 (pdftex.def)             Requested size: 187.89912pt x 46.97346pt.
 
 
-LaTeX Warning: Reference `IOBuf' on page 11 undefined on input line 391.
+LaTeX Warning: Reference `IOBuf' on page 12 undefined on input line 426.
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 391--396
+Underfull \hbox (badness 1337) in paragraph at lines 426--431
 []\OT1/ptm/m/n/10 For re-duc-ing sig-nal drive con-sider the IO buffer
  []
 
 
-Overfull \hbox (25.90431pt too wide) in paragraph at lines 391--396
+Overfull \hbox (25.90431pt too wide) in paragraph at lines 426--431
 \OT1/ptm/b/n/10 DIAGRAMSHOWINGLARGEPARASITCINDUCTANCE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 391--396
+Underfull \hbox (badness 1005) in paragraph at lines 426--431
+\OT1/ptm/m/n/10 speed IO, such as pro-ces-sor to pro-ces-sor in-ter-faces
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 426--431
+\OT1/ptm/m/n/10 par-a-sitic in-duc-tance In-creases this power con-vert-ers
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--431
 
  []
 
-[11 <./TransmissionLine.png (PNG copy)>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12]
+Underfull \hbox (badness 10000) in paragraph at lines 432--441
 
-LaTeX Warning: Citation `Pilawa2012' on page 13 undefined on input line 443.
+ []
+
+[12 <./TransmissionLine.png (PNG copy)>]
+Underfull \hbox (badness 1122) in paragraph at lines 453--455
+\OT1/ptm/m/n/10 power loads. re-viewed lit-er-a-ture has also re-ported
+ []
 
 
-LaTeX Warning: Citation `Pique' on page 13 undefined on input line 446.
+Underfull \hbox (badness 10000) in paragraph at lines 453--455
+
+ []
 
 
-Underfull \hbox (badness 2717) in paragraph at lines 441--454
+Underfull \vbox (badness 1082) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 482--483
+
+ []
+
+
+LaTeX Warning: Citation `Pilawa2012' on page 13 undefined on input line 484.
+
+
+LaTeX Warning: Citation `Pique' on page 13 undefined on input line 487.
+
+
+Underfull \hbox (badness 2717) in paragraph at lines 484--489
 \OT1/ptm/m/n/10 LDMOS tran-sis-tors can-not op-er-ate fast enough to
  []
 
 
-Underfull \hbox (badness 3229) in paragraph at lines 441--454
+Underfull \hbox (badness 3229) in paragraph at lines 484--489
 \OT1/ptm/m/n/10 pre-regulated ca-pac-i-tors are ex-cel-lent charge wells
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--454
+Underfull \hbox (badness 1448) in paragraph at lines 484--489
+\OT1/ptm/m/n/10 ap-proach of pas-sives may also be fur-ther ex-plored
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 484--489
+\OT1/ptm/m/n/10 as Pli-awa's de-sign mounts the power ca-pac-i-tors to
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 484--489
+\OT1/ptm/m/n/10 the die sub-strate, in-tro-duc-ing a far larger par-a-sitic
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 484--489
+\OT1/ptm/m/n/10 im-pen-dence than Stur-cken and In-tel's $\OML/ztmcm/m/it/10 Si
+$ \OT1/ptm/m/n/10 in-ter-poser
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 484--489
+\OT1/ptm/m/n/10 ca-pac-i-tors [[]] em-ployed by \OT1/ptm/b/n/10 cite from struc
+ken or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 484--489
+
+ []
+
+[13]
+Underfull \hbox (badness 1314) in paragraph at lines 489--494
+\OT1/ptm/m/n/10 Although the $\OML/ztmcm/m/it/10 Si$ \OT1/ptm/m/n/10 in-ter-pos
+er de-sign has an at-trac-tive
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 489--494
+\OT1/ptm/m/n/10 out-put op-er-at-ing point en-ve-lope, re-search ques-tions
+ []
+
+
+Underfull \hbox (badness 1540) in paragraph at lines 489--494
+\OT1/ptm/m/n/10 in a sin-gle in-te-grated con-verter with an ag-gres-sive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--494
 
  []
 
 
-LaTeX Warning: Citation `Pilawa2012' on page 13 undefined on input line 460.
+LaTeX Warning: Citation `Pilawa2012' on page 14 undefined on input line 504.
 
-[13] (./usenix.bbl
+(./usenix.bbl
+Underfull \vbox (badness 1221) has occurred while \output is active []
+
+ [14]
 Missing character: There is no Î in font ptmr7t!
 Missing character: There is no ¼ in font ptmr7t!
 Missing character: There is no Ã in font ptmrc7t!
@@ -683,7 +762,7 @@ Missing character: There is no Ã in font ptmrc7t!
 Missing character: There is no Ÿ in font ptmrc7t!
 Missing character: There is no Ã in font ptmri7t!
 Missing character: There is no ¤ in font ptmri7t!
-[14]
+[15]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
@@ -697,19 +776,21 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-) [15] (./usenix.aux)
+) [16
+
+] (./usenix.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1925 strings out of 495031
- 27568 string characters out of 6181531
- 94883 words of memory out of 5000000
- 5066 multiletter control sequences out of 15000+600000
+ 1928 strings out of 495031
+ 27600 string characters out of 6181531
+ 87902 words of memory out of 5000000
+ 5069 multiletter control sequences out of 15000+600000
  50755 words of font info for 104 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,9n,23p,1087b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,9n,23p,1203b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
@@ -719,10 +800,10 @@ e1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/us
 yr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on usenix.pdf (15 pages, 327137 bytes).
+Output written on usenix.pdf (16 pages, 330723 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
+ 106 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
