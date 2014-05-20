@@ -40,6 +40,13 @@
 \newblock {\em Power Electronics, IEEE Transactions on 27.2\/} (2012),
   610--613.
 
+\bibitem{Callister2012}
+{\sc Callister, W.~D., and Rethwisch, D.~G.}
+\newblock Fundamentals of materials science and engineering: an integrated
+  approach 4th ed.
+\newblock In {\em Fundamentals of materials science and engineering: an
+  integrated approach 4th ed}. Wiley, Hoboken, NJ, 2012.
+
 \bibitem{Alamo2009}
 {\sc del Alamo, J.~A., and Joh, J.}
 \newblock Gan hemt reliability.
@@ -96,6 +103,22 @@
   buck converter with precise dcm operation and enhanced light-load efficiency.
 \newblock {\em Solid-State Circuits Conference Digest of Technical Papers
   (ISSCC)\/} (2013), 1--13.
+
+\bibitem{IntelIvyBridge2013}
+{\sc Intel Corporation}.
+\newblock {\em Desktop 3rd Generation Intel Core Processor Family, Desktop
+  Intel Pentium Processor Family, and Desktop Intel Celeron Processor Family
+  Datasheet}.
+\newblock 2200 Mission College Blvd, Santa Clara, CA 95054, United States,
+  2013.
+
+\bibitem{IntelHaswell2014}
+{\sc Intel Corporation}.
+\newblock {\em Desktop 4th Generation Intel Core Processor Family, Desktop
+  Intel Pentium Processor Family, and Desktop Intel Celeron Processor Family
+  Datasheet}.
+\newblock 2200 Mission College Blvd, Santa Clara, CA 95054, United States,
+  2014.
 
 \bibitem{Iwai2009}
 {\sc Iwai, H.}
@@ -166,6 +189,13 @@
 \newblock {\em Solid-State Circuits Conference Digest of Technical Papers
   (ISSCC), 2010 IEEE International\/} (2010), 210--211.
 
+\bibitem{PhuckLe2011}
+{\sc Le, Hanh-Phuc, S. R.~S., and Alon, E.}
+\newblock Design techniques for fully integrated switched-capacitor dc-dc
+  converters.
+\newblock {\em Solid-State Circuits, IEEE Journal of 46.9\/} (2011),
+  2120--2131.
+
 \bibitem{Lee2004}
 {\sc Lee, Sangkyu, U. P. V. A. H. Y.-G.~J., and Yoon, K.-J.}
 \newblock Microstructure and permittivity of sintered batio 3 : influence of
@@ -186,18 +216,45 @@
 \newblock {\em Power Electronics, IEEE Transactions on 27.1\/} (2012),
   463--471.
 
+\bibitem{Ng2012}
+{\sc Ng~Vincent, S.~S.}
+\newblock A 92%-efficiency wide-input-voltage-range switched-capacitor dc-dc
+  converter.
+\newblock {\em Solid-State Circuits Conference Digest of Technical Papers
+  (ISSCC), 2012 IEEE International\/} (2012), 282--284.
+
+\bibitem{NVidia2010}
+{\sc Nvidia Corporation}.
+\newblock {\em Tegra 200 Series Developer Board, User Manual}.
+\newblock 2701 San Tomas Expressway at Walsh Avenue Santa Clara, CA 95050,
+  United States, 2010.
+
 \bibitem{OSulivan2013}
 {\sc O'Sullivan, Eugene~J., e.~a.}
 \newblock (invited) developments in integrated on-chip inductors with magnetic
   yokes.
 \newblock {\em ECS Transactions 50.10\/} (2013), 93--105.
 
-\bibitem{pilawa2012}
+\bibitem{Pilawa2012}
 {\sc Pilawa-Podgurski, R.~C., and Perreault, D.~J.}
 \newblock Merged two-stage power converter with soft charging
   switched-capacitor stage in 180 nm cmos.
 \newblock {\em Solid-State Circuits, IEEE Journal of 47.7\/} (2012),
   1557--1567.
+
+\bibitem{Pique2012}
+{\sc Pique, G.~V.}
+\newblock A 41-phase switched-capacitor power converter with 3.8 mv output
+  ripple and 81% efficiency in baseline 90nm cmos.
+\newblock {\em Solid-State Circuits Conference Digest of Technical Papers
+  (ISSCC), 2012 IEEE International\/} (2012), 98--100.
+
+\bibitem{Yogesh2010}
+{\sc Ramadass, Yogesh~K., A. A.~F., and Chandrakasan, A.~P.}
+\newblock A fully-integrated switched-capacitor step-down dc-dc converter with
+  digital capacitance modulation in 45 nm cmos.
+\newblock {\em Solid-State Circuits, IEEE Journal of 45.12\/} (2010),
+  2557--2565.
 
 \bibitem{Ramadass2010}
 {\sc Ramadass, Yogesh, A. F. B.~H., and Chandrakasan, A.}
@@ -216,6 +273,12 @@
 \newblock High dielectric constant oxides.
 \newblock {\em The European physical journal applied physics 28.03\/} (2004),
   265--291.
+
+\bibitem{Rodriguez2014}
+{\sc Rodriguez, M., Y.~Z., and Maksimovic, D.}
+\newblock High frequency pwm buck converter using gan-on-sic hemts.
+\newblock {\em IEEE Transactions on power electronics IEEE 29.5\/} (2014),
+  2462--2473.
 
 \bibitem{Seeman2008}
 {\sc Seeman, M.~D., and Sanders., S.~R.}

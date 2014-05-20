@@ -2,9 +2,15 @@
 \citation{Marbell2011}
 \citation{Chang2010}
 \citation{Dennard1974}
+\citation{NVidia2010}
 \citation{Kurson2003}
+\citation{PhuckLe2011}
+\citation{Hongwei2011}
+\citation{Yogesh2010}
 \citation{Sturcken2012}
 \citation{Intel2010}
+\citation{IntelHaswell2014}
+\citation{IntelIvyBridge2013}
 \citation{Kurson2003}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
 \citation{Marbell2011}
@@ -12,35 +18,37 @@
 \@writefile{toc}{\contentsline {section}{\numberline {2}Operation of the DC DC converter}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Switched Capacitor stepdown converter operating principle}{2}}
 \newlabel{SCOpPrinciple}{{2.1}{2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces A ${\begingroup 1\endgroup \over 2}$ stepdown SC topology}}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces A ${\begingroup 1\endgroup \over 2}$ stepdown SC topology with major parasitic components}}{2}}
 \newlabel{SCTopology}{{1}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Inductor-capacitor stepdown converter operating principle}{2}}
+\citation{Damak2013}
 \citation{Ramadass2007}
 \citation{Damak2013}
 \citation{Zheng2013}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces An inductor capacitor buck topology}}{3}}
 \newlabel{BKTopology}{{2}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Converter critical parameters}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Integrated Converter critical parameters}{3}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Switched capacitor stepdown converter critical parameters}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces An SC topology with major parasitic components}}{3}}
 \newlabel{NonIdealSCTopology}{{3}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Bottom Plate parasitic capacitance}}{3}}
 \newlabel{BottomPlatePar}{{4}{3}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Inductor-capacitor converter critical parameters}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces An buck topology with major parasitic components}}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces A buck topology with major parasitic components}}{4}}
 \newlabel{NonIdealBuckTopology}{{5}{4}}
 \citation{Kurson2006}
 \citation{Kurson2006}
 \citation{Kurson2006}
 \citation{Alghamdi2012}
 \citation{Seeman2008}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}Converter load regulation concept}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Basic DC DC converter control loop where: $\theta _x$ = phase, $D_x$ = duty cycle}}{5}}
+\newlabel{ControlCKBlockDiags}{{6}{5}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Design of Integrated DC DC Converters}{5}}
+\newlabel{DesignOfIntegratedDCDCConverters}{{3}{5}}
 \citation{Rodriguez2014}
 \citation{Cheng2013}
 \citation{Damak2013}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}Converter load regulation concept}{5}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Design of Integrated DC DC Converters}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Motivation}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Design challenges}{5}}
 \citation{Sanders2010}
 \citation{Viraj2007}
 \citation{Alimadadi2008}
@@ -48,13 +56,22 @@
 \citation{Alimadadi2008}
 \citation{Alimadadi2008}
 \citation{Viraj2007}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Motivation}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Design challenges}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Performance drawbacks of Baseline monolithic DC DC Converters}{6}}
+\citation{Alimadadi2008}
+\citation{Bathily2012}
+\citation{Sturcken2013}
 \citation{Iwai2009}
 \citation{Andreou1999}
 \citation{Iwai2009}
 \citation{Damak2013}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Summary of recent literature}{7}}
-\newlabel{litReview}{{4}{7}}
+\citation{Viraj2007}
+\citation{Pique2012}
+\citation{Yogesh2010}
+\citation{PhuckLe2011}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Diagram of major MOSFET switch losses}}{7}}
+\newlabel{SWLosses}{{7}{7}}
 \citation{Alimadadi2008}
 \citation{Bathily2012}
 \citation{Hyunseok2012}
@@ -67,9 +84,9 @@
 \citation{Krausse2013}
 \citation{Krausse2013}
 \citation{Krausse2013}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Summary of recent literature}{8}}
+\newlabel{litReview}{{4}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}CMOS Switches: }{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Comparative performance of power switch types, Reproduced from\cite  {Krausse2013}}}{8}}
-\newlabel{GaNCharacter}{{6}{8}}
 \citation{Viraj2007}
 \citation{Kwong2009}
 \citation{Viraj2007}
@@ -84,6 +101,15 @@
 \citation{Johari2009}
 \citation{Lee2004}
 \citation{Lee2004}
+\citation{Callister2012}
+\citation{Pilawa2012}
+\citation{Bathily2012}
+\citation{Ng2012}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Comparative performance of power switch types, Reproduced from\cite  {Krausse2013}}}{9}}
+\newlabel{GaNCharacter}{{8}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Table of capacitor permittivity where: \textit  {* example technologies, not used in reviewed designs}}}{9}}
+\newlabel{PermittivityTable}{{1}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Capacitors: }{9}}
 \citation{Alimadadi2008}
 \citation{Artillan2011}
 \citation{Meere2009}
@@ -92,9 +118,6 @@
 \citation{Cheng2013}
 \citation{Cheng2013}
 \citation{Hongwei2011}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Capacitors: }{9}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \textit  {* example technologies, not used in reviewed designs}}}{9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Inductors: }{9}}
 \citation{OSulivan2013}
 \citation{Meere2009}
 \citation{Sturcken2013}
@@ -105,10 +128,14 @@
 \citation{Viraj2007}
 \citation{Ramadass2010}
 \citation{Pique2012}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces The power limitation of bondwire inductors}}{10}}
-\newlabel{BondWireLim}{{7}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Inductors: }{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces The power limitation of bondwire inductors}}{10}}
+\newlabel{BondWireLim}{{9}{10}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}SC Architecture}{10}}
 \citation{Wens2011}
+\citation{Alimadadi2008}
+\citation{Bathily2012}
+\citation{Sturcken2013}
 \citation{Feng2008}
 \citation{Cheng2013}
 \citation{ChengII2013}
@@ -116,22 +143,35 @@
 \citation{Kim2011}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Inductor buck architecture}{11}}
 \citation{Shannon1948}
-\citation{Wens2011}
 \@writefile{toc}{\contentsline {section}{\numberline {5}The IO limit with integrated DC DC converters}{12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}IO pin performance land DC DC converters}{12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Transmission line model with parasitic $Z$}}{12}}
-\newlabel{TXLine}{{8}{12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Saving pins with DC DC converters}{12}}
-\citation{pilawa2012}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}DC DC converters and IO pin performance}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Transmission line model with parasitic $Z$}}{12}}
+\newlabel{TXLine}{{10}{12}}
+\citation{Wens2011}
+\citation{Pilawa2012}
+\citation{Pilawa2012}
+\citation{Pilawa2012}
+\citation{Bathily2012}
+\citation{Ng2012}
 \citation{Gong2008}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Power route of an IO buffer}}{13}}
+\newlabel{IOBuf}{{11}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Inductive path between converter and load}}{13}}
+\newlabel{DroopTop}{{12}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Saving pins with DC DC converters}{13}}
+\citation{Gong2008}
+\citation{Wens2011}
+\citation{ChengII2013}
+\citation{Sturcken2013}
+\citation{Pilawa2012}
 \citation{Pilawa2012}
 \citation{Cheng2013}
 \citation{Sturcken2012}
 \citation{Sturcken2013}
-\citation{Pique}
+\citation{Pique2012}
 \citation{Damak2013}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Directions for future work}{13}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}LDMOS High voltage SC-Buck}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Directions for future work}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}LDMOS High voltage SC-Buck}{14}}
 \citation{Intel2010}
 \citation{Sturcken2013}
 \citation{Gokul2011}
@@ -140,50 +180,61 @@
 \bibstyle{acm}
 \bibdata{sample.bib}
 \bibcite{Ahn2012}{1}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}GaN Interposer buck: }{14}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Conclusions}{14}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Evolution of integrated DC DC converter circuits \textit  {*reduced to two dimensions by dividing over depth of substrate}}}{15}}
+\newlabel{EffnEnergyDensity}{{2}{15}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}GaN Interposer buck: }{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{15}}
 \bibcite{Alghamdi2012}{2}
 \bibcite{Alimadadi2008}{3}
 \bibcite{Andreou1999}{4}
 \bibcite{Artillan2011}{5}
 \bibcite{Bathily2012}{6}
-\bibcite{Alamo2009}{7}
-\bibcite{Dennard1974}{8}
-\bibcite{Damak2013}{9}
-\bibcite{Mustapha2008}{10}
-\bibcite{Gong2008}{11}
-\bibcite{Goyal2013}{12}
-\bibcite{Hower2005}{13}
-\bibcite{ChengII2013}{14}
-\bibcite{Cheng2013}{15}
-\bibcite{Iwai2009}{16}
-\bibcite{Hongwei2011}{17}
-\bibcite{Johari2009}{18}
-\bibcite{Kim2011}{19}
-\bibcite{Krausse2013}{20}
-\bibcite{Gokul2011}{21}
-\bibcite{Kurson2006}{22}
-\bibcite{Kurson2003}{23}
-\bibcite{Kwong2009}{24}
-\bibcite{Chang2010}{25}
-\bibcite{Phuck2010}{26}
-\bibcite{Lee2004}{27}
-\bibcite{Meere2009}{28}
-\bibcite{Hyunseok2012}{29}
-\bibcite{OSulivan2013}{30}
-\bibcite{pilawa2012}{31}
-\bibcite{Ramadass2010}{32}
-\bibcite{Ramadass2007}{33}
-\bibcite{Robertson2004}{34}
-\bibcite{Seeman2008}{35}
-\bibcite{Sanders2010}{36}
-\bibcite{Shannon1948}{37}
-\bibcite{Marbell2011}{38}
-\bibcite{Sturcken2013}{39}
-\bibcite{Sturcken2012}{40}
-\bibcite{Feng2008}{41}
-\bibcite{Intel2010}{42}
-\bibcite{Viraj2007}{43}
-\bibcite{Wens2007}{44}
-\bibcite{Wens2011}{45}
-\bibcite{Zheng2013}{46}
+\bibcite{Callister2012}{7}
+\bibcite{Alamo2009}{8}
+\bibcite{Dennard1974}{9}
+\bibcite{Damak2013}{10}
+\bibcite{Mustapha2008}{11}
+\bibcite{Gong2008}{12}
+\bibcite{Goyal2013}{13}
+\bibcite{Hower2005}{14}
+\bibcite{ChengII2013}{15}
+\bibcite{Cheng2013}{16}
+\bibcite{IntelIvyBridge2013}{17}
+\bibcite{IntelHaswell2014}{18}
+\bibcite{Iwai2009}{19}
+\bibcite{Hongwei2011}{20}
+\bibcite{Johari2009}{21}
+\bibcite{Kim2011}{22}
+\bibcite{Krausse2013}{23}
+\bibcite{Gokul2011}{24}
+\bibcite{Kurson2006}{25}
+\bibcite{Kurson2003}{26}
+\bibcite{Kwong2009}{27}
+\bibcite{Chang2010}{28}
+\bibcite{Phuck2010}{29}
+\bibcite{PhuckLe2011}{30}
+\bibcite{Lee2004}{31}
+\bibcite{Meere2009}{32}
+\bibcite{Hyunseok2012}{33}
+\bibcite{Ng2012}{34}
+\bibcite{NVidia2010}{35}
+\bibcite{OSulivan2013}{36}
+\bibcite{Pilawa2012}{37}
+\bibcite{Pique2012}{38}
+\bibcite{Yogesh2010}{39}
+\bibcite{Ramadass2010}{40}
+\bibcite{Ramadass2007}{41}
+\bibcite{Robertson2004}{42}
+\bibcite{Rodriguez2014}{43}
+\bibcite{Seeman2008}{44}
+\bibcite{Sanders2010}{45}
+\bibcite{Shannon1948}{46}
+\bibcite{Marbell2011}{47}
+\bibcite{Sturcken2013}{48}
+\bibcite{Sturcken2012}{49}
+\bibcite{Feng2008}{50}
+\bibcite{Intel2010}{51}
+\bibcite{Viraj2007}{52}
+\bibcite{Wens2007}{53}
+\bibcite{Wens2011}{54}
+\bibcite{Zheng2013}{55}
