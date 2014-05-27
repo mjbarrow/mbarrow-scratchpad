@@ -21,6 +21,13 @@
 \newblock {\em Power Electronics Specialists Conference, 2008. PESC 2008.
   IEEE\/} (2008), 140--146.
 
+\bibitem{Andersen2013}
+{\sc Andersen, Toke~M, F. K. J. W. K. T. T. C. M. L. K. T. M. e.~a.}
+\newblock A 4.6 w/mm 2 power density 86% efficiency on-chip switched capacitor
+  dc-dc converter in 32 nm soi cmos.
+\newblock {\em Applied Power Electronics Conference and Exposition (APEC), 2013
+  Twenty-Eighth Annual IEEE\/} (2013).
+
 \bibitem{Andreou1999}
 {\sc Andreou, A.~G., and Sánchez-Sinencio., E.}
 \newblock Low-voltage/low-power integrated circuits and systems.
@@ -32,6 +39,13 @@
 \newblock Integrated lc filter on silicon for dc–dc converter applications.
 \newblock {\em Power Electronics, IEEE Transactions on 26.8\/} (2011),
   2319--2325.
+
+\bibitem{Bandyopadhyay2011}
+{\sc Bandyopadhyay~Saurav, Chandrakasan Anantha~P, R. Y.~K.}
+\newblock 20 µ a to 100 ma dc-dc converter with 2.8-4.2 v battery supply for
+  portable applications in 45 nm cmos.
+\newblock {\em Solid-State Circuits, IEEE Journal of 46.12\/} (2011),
+  2807--2820.
 
 \bibitem{Bathily2012}
 {\sc Bathily, Malal, B.~A., and Hasbani, F.}

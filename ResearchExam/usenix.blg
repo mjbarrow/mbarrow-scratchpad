@@ -1,28 +1,16 @@
 This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: usenix.aux
-Case mismatch error between cite keys pilawa2012 and Pilawa2012
----line 151 of file usenix.aux
- : \citation{pilawa2012
- :                     }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys pilawa2012 and Pilawa2012
----line 152 of file usenix.aux
- : \citation{pilawa2012
- :                     }
-I'm skipping whatever remains of this command
 The style file: acm.bst
 Database file #1: sample.bib.bib
-Repeated entry---line 406 of file sample.bib.bib
+Repeated entry---line 422 of file sample.bib.bib
  : Wens2011
  :         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 451 of file sample.bib.bib
+Repeated entry---line 467 of file sample.bib.bib
  : Sturcken2013
  :             ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Bandyopadhyay2011"
-Warning--I didn't find a database entry for "Pique"
 Name 1 in "Stanley-Marbell, Phillip, Victoria Caparros Cabezas, and Ronald Luijten." has a comma at the end for entry Marbell2011
 while executing---line 1092 of file acm.bst
 Name 1 in "L Chang, D Frank, R Montoye, S Koester, B Ji, P Coteus, R Dennard, and W Haensch." has a comma at the end for entry Chang2010
@@ -151,6 +139,16 @@ Name 1 in "Kwong, Joyce, Yogesh K. Ramadass, Naveen Verma, and Anantha P. Chandr
 while executing---line 1092 of file acm.bst
 Too many commas in name 1 of "Kwong, Joyce, Yogesh K. Ramadass, Naveen Verma, and Anantha P. Chandrakasan" for entry Kwong2009
 while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Andersen, Toke M, Florian Krismer, Johann W. Kolar, Thomas Toifl, Christian Menolfi, Lukas Kull, Thomas Morf et al" for entry Andersen2013
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Andersen, Toke M, Florian Krismer, Johann W. Kolar, Thomas Toifl, Christian Menolfi, Lukas Kull, Thomas Morf et al" for entry Andersen2013
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Andersen, Toke M, Florian Krismer, Johann W. Kolar, Thomas Toifl, Christian Menolfi, Lukas Kull, Thomas Morf et al" for entry Andersen2013
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Andersen, Toke M, Florian Krismer, Johann W. Kolar, Thomas Toifl, Christian Menolfi, Lukas Kull, Thomas Morf et al" for entry Andersen2013
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Andersen, Toke M, Florian Krismer, Johann W. Kolar, Thomas Toifl, Christian Menolfi, Lukas Kull, Thomas Morf et al" for entry Andersen2013
+while executing---line 1092 of file acm.bst
 Name 1 in "Johari, Houri, and Farrokh Ayazi" has a comma at the end for entry Johari2009
 while executing---line 1092 of file acm.bst
 Name 1 in "Lee, Sangkyu, Ungyu Paik, Vincent A. Hackley, Yeon-Gil Jung, and Kyung-Jin Yoon" has a comma at the end for entry Lee2004
@@ -236,6 +234,16 @@ while executing---line 1133 of file acm.bst
 Too many commas in name 1 of "Alimadadi, Mehdi, Samad Sheikhaei, Guy Lemieux, Patrick Palmer, Shahriar Mirabbasi, and William Dunford." for entry Alimadadi2008
 while executing---line 1133 of file acm.bst
 Too many commas in name 1 of "Alimadadi, Mehdi, Samad Sheikhaei, Guy Lemieux, Patrick Palmer, Shahriar Mirabbasi, and William Dunford." for entry Alimadadi2008
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Andersen, Toke M, Florian Krismer, Johann W. Kolar, Thomas Toifl, Christian Menolfi, Lukas Kull, Thomas Morf et al" for entry Andersen2013
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Andersen, Toke M, Florian Krismer, Johann W. Kolar, Thomas Toifl, Christian Menolfi, Lukas Kull, Thomas Morf et al" for entry Andersen2013
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Andersen, Toke M, Florian Krismer, Johann W. Kolar, Thomas Toifl, Christian Menolfi, Lukas Kull, Thomas Morf et al" for entry Andersen2013
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Andersen, Toke M, Florian Krismer, Johann W. Kolar, Thomas Toifl, Christian Menolfi, Lukas Kull, Thomas Morf et al" for entry Andersen2013
+while executing---line 1133 of file acm.bst
+Too many commas in name 1 of "Andersen, Toke M, Florian Krismer, Johann W. Kolar, Thomas Toifl, Christian Menolfi, Lukas Kull, Thomas Morf et al" for entry Andersen2013
 while executing---line 1133 of file acm.bst
 Name 1 in "Andreou, Andreas G., and Edgar Sánchez-Sinencio." has a comma at the end for entry Andreou1999
 while executing---line 1133 of file acm.bst
@@ -428,45 +436,45 @@ Name 1 in "Wens, Mike, and Michiel Steyaert" has a comma at the end for entry We
 while executing---line 1133 of file acm.bst
 Name 1 in "Zheng, Chen, Inshad Chowdhury, and Dongsheng Ma" has a comma at the end for entry Zheng2013
 while executing---line 1133 of file acm.bst
-You've used 55 entries,
+You've used 57 entries,
             2253 wiz_defined-function locations,
-            860 strings with 16043 characters,
-and the built_in function-call counts, 15889 in all, are:
-= -- 1576
-> -- 572
+            867 strings with 16581 characters,
+and the built_in function-call counts, 16391 in all, are:
+= -- 1625
+> -- 586
 < -- 0
-+ -- 263
-- -- 186
-* -- 1173
-:= -- 2612
-add.period$ -- 165
-call.type$ -- 55
-change.case$ -- 257
++ -- 270
+- -- 190
+* -- 1207
+:= -- 2695
+add.period$ -- 171
+call.type$ -- 57
+change.case$ -- 265
 chr.to.int$ -- 0
-cite$ -- 56
-duplicate$ -- 508
-empty$ -- 1409
-format.name$ -- 186
-if$ -- 3364
+cite$ -- 58
+duplicate$ -- 526
+empty$ -- 1457
+format.name$ -- 190
+if$ -- 3470
 int.to.chr$ -- 0
-int.to.str$ -- 55
-missing$ -- 53
-newline$ -- 277
-num.names$ -- 104
-pop$ -- 168
+int.to.str$ -- 57
+missing$ -- 55
+newline$ -- 287
+num.names$ -- 108
+pop$ -- 173
 preamble$ -- 1
-purify$ -- 206
+purify$ -- 212
 quote$ -- 0
-skip$ -- 321
+skip$ -- 333
 stack$ -- 0
-substring$ -- 1242
-swap$ -- 109
+substring$ -- 1280
+swap$ -- 113
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 218
+type$ -- 226
 warning$ -- 1
-while$ -- 148
-width$ -- 57
-write$ -- 547
-(There were 206 error messages)
+while$ -- 153
+width$ -- 59
+write$ -- 566
+(There were 214 error messages)
