@@ -1,0 +1,357 @@
+\begin{thebibliography}{10}
+
+\bibitem{Ahn2012}
+{\sc Ahn, Y., et~al.}
+\newblock A 50-mhz fully integrated low-swing buck converter using packaging
+  inductors.
+\newblock {\em Power Electronics, IEEE Transactions on 27.10\/} (2012),
+  4347--4356.
+
+\bibitem{Alghamdi2012}
+{\sc Alghamdi, M.~K., and Hamoui., A.~A.}
+\newblock A spurious-free switching buck converter achieving enhanced
+  light-load efficiency by using a-modulator controller with a scalable
+  sampling frequency.
+\newblock {\em Solid-State Circuits, IEEE Journal of 47.4\/} (2012), 841--851.
+
+\bibitem{Alimadadi2008}
+{\sc Alimadadi, M., et~al.}
+\newblock A 660mhz zvs dc-dc converter using gate-driver charge-recycling in
+  0.18μm cmos with an integrated output filter.
+\newblock {\em Power Electronics Specialists Conference, 2008. PESC 2008.
+  IEEE\/} (2008), 140--146.
+
+\bibitem{Andersen2013}
+{\sc Andersen, T.~M., et~al.}
+\newblock A 4.6 w/mm 2 power density 86% efficiency on-chip switched capacitor
+  dc-dc converter in 32 nm soi cmos.
+\newblock {\em Applied Power Electronics Conference and Exposition (APEC), 2013
+  Twenty-Eighth Annual IEEE\/} (2013).
+
+\bibitem{Andreou1999}
+{\sc Andreou, A.~G., and Sánchez-Sinencio., E.}
+\newblock Low-voltage/low-power integrated circuits and systems.
+\newblock {\em IEE\/} (1999).
+
+\bibitem{Artillan2011}
+{\sc Artillan, P., et~al.}
+\newblock Integrated lc filter on silicon for dc–dc converter applications.
+\newblock {\em Power Electronics, IEEE Transactions on 26.8\/} (2011),
+  2319--2325.
+
+\bibitem{Bathily2012}
+{\sc Bathily, M., et~al.}
+\newblock A 200-mhz integrated buck converter with resonant gate drivers for an
+  rf power amplifier.
+\newblock {\em Power Electronics, IEEE Transactions on 27.2\/} (2012),
+  610--613.
+
+\bibitem{Callister2012}
+{\sc Callister, W.~D., and Rethwisch, D.~G.}
+\newblock Fundamentals of materials science and engineering: an integrated
+  approach 4th ed.
+\newblock In {\em Fundamentals of materials science and engineering: an
+  integrated approach 4th ed}. Wiley, Hoboken, NJ, 2012.
+
+\bibitem{Chandrakasan1992}
+{\sc Chandrakasan, A.~P., et~al.}
+\newblock Low-power cmos digital design.
+\newblock {\em IEICE Transactions on Electronics 75 4\/} (1992), 371--382.
+
+\bibitem{Alamo2009}
+{\sc del Alamo, J.~A., and Joh, J.}
+\newblock Gan hemt reliability.
+\newblock {\em Microelectronics reliability 49.9\/} (2009), 1200--1206.
+
+\bibitem{Damak2013}
+{\sc El-Damak, D., et~al.}
+\newblock A 93% efficiency reconfigurable switched-capacitor dc-dc converter
+  using on-chip ferroelectric capacitors.
+\newblock {\em Solid-State Circuits Conference Digest of Technical Papers
+  (ISSCC)\/} (2013), 374--375.
+
+\bibitem{Mustapha2008}
+{\sc Faqir, M., et~al.}
+\newblock Mechanisms of rf current collapse in algan–gan high electron
+  mobility transistors.
+\newblock {\em Device and Materials Reliability, IEEE Transactions on 8.2\/}
+  (2008), 240--247.
+
+\bibitem{Freescale2014}
+{\sc Freescale Semiconductor Corporation}.
+\newblock {\em MPC8640 and MPC8640D Integrated Host Processor Hardware
+  Specifications}.
+\newblock 6501 W William Cannon Dr, Austin, TX 78735, United States, 2014.
+
+\bibitem{Gong2008}
+{\sc Gong, Z., et~al.}
+\newblock Design of high power density dc-dc converter based on embedded
+  passive substrate.
+\newblock {\em Power Electronics Specialists Conference, 2008. PESC 2008.
+  IEEE\/} (2008), 273--277.
+
+\bibitem{Goyal2013}
+{\sc Goyal, N.}
+\newblock Design and modeling of high-power semiconductor devices with emphasis
+  on algan/gan hemts.
+
+\bibitem{Hower2005}
+{\sc Hower, P.~L., and Pendharkar, S.}
+\newblock Short and long-term safe operating area considerations in ldmos
+  transistors.
+\newblock {\em Reliability Physics Symposium, 2005. Proceedings. 43rd Annual.
+  2005 IEEE International\/} (2005), 545--550.
+
+\bibitem{ChengII2013}
+{\sc Huang, C., and Mok, P.~K.}
+\newblock A 100 mhz 82.4% efficiency package-bondwire based four-phase
+  fully-integrated buck converter with flying capacitor for area reduction.
+\newblock {\em Solid-State Circuits Conference Digest of Technical Papers
+  (ISSCC), 2013 IEEE International. IEEE\/} (2013), 1--12.
+
+\bibitem{Cheng2013}
+{\sc Huang, C., and Mok., P.~K.}
+\newblock An 84.7% efficiency 100-mhz package bondwire-based fully integrated
+  buck converter with precise dcm operation and enhanced light-load efficiency.
+\newblock {\em Solid-State Circuits Conference Digest of Technical Papers
+  (ISSCC)\/} (2013), 1--13.
+
+\bibitem{IntelIvyBridge2013}
+{\sc Intel Corporation}.
+\newblock {\em Desktop 3rd Generation Intel Core Processor Family, Desktop
+  Intel Pentium Processor Family, and Desktop Intel Celeron Processor Family
+  Datasheet}.
+\newblock 2200 Mission College Blvd, Santa Clara, CA 95054, United States,
+  2013.
+
+\bibitem{IntelHaswell2014}
+{\sc Intel Corporation}.
+\newblock {\em Desktop 4th Generation Intel Core Processor Family, Desktop
+  Intel Pentium Processor Family, and Desktop Intel Celeron Processor Family
+  Datasheet}.
+\newblock 2200 Mission College Blvd, Santa Clara, CA 95054, United States,
+  2014.
+
+\bibitem{Iwai2009}
+{\sc Iwai, H.}
+\newblock Roadmap for 22nm and beyond.
+\newblock {\em Microelectronic Engineering 86.7\/} (2009), 1520--1528.
+
+\bibitem{Hongwei2011}
+{\sc Jia, H., et~al.}
+\newblock Integration of a monolithic buck converter power ic and bondwire
+  inductors with ferrite epoxy glob cores.
+\newblock {\em Power Electronics, IEEE Transactions on 26.6\/} (2011),
+  1627--1630.
+
+\bibitem{Johari2009}
+{\sc Johari, H., and Ayazi, F.}
+\newblock High-density embedded deep trench capacitors in silicon with enhanced
+  breakdown voltage.
+\newblock {\em Components and Packaging Technologies, IEEE Transactions on
+  32.4\/} (2009), 808--815.
+
+\bibitem{Kim2011}
+{\sc Kim, W., et~al.}
+\newblock A fully-integrated 3-level dc/dc converter for nanosecond-scale dvs
+  with fast shunt regulation.
+\newblock {\em Solid-State Circuits Conference Digest of Technical Papers
+  (ISSCC), 2011, IEEE International\/} (2011), 268--270.
+
+\bibitem{Krausse2013}
+{\sc Krauße, D.}
+\newblock High power algan, gan hfets for industrial, scientific and medical
+  applications.
+\newblock {\em Diss. Universitätsbibliothek Freiburg\/} (2013).
+
+\bibitem{Gokul2011}
+{\sc Kumar, G., et~al.}
+\newblock Ultra-high i/o density glass/silicon interposers for high bandwidth
+  smart mobile applications.
+\newblock {\em Electronic Components and Technology Conference (ECTC), 2011
+  IEEE 61st. IEEE\/} (2011), 217--223.
+
+\bibitem{Kurson2006}
+{\sc Kurson, V., and E, F.}
+\newblock {\em Multi-voltage CMOS circuit design.}
+\newblock John Wiley and Sons, Chichester, 2006.
+
+\bibitem{Kwong2009}
+{\sc Kwong, J., et~al.}
+\newblock A 65 nm sub-microcontroller with integrated sram and switched
+  capacitor dc-dc converter.
+\newblock {\em Solid-State Circuits, IEEE Journal of 44.1\/} (2009), 115--126.
+
+\bibitem{Phuck2010}
+{\sc Le, H.-P., et~al.}
+\newblock A 32nm fully integrated reconfigurable switched-capacitor dc-dc
+  converter delivering 0.55w/mm2 at 81% efficiency.
+\newblock {\em Solid-State Circuits Conference Digest of Technical Papers
+  (ISSCC), 2010 IEEE International\/} (2010), 210--211.
+
+\bibitem{PhuckLe2011}
+{\sc Le, H.-P., et~al.}
+\newblock Design techniques for fully integrated switched-capacitor dc-dc
+  converters.
+\newblock {\em Solid-State Circuits, IEEE Journal of 46.9\/} (2011),
+  2120--2131.
+
+\bibitem{Lee2004}
+{\sc Lee, S., et~al.}
+\newblock Microstructure and permittivity of sintered batio 3 : influence of
+  particle surface chemistry in an aqueous medium.
+\newblock {\em Materials research bulletin 39.1\/} (2004), 93--102.
+
+\bibitem{Meere2009}
+{\sc Meere, R., et~al.}
+\newblock Analysis of microinductor performance in a 20-100 mhz dc/dc
+  converter.
+\newblock {\em Power Electronics, IEEE Transactions on 24.9\/} (2009),
+  2212--2218.
+
+\bibitem{Hyunseok2012}
+{\sc Nam, H., et~al.}
+\newblock 5-v buck converter using 3.3-v standard cmos process with adaptive
+  power transistor driver increasing efficiency and maximum load capacity.
+\newblock {\em Power Electronics, IEEE Transactions on 27.1\/} (2012),
+  463--471.
+
+\bibitem{NVidia2010}
+{\sc Nvidia Corporation}.
+\newblock {\em Tegra 200 Series Developer Board, User Manual}.
+\newblock 2701 San Tomas Expressway at Walsh Avenue Santa Clara, CA 95050,
+  United States, 2010.
+
+\bibitem{OSulivan2013}
+{\sc O'Sullivan, E.~J., et~al.}
+\newblock (invited) developments in integrated on-chip inductors with magnetic
+  yokes.
+\newblock {\em ECS Transactions 50.10\/} (2013), 93--105.
+
+\bibitem{Pilawa2012}
+{\sc Pilawa-Podgurski, et~al.}
+\newblock Merged two-stage power converter with soft charging
+  switched-capacitor stage in 180 nm cmos.
+\newblock {\em Solid-State Circuits, IEEE Journal of 47.7\/} (2012),
+  1557--1567.
+
+\bibitem{Pique2012}
+{\sc Pique, G.~V.}
+\newblock A 41-phase switched-capacitor power converter with 3.8 mv output
+  ripple and 81% efficiency in baseline 90nm cmos.
+\newblock {\em Solid-State Circuits Conference Digest of Technical Papers
+  (ISSCC), 2012 IEEE International\/} (2012), 98--100.
+
+\bibitem{Ramadass2010}
+{\sc Ramadass, Y., et~al.}
+\newblock A 0.16mm2 completely on-chip switched-capacitor dc-dc converter using
+  digital capacitance modulation for ldo replacement in 45nm cmos.
+\newblock {\em ISSCC 2010/SESSION 10/DC-DC POWER CONVERSION/10.7\/} (2010).
+
+\bibitem{Ramadass2007}
+{\sc Ramadass, Y.~K., and Chandrakasan, A.~P.}
+\newblock Voltage scalable switched capacitor dc-dc converter for
+  ultra-low-power on-chip applications.
+\newblock {\em Power Electronics Specialists Conference\/} (2007).
+
+\bibitem{Yogesh2010}
+{\sc Ramadass, Y.~K., et~al.}
+\newblock A fully-integrated switched-capacitor step-down dc-dc converter with
+  digital capacitance modulation in 45 nm cmos.
+\newblock {\em Solid-State Circuits, IEEE Journal of 45.12\/} (2010),
+  2557--2565.
+
+\bibitem{Robertson2004}
+{\sc Robertson, J.}
+\newblock High dielectric constant oxides.
+\newblock {\em The European physical journal applied physics 28.03\/} (2004),
+  265--291.
+
+\bibitem{Bandyopadhyay2011}
+{\sc Saurav, B., et~al.}
+\newblock 20 µ a to 100 ma dc-dc converter with 2.8-4.2 v battery supply for
+  portable applications in 45 nm cmos.
+\newblock {\em Solid-State Circuits, IEEE Journal of 46.12\/} (2011),
+  2807--2820.
+
+\bibitem{Seeman2008}
+{\sc Seeman, M.~D., and Sanders., S.~R.}
+\newblock Analysis and optimization of switched-capacitor dc–dc converters.
+\newblock {\em Power Electronics, IEEE Transactions on 23.2\/} (2008),
+  841--851.
+
+\bibitem{Marbell2011}
+{\sc Stanley-Marbell, P., et~al.}
+\newblock Pinned to the walls: impact of packaging and application properties
+  on the memory and power walls.
+\newblock {\em Proceedings of the 17th IEEE/ACM international symposium on
+  Low-power electronics and design. 50\/} (2011), 51--56.
+
+\bibitem{Sturcken2012}
+{\sc Sturcken, N., et~al.}
+\newblock A 2.5 d integrated voltage regulator using coupled-magnetic-core
+  inductors on silicon interposer delivering 10.8 a/mm 2.
+\newblock {\em Solid-State Circuits Conference Digest of Technical Papers
+  (ISSCC), 2012 IEEE International\/} (2012), 400--402.
+
+\bibitem{Sturcken2013}
+{\sc Sturcken, N., et~al.}
+\newblock A 2.5 d integrated voltage regulator using coupled-magnetic-core
+  inductors on silicon interposer.
+\newblock {\em Solid-State Circuits, IEEE Journal of 48.1\/} (2013), 244--254.
+
+\bibitem{Feng2008}
+{\sc Su, F., et~al.}
+\newblock Ultra fast fixed-frequency hysteretic buck converter with maximum
+  charging current control and adaptive delay compensation for dvs
+  applications.
+\newblock {\em Solid-State Circuits, IEEE Journal of 43.4\/} (2008), 815--822.
+
+\bibitem{Taylor2012}
+{\sc Taylor, M.~B.}
+\newblock Is dark silicon useful?: harnessing the four horsemen of the coming
+  dark silicon apocalypse.
+\newblock {\em Proceedings of the 49th Annual Design Automation Conference,
+  ACM\/} (2012), 1131--1136.
+
+\bibitem{Intel2010}
+{\sc Ted-DiBenne~II, J., et~al.}
+\newblock A 400 amp fully integrated silicon voltage regulator with in-die
+  magnetically coupled embedded inductors.
+\newblock {\em APEC—Special Presentation\/} (2010).
+
+\bibitem{Ng2012}
+{\sc Vincent, N., and Seth, S.}
+\newblock A 92%-efficiency wide-input-voltage-range switched-capacitor dc-dc
+  converter.
+\newblock {\em Solid-State Circuits Conference Digest of Technical Papers
+  (ISSCC), 2012 IEEE International\/} (2012), 282--284.
+
+\bibitem{Viraj2007}
+{\sc Viraj, A. K.~P., and Amaratunga., G. A.~J.}
+\newblock A monolithic cmos 5v/1v switched capacitor dc-dc step-down converter.
+\newblock {\em Power Electronics Specialists Conference, 2007. PESC 2007.
+  IEEE\/} (2007), 2510--2514.
+
+\bibitem{Wens2007}
+{\sc Wens, M., et~al.}
+\newblock A fully-integrated 0.18µm cmos dc-dc step-up converter, using a
+  bondwire spiral inductor.
+\newblock {\em Solid State Circuits Conference, 2007. ESSCIRC 2007. 33rd
+  European. IEEE\/} (2007), 268--271.
+
+\bibitem{Wens2011}
+{\sc Wens, M., and Steyaert, M.}
+\newblock A fully integrated cmos 800-mw four-phase semiconstant on/off-time
+  step-down converter.
+\newblock {\em Power Electronics, IEEE Transactions on 26.2\/} (2011),
+  326--333.
+
+\bibitem{Zheng2013}
+{\sc Zheng, C., et~al.}
+\newblock Low-noise switched-capacitor power converter with adaptive on-chip
+  surge suppression and preemptive timing control.
+\newblock {\em IEEE transactions on power electronics 28.11\/} (2013),
+  5174--5182.
+
+\end{thebibliography}

@@ -1,0 +1,901 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.10)  31 MAY 2014 01:26
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**barrow_re.tex
+(./barrow_re.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 2 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./usenix.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+\epsfxsize=\dimen105
+\epsfysize=\dimen106
+)
+(/usr/share/texlive/texmf-dist/tex/latex/endnotes/endnotes.sty
+\c@endnote=\count88
+\endnotesep=\dimen107
+\@enotes=\write3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/was/upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+) (./barrow_re.aux)
+\openout1 = `barrow_re.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 24.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+\big@size=\dimen108
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count89
+\scratchdimen=\dimen109
+\scratchbox=\box26
+\nofMPsegments=\count90
+\nofMParguments=\count91
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count92
+\MPscratchDim=\dimen110
+\MPnumerator=\count93
+\makeMPintoPDFobject=\count94
+\everyMPtoPDFconversion=\toks16
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 41
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 41
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 41
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 41
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
+
+Underfull \hbox (badness 1320) in paragraph at lines 62--77
+\OT1/ptm/m/n/10 CPU com-bined with in-creas-ing lev-els of pe-riph-eral
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 62--77
+\OT1/ptm/m/n/10 in-te-gra-tion to form Sys-tem on Chip (SoC) de-vices.
+ []
+
+
+Underfull \hbox (badness 1521) in paragraph at lines 62--77
+\OT1/ptm/m/n/10 These SoCs typ-i-cally in-te-grate func-tion-al-ity but do
+ []
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 62--77
+\OT1/ptm/m/n/10 ex-em-pli-fied by around 30 in-de-pen-dent sup-plies for
+ []
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 62--77
+\OT1/ptm/m/n/10 ing pas-sives such as ca-pac-i-tors and in-duc-tors on a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--77
+
+ []
+
+
+Underfull \vbox (badness 5288) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Underfull \hbox (badness 3291) in paragraph at lines 95--95
+[]\OT1/ptm/b/n/12 Switched Ca-pac-i-tor step-down con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+<SCTopology.png, id=9, 1144.275pt x 724.7075pt>
+File: SCTopology.png Graphic file (type png)
+ <use SCTopology.png>
+Package pdftex.def Info: SCTopology.png used on input line 101.
+(pdftex.def)             Requested size: 187.89912pt x 118.99655pt.
+
+<SCTopologyII.png, id=11, 863.225pt x 632.3625pt>
+File: SCTopologyII.png Graphic file (type png)
+ <use SCTopologyII.png>
+Package pdftex.def Info: SCTopologyII.png used on input line 107.
+(pdftex.def)             Requested size: 187.89912pt x 137.64388pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--115
+
+ []
+
+
+Underfull \hbox (badness 7151) in paragraph at lines 116--116
+[]\OT1/ptm/b/n/12 Inductor-capacitor step down con-
+ []
+
+<BKTopology.png, id=12, 903.375pt x 622.325pt>
+File: BKTopology.png Graphic file (type png)
+ <use BKTopology.png>
+Package pdftex.def Info: BKTopology.png used on input line 120.
+(pdftex.def)             Requested size: 187.89912pt x 129.43864pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+
+[2 <./SCTopology.png> <./SCTopologyII.png (PNG copy)> <./BKTopology.png (PNG co
+py)>] <SCTopologyParasitics.png, id=19, 1124.2pt x 748.7975pt>
+File: SCTopologyParasitics.png Graphic file (type png)
+
+<use SCTopologyParasitics.png>
+Package pdftex.def Info: SCTopologyParasitics.png used on input line 144.
+(pdftex.def)             Requested size: 187.89912pt x 125.14584pt.
+
+<BottomPlateCap.png, id=20, 823.075pt x 562.1pt>
+File: BottomPlateCap.png Graphic file (type png)
+ <use BottomPlateCap.png>
+Package pdftex.def Info: BottomPlateCap.png used on input line 149.
+(pdftex.def)             Requested size: 187.89912pt x 128.31966pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
+\OT1/ptm/m/n/10 Conduction loss re-duces the sup-ply volt-age
+ []
+
+
+Underfull \hbox (badness 6758) in paragraph at lines 157--159
+\OT1/ptm/m/n/10 seen at the ca-pac-i-tors by a fac-tor $\OML/ztmcm/m/it/10 ^^NV
+$\OT1/ptm/m/n/10 , where
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
+
+ []
+
+
+Underfull \vbox (badness 2961) has occurred while \output is active []
+
+ [3 <./SCTopologyParasitics.png> <./BottomPlateCap.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
+[]\OT1/ptm/b/n/12 Inductor-capacitor con-verter par-a-
+ []
+
+<BuckTopologyParasitics.png, id=27, 963.6pt x 632.3625pt>
+File: BuckTopologyParasitics.png Graphic file (type png)
+
+<use BuckTopologyParasitics.png>
+Package pdftex.def Info: BuckTopologyParasitics.png used on input line 171.
+(pdftex.def)             Requested size: 187.89912pt x 123.30536pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--176
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Spiralinductor.png, id=28, 609.27625pt x 311.1625pt>
+File: Spiralinductor.png Graphic file (type png)
+ <use Spiralinductor.png>
+Package pdftex.def Info: Spiralinductor.png used on input line 179.
+(pdftex.def)             Requested size: 187.89912pt x 95.96083pt.
+
+Underfull \hbox (badness 1521) in paragraph at lines 177--185
+\OT1/ptm/m/n/10 equiv-a-lent se-ries re-sis-tance (ESR). Stan-dard CMOS
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--185
+
+ []
+
+
+Underfull \hbox (badness 2401) in paragraph at lines 186--187
+\OT1/ptm/m/n/10 With the volt-age step-down prin-ci-ple in mind we
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
+
+ []
+
+[4 <./BuckTopologyParasitics.png> <./Spiralinductor.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 194.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 194.
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--215
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
+
+ []
+
+<BasicControlBlockDiag.png, id=34, 1042.89626pt x 923.45pt>
+File: BasicControlBlockDiag.png Graphic file (type png)
+
+<use BasicControlBlockDiag.png>
+Package pdftex.def Info: BasicControlBlockDiag.png used on input line 223.
+(pdftex.def)             Requested size: 187.89912pt x 166.36882pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--231
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 264--267
+
+ []
+
+
+Underfull \hbox (badness 2035) in paragraph at lines 268--277
+\OT1/ptm/m/n/10 Naive In-te-grated SC con-vert-ers have a low power
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--277
+
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 278--287
+\OT1/ptm/m/n/10 a range of step-down volt-ages in a ba-sic topol-ogy.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
+
+ []
+
+[6 <./BasicControlBlockDiag.png (PNG copy)>]
+<SwitchLosses.png, id=44, 921.4425pt x 991.705pt>
+File: SwitchLosses.png Graphic file (type png)
+ <use SwitchLosses.png>
+Package pdftex.def Info: SwitchLosses.png used on input line 314.
+(pdftex.def)             Requested size: 187.89912pt x 202.22646pt.
+
+Underfull \hbox (badness 1292) in paragraph at lines 312--318
+\OT1/ptm/m/n/10 CMOS switches suf-fer static and dy-namic par-a-sitic
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 319--325
+\OT1/ptm/m/n/10 are re-vers-ing the leak-age trend [[]] and in-creas-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--325
+
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 326--330
+\OT1/ptm/m/n/10 The loss prob-lem is com-pli-cated by the fre-quency
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 326--330
+\OT1/ptm/m/n/10 Because in-te-grated con-vert-ers tog-gle their power
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--330
+
+ []
+
+[7 <./SwitchLosses.png (PNG copy)>]
+Underfull \hbox (badness 7047) in paragraph at lines 331--333
+\OT1/ptm/m/n/10 re-search ques-tions con-cern tech-nol-ogy pa-ram-e-ters
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--333
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--337
+
+ []
+
+<TransistorPerf.png, id=49, 614.295pt x 877.2775pt>
+File: TransistorPerf.png Graphic file (type png)
+ <use TransistorPerf.png>
+Package pdftex.def Info: TransistorPerf.png used on input line 345.
+(pdftex.def)             Requested size: 234.87749pt x 335.43037pt.
+
+Overfull \hbox (9.03374pt too wide) in paragraph at lines 345--346
+[][] 
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 337--349
+\OT1/ptm/m/n/10 volt-age power con-ver-sion, such as: high op-er-at-ing
+ []
+
+
+Underfull \vbox (badness 4072) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 351--352
+[]\OT1/ptm/m/n/10 To con-clude dis-cus-sion on power switches, the
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 351--352
+\OT1/ptm/m/n/10 lit-er-a-ture pro-posed novel cir-cuit de-signs to im-prove
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 351--352
+\OT1/ptm/m/n/10 in-di-cates as volt-age and power den-sity de-mands of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./TransistorPerf.png>]
+Underfull \vbox (badness 1189) has occurred while \output is active []
+
+
+<BondWireInductorLimit.png, id=57, 1003.75pt x 1614.03pt>
+File: BondWireInductorLimit.png Graphic file (type png)
+
+<use BondWireInductorLimit.png>
+Package pdftex.def Info: BondWireInductorLimit.png used on input line 380.
+(pdftex.def)             Requested size: 187.89912pt x 302.13731pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 385--388
+\OT1/ztmcm/m/n/10 100%$\OT1/ptm/m/n/10 , Topol-ogy b, with no switch-ing con-ve
+rter in
+ []
+
+
+Underfull \hbox (badness 5245) in paragraph at lines 385--388
+[]\OT1/ptm/m/n/10 Attacking the above men-tioned lim-i-ta-tions, re-
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 385--388
+\OT1/ptm/m/n/10 This is the high-est re-ported drive of all in-te-grated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--388
+
+ []
+
+[10]
+Underfull \hbox (badness 1701) in paragraph at lines 390--391
+\OT1/ptm/m/n/10 and ca-pac-i-tors, but these re-quire ad-di-tional dop-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
+
+ []
+
+
+Underfull \hbox (badness 3471) in paragraph at lines 395--400
+\OT1/ptm/m/n/10 with more gran-u-lar impedance mod-u-la-tion con-trol
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--400
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
+
+ []
+
+[11 <./BondWireInductorLimit.png>]
+Underfull \hbox (badness 3612) in paragraph at lines 406--414
+[]\OT1/ptm/m/n/10 Integrated Buck con-vert-ers can fea-ture com-plex
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 406--414
+\OT1/ptm/m/n/10 un-like ca-pac-i-tance, in-duc-tance re-duces for elec-tri-
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 406--414
+\OT1/ptm/m/n/10 Buck con-vert-ers can ad-just $\OML/ztmcm/m/it/10 T[]$ \OT1/ptm
+/m/n/10 of the power train
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 406--414
+\OT1/ptm/m/n/10 hys-tere-sis con-trol of in-te-grated Bucks has re-ceived
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 406--414
+\OT1/ptm/m/n/10 a more com-plex fil-ter and en-ergy stor-age net-work.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--414
+
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 415--417
+\OT1/ptm/m/n/10 con-trol phase shift tech-niques ap-plied to mod-u-lar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--417
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+<DroopResponseLatency.png, id=68, 1047.915pt x 854.19125pt>
+File: DroopResponseLatency.png Graphic file (type png)
+
+<use DroopResponseLatency.png>
+Package pdftex.def Info: DroopResponseLatency.png used on input line 450.
+(pdftex.def)             Requested size: 187.89912pt x 153.16127pt.
+
+Underfull \hbox (badness 2269) in paragraph at lines 448--462
+\OT1/ptm/m/n/10 The I/O per-for-mance ben-e-fit of in-te-grated DC/DC
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 448--462
+\OT1/ptm/m/n/10 and re-duces the max-i-mum speed of I/O. In-te-grated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--462
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--470
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
+
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 473--477
+\OT1/ptm/m/n/10 volt-age in-put is stepped down by an SC phase as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--477
+
+ []
+
+
+Underfull \vbox (badness 3601) has occurred while \output is active []
+
+ [13 <./DroopResponseLatency.png>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 490.
+
+Underfull \hbox (badness 10000) in paragraph at lines 492--492
+[]\OT1/ptm/b/n/9 Converter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--493
+[]\OT1/ptm/m/n/9 transformer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
+
+ []
+
+
+Underfull \hbox (badness 2717) in paragraph at lines 512--515
+\OT1/ptm/m/n/10 LDMOS tran-sis-tors can-not op-er-ate fast enough to
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 512--515
+\OT1/ptm/m/n/10 pre-regulated ca-pac-i-tors are ex-cel-lent charge wells
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 512--515
+
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 516--517
+\OT1/ptm/m/n/10 ap-proach of pas-sives may also be fur-ther ex-plored
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 516--517
+\OT1/ptm/m/n/10 as Pli-awa's de-sign mounts the power ca-pac-i-tors to
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 516--517
+\OT1/ptm/m/n/10 the die sub-strate, in-tro-duc-ing a far larger par-a-sitic
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 516--517
+\OT1/ptm/m/n/10 impedance than Stur-cken and In-tel's $\OML/ztmcm/m/it/10 Si$ \
+OT1/ptm/m/n/10 in-ter-poser
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
+
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 518--519
+\OT1/ptm/m/n/10 the SC and Buck cre-ate a com-plex fil-ter, how-ever
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--519
+
+ []
+
+
+Underfull \hbox (badness 1314) in paragraph at lines 519--521
+\OT1/ptm/m/n/10 Although the $\OML/ztmcm/m/it/10 Si$ \OT1/ptm/m/n/10 in-ter-pos
+er de-sign has an at-trac-tive
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 519--521
+\OT1/ptm/m/n/10 out-put op-er-at-ing point en-ve-lope, re-search ques-tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--521
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 524--526
+
+ []
+
+(./barrow_re.bbl
+Missing character: There is no Î in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+ [15]
+Missing character: There is no Ã in font ptmrc7t!
+Missing character: There is no ¡ in font ptmrc7t!
+
+Underfull \hbox (badness 1708) in paragraph at lines 32--35
+[]\OT1/ptm/m/sc/8 Andreou, A. G., and Snchez-Sinencio., E.  \OT1/ptm/m/n/8 Low-
+
+ []
+
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no Ã in font ptmrc7t!
+Missing character: There is no Ÿ in font ptmrc7t!
+Missing character: There is no Ã in font ptmri7t!
+Missing character: There is no ¤ in font ptmri7t!
+
+Underfull \hbox (badness 1067) in paragraph at lines 186--191
+\OT1/ptm/m/n/8 switched-capacitor dc-dc con-verter de-liv-er-ing 0.55w/mm2 at
+ []
+
+
+Underfull \hbox (badness 1394) in paragraph at lines 246--250
+\OT1/ptm/m/n/8 switched-capacitor dc-dc con-verter us-ing dig-i-tal ca-pac-i-ta
+nce
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 258--263
+[]\OT1/ptm/m/sc/8 Ramadass, Y. K., et al.  \OT1/ptm/m/n/8 A fully-integrated sw
+itched-
+ []
+
+[16]
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no µ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no â in font ptmri7t!
+Missing character: There is no € in font ptmri7t!
+Missing character: There is no ” in font ptmri7t!
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no µ in font ptmr7t!
+) [17
+
+] (./barrow_re.aux) ) 
+Here is how much of TeX's memory you used:
+ 1962 strings out of 495031
+ 28291 string characters out of 6181531
+ 88055 words of memory out of 5000000
+ 5091 multiletter control sequences out of 15000+600000
+ 54697 words of font info for 108 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 37i,14n,23p,1451b,262s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
+}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
+utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on barrow_re.pdf (17 pages, 510563 bytes).
+PDF statistics:
+ 117 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+

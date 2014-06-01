@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: barrow_re.aux
+The style file: acm.bst
+Database file #1: sample.bib.bib
+Repeated entry---line 448 of file sample.bib.bib
+ : Wens2011
+ :         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 493 of file sample.bib.bib
+ : Sturcken2013
+ :             ,
+I'm skipping whatever remains of this entry
+Name 1 in "Johari, Houri, and Farrokh Ayazi" has a comma at the end for entry Johari2009
+while executing---line 1092 of file acm.bst
+Name 1 in "Callister, William D., and David G. Rethwisch" has a comma at the end for entry Callister2012
+while executing---line 1092 of file acm.bst
+Name 1 in "Wens, Mike, and Michiel Steyaert" has a comma at the end for entry Wens2011
+while executing---line 1092 of file acm.bst
+Name 1 in "Callister, William D., and David G. Rethwisch" has a comma at the end for entry Callister2012
+while executing---line 1133 of file acm.bst
+Warning--empty journal in Goyal2013
+Name 1 in "Johari, Houri, and Farrokh Ayazi" has a comma at the end for entry Johari2009
+while executing---line 1133 of file acm.bst
+Name 1 in "Wens, Mike, and Michiel Steyaert" has a comma at the end for entry Wens2011
+while executing---line 1133 of file acm.bst
+You've used 54 entries,
+            2253 wiz_defined-function locations,
+            845 strings with 14195 characters,
+and the built_in function-call counts, 15514 in all, are:
+= -- 1548
+> -- 574
+< -- 0
++ -- 263
+- -- 188
+* -- 1127
+:= -- 2564
+add.period$ -- 162
+call.type$ -- 54
+change.case$ -- 225
+chr.to.int$ -- 0
+cite$ -- 55
+duplicate$ -- 500
+empty$ -- 1374
+format.name$ -- 188
+if$ -- 3300
+int.to.chr$ -- 0
+int.to.str$ -- 54
+missing$ -- 51
+newline$ -- 272
+num.names$ -- 100
+pop$ -- 140
+preamble$ -- 1
+purify$ -- 176
+quote$ -- 0
+skip$ -- 342
+stack$ -- 0
+substring$ -- 1201
+swap$ -- 107
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 214
+warning$ -- 1
+while$ -- 141
+width$ -- 56
+write$ -- 536
+(There were 8 error messages)
